@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27%29%3B);
+body{
+	margin: 0;
+	height: 100vh;
+	width: 100vw;
+	font-family: 'PT Sans',sans-serif;
+	background: linear-gradient(#6de982, #04e948);
+}
+#menu{
+	width: 35px;
+	height: 30px;
+	margin: 30px 0 20px 20px;
+	cursor: pointer;
+}
+.bar{
+	height: 5px;
+	width: 100%;
+	background-color: rgb(18, 180, 12);
+	display: block;
+	border-radius: 5px;
+	transition: 0.3s ease;
+}
+#bar1{
+	transform: translateY(-4px);
+}
+#bar3{
+	transform: translateY(4px);
+}
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+}
+.nav li a:hover{
+	font-weight: bold;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle, rgb(20, 161, 7), rgb(9, 151, 28));
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 550px;
+	height: 540px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+.search-box{
+	position: absolute;
+	top:7%;;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background:#0a1b2d;
+	height: 40px;
+	padding: 10px;
+	border-radius: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.search-txt{
+	border: none;
+	background: none;
+	outline: none;
+	padding: 0;
+	color:#f0f5fb;
+	font-size: 16px;
+	line-height: 40px;
+	width: 0;
+	transition: .5s;
+	font-family: 'Open Sans';
+}
+::-webkit-input-placeholder {
+	color: #1e3754;
+}
+.search-btn{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background: #0a1b2d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+}
+.search-box:hover > .search-txt {
+width: 240px;
+padding: 0 9px;
+}
+.search-box:hover > .search-btn{
+	background-color: rgb(179, 10, 10);
+}
