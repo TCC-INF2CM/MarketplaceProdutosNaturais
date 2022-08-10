@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Cadastro.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <h2>Crie sua conta</h2>
+        </div>
+        <form class="form" id="from" form method="get" action="ConfirmarCadastro.html">
+            <div class="form-control">
+                <label for="username">Nome Completo</label>
+                <input type="text" id="username" placeholder="Insira seu nome completo">
+                <i class="img-error"><img src="./img.svg/error-icon.svg" alt=""></i>
+                <i class="img-success"><img src="./img.svg/success-icon.svg" alt=""></i>
+                <small>Erro ao digitar</small>
+            </div>
+
+            
+
+            <div class="form-control">
+                <label for="CPF">CPF</label>
+                <input type="text" id="CPF" maxlength="11" placeholder="Insira seu CPF">
+                <i class="img-error"><img src="./img.svg/error-icon.svg" alt=""></i>
+                <i class="img-success"><img src="./img.svg/success-icon.svg" alt=""></i>
+                <small>Erro ao digitar</small>
+            </div>
+
+           <div class="form-control">
+            <label for="Data de Nascimento">Data de Nascimento</label>
+            <input type="date" name="Data Nascimento" autofocus>
+            <i class="img-error"><img src="./img.svg/error-icon.svg" alt=""></i>
+                <i class="img-success"><img src="./img.svg/success-icon.svg" alt=""></i>
+                <small>Erro ao digitar</small>
+           </div>
+
+
+            <button type="submit">Prosseguir</button>
+
+        </form>
+    </div>
+</body>
+</html>
