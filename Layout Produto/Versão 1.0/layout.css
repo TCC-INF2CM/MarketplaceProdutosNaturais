@@ -1,0 +1,127 @@
+.card{
+    width: 300px;
+    height: 400px;
+    background:  #6b594b;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+.card:hover{
+    transform: scale(.9);
+}
+.card:hover::after{
+    height: 200px;
+}
+.card:hover .con-text p{
+    margin-bottom: 0px;
+    opacity: 1;
+}
+.card:hover img{
+    transform: scale(1.25);
+}
+.card:hover .ul{
+    transform: translate(0);
+    opacity: 1;
+}
+.card:after{
+    width: 100%;
+    content: '';
+    left: 0px;
+    bottom: 0px;
+    height: 150px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 100%;
+    transition: all 25.s ease;
+}
+.card img{
+    height: 100%;
+    z-index: 10;
+    transition: all .25s ease;
+}
+.card .con-text{
+    z-index: 30;
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+.card .con-text p{
+    font-size: .8rem;
+    opacity: 0;
+    margin-bottom: -170px;
+    transition: all .25s ease;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column ;
+}
+.card .con-text p button{
+    padding: 7px 17px;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #6b594b;
+    color: #fff;
+    margin-top: ;
+    margin-left: ;
+    cursor: pointer;
+    transition: all .25s ease;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: .75rem;
+    outline: none;
+}
+.card .con-text p button:hover{
+    background: #fff;
+    color: #000;
+}
+.ul{
+    position: absolute;
+    right: 10px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 40;
+    border-radius: 14px;
+    padding-left: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    top: 0px;
+    opacity: 0;
+    transform: translate(100%);
+    transition: all .25s all ease;
+}
+.ul li{
+    background: #6b594b;
+    list-style: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: .7;
+    transition: all .25s ease;
+    backface-visibility: hidden;
+}
+.ul li:last-child{
+    border-radius: 0px 0px 12px 12px;
+}
+.ul li:first-child{
+    border-radius: 12px 12px 0px 0px;
+}
+.ul li:hover{
+    opacity: 1;
+    transform: translate(-7px, -4px);
+    border-radius: 6px;
+}
+.ul li i{
+    font-size: 1.4rem;
+    color: #000;
+}
