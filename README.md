@@ -1,1 +1,4 @@
-# Farmacia
+Paleta de cores 
+
+Verde
+Marrom
