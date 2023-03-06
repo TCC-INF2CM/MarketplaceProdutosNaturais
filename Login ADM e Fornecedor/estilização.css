@@ -1,5 +1,6 @@
 body {
   font: normal 12pt Arial;
+  background-color: #f2f2f2;
 }
 header {
   color: rgb(0, 0, 0);
@@ -17,6 +18,7 @@ section {
 }
 input{
     border: 2px solid black;
+    border-radius: 24px;
     height: 25pt;
     width: 240pt;
     padding: 5px;
@@ -24,11 +26,24 @@ input{
     margin: 25px;
 }
 input#botão{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 100pt;
   height: 50px;
+  border-radius: 24px;
+  background-color: #038c5a;
+  color: white;
 
 }
 footer {
   text-align: center;
   font-style: italic , bold;
 }
+
+/* input#senha {
+  transform: translateY(-50%);
+  background-image: url('.img/hidden.png');
+  background-size: cover;
+  cursor: pointer;
+} */
