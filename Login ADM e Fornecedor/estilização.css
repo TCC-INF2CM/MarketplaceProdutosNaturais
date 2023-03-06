@@ -18,10 +18,10 @@ section {
 }
 input{
     border: 2px solid black;
-    border-radius: 24px;
+    border-radius: 20px;
     height: 25pt;
     width: 240pt;
-    padding: 5px;
+    padding: 10px;
     font-size: 15px;
     margin: 25px;
 }
@@ -39,6 +39,10 @@ input#botão{
 footer {
   text-align: center;
   font-style: italic , bold;
+}
+#esquecisenha{
+    text-decoration: none;
+
 }
 
 /* input#senha {
