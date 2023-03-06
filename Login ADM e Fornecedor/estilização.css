@@ -1,93 +1,34 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+body {
+  font: normal 12pt Arial;
 }
-.center{
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 300px;
-}
-.center h1{
-    text-align: center;
-    padding: 30px;
-}
-.text-field input{
-    width: 100%;
-    height: 30px;
-    margin: 30px 0;
-    border-color: rgb(0, 0, 0);
-
-}
-.text-field label{
-    position:relative;
-    top: 45%;
-    left: 5px;
-}
-.password label{
-    position:relative;
-    top: 70%;
-    left: 5px;
-}
-.password input{
-    width: 100%;
-    height: 30px;
-    margin: 30px 0;
-    border-color: rgb(0, 0, 0);
+header {
+  color: rgb(0, 0, 0);
+  text-align: center;
 }
 
-button {
-    --color: #038C5A;
-    --color2: #ffffff;
-    font-family: inherit;
-    display: inline-block;
-    width: 6em;
-    height: 2.6em;
-    line-height: 2.5em;
-    overflow: hidden;
-    margin: 20px;
-    font-size: 17px;
-    z-index: 1;
-    color: var(--color);
-    border: 2px solid var(--color);
-    border-radius: 6px;
-    position: relative;
-  }
+section {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  width: 400px;
+  margin: auto;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.415);
   
-  button::before {
-    position: absolute;
-    content: "";
-    background: var(--color);
-    width: 150px;
-    height: 200px;
-    z-index: -1;
-    border-radius: 50%;
-  }
-  
-  button:hover {
-    color: white;
-  }
-  
-  button:before {
-    top: 100%;
-    left: 100%;
-    transition: .3s all;
-  }
-  
-  button:hover::before {
-    top: -30px;
-    left: -30px;
-  }
-  .text-field input:focus ~ label, 
-  .text-field input:valid ~ label{
-    transform: translateY(-24px);
-    font-size: 20px;
-  }
-  footer{
-    background-color: crimson;
-    height: 100px;
-    width: 100%;
-  }
-  
+}
+input{
+    border: 2px solid black;
+    height: 25pt;
+    width: 240pt;
+    padding: 5px;
+    font-size: 15px;
+    margin: 25px;
+}
+input#botão{
+  width: 100pt;
+  height: 50px;
+
+}
+footer {
+  text-align: center;
+  font-style: italic , bold;
+}
