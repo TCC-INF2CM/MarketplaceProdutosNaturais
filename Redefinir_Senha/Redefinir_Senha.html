@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Recuperacao.css">
+    <link rel="stylesheet" href="Redefinir_Senha.css">
     <title>www.lifetree.com.br</title>
 </head>
 <body>
@@ -12,14 +12,16 @@
 
     <section>
         <div id="div1">
-            <p>Para recuperar a sua senha, informe o seu email que enviaremos um link para a alteração de senha</p>
+            <p>Redefine sua senha inserindo suas nova senha</p>
         </div>
+        <div id="div2">
+            <input type="password" id="novaSenha" placeholder="Digite sua nova senha">
+            <br>
+            <input type="password" id="novaSenha" placeholder="Digite a senha novamente">
+            <br>
+            <input type="button" value="finalizar" id="botão" onclick="finalizar()">
 
-            <div id="div2">
-                <input type="text" id="texto" placeholder="Email">
-                <br>
-                <input type="button" value="Enviar" id="botão" onclick="enviar()">
-            </div>
+        </div>
     </section>
 
     <footer>
@@ -31,6 +33,7 @@
 
         <img src="arvorelogo1.png" alt="Imagem" class="imagem-lateral2">
     </div>
+
 
 </body>
 </html>
