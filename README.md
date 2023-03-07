@@ -8,6 +8,5 @@ Meios de acesso dos integrantes do grupo:
 * Felipe de Jesus[ GitHub](https://github.com/FelipeMarani)
 * Gustavo Rocha[ GitHub](https://github.com/Gus303)
 * João Pedro[ GitHub](https://github.com/jpshawty38)
-* Pedro Almeida
 * Stiven Quiros 
 
