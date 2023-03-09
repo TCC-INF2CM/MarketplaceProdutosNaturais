@@ -1,4 +1,3 @@
-
 const email = document.getElementById('email')
 
 form.addEventListener('submit', (e) => {
