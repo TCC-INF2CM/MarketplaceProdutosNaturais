@@ -13,6 +13,10 @@ h1{
   font-size: 30px;
   
 }
+a{
+  color: black;
+  text-decoration: underline;
+}
 
 section {
   background-color: white;
@@ -21,6 +25,7 @@ section {
   width: 400px;
   margin: auto;
   box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.415);
+  
 
 }
 
