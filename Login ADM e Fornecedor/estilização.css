@@ -58,9 +58,16 @@ footer {
 }
 
 #esquecisenha {
-  text-decoration: none;
   padding: 35px;
+  margin-top: 55px;
 
+}
+.info{
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 16px;
+  color: red;
+  text-align: ;
 }
 
 .imagem-lateral {
@@ -68,6 +75,8 @@ footer {
   top: 113px;
   left: -210px;
   width: 500px;
+  max-width: 100%;
+  height: auto;
 }
 .imagem-lateral2 {
   position: absolute;
