@@ -17,13 +17,15 @@
     <section>
         <div>
             <input type="text" id="text" placeholder="Fornecedor/ ADM">
-            <input type="password" id="senha" placeholder="Senha">
+            <input type="password" id="senha" placeholder="Senha"
+            onkeyup="verificar()">
+            <div class="info">
+                <div class="feed">Numeros de caracteres: Minino 8 </div>
+                <div class="feed">Letras maiscula: ABC</div>
+                <div class="feed">Numeros entre 0 e 9</div>
+            </div>
             <a href="" id="esquecisenha">Esqueceu a senha?</a>
-            <input type="button" value="Entrar" id="botão" onclick="entrar()">
-
-
-            <!-- <div id="icon"></div> -->
-
+            <input type="button" value="Entrar" disabled id="botão" onclick="entrar()">
         </div>
 
     </section>
@@ -32,13 +34,13 @@
 
     </footer>
     <div class="Imagem">
-        <img src="arvorelogo1.png" alt="Imagem" class="imagem-lateral">
-        <img src="arvorelogo1.png" alt="Imagem" class="imagem-lateral2">
+        <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral">
+        <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral2">
 
       </div>
       
 
-
+<script src="script.js"></script>
 
 
 </body>
