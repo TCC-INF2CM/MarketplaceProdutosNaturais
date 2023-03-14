@@ -28,7 +28,8 @@ input {
   border: 2px solid black;
   border-radius: 15px;
   height: 20pt;
-  width: 250pt;
+  width: 100%;
+  max-width: 330px;
   padding: 15px;
   font-size: 15px;
   margin: 15px;
@@ -63,13 +64,15 @@ footer {
   position: absolute;
   top: 113px;
   left: -210px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 .imagem-lateral2 {
   position: absolute;
   top: 403px;
   right: -120px;
-  width: 260px;
+  width: 100%;
+  max-width: 260px;
 }
 .feed{
   font-size: 15px;
@@ -80,8 +83,18 @@ footer {
 
 
 
+@media screen and (max-width:768px) {
+    .imagem-lateral2{
+      width:900px;
+      
+    }
+  
+}
 
-/* input#senha {
+
+
+/*
+ input#senha {
   transform: translateY(-50%);
   background-image: url('.img/hidden.png');
   background-size: cover;
