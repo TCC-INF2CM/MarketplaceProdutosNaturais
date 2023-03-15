@@ -61,6 +61,13 @@ footer {
   margin-left: 5%;
 
 }
+.info{
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 16px;
+  color: red;
+  display: none;
+}
 
 .imagem-lateral {
   position: absolute;
