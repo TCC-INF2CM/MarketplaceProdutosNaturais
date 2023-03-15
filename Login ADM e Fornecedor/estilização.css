@@ -88,7 +88,7 @@ footer {
 @media screen and (max-width:768px) {
     .imagem-lateral2{
       width:100%;
-      top: 770px; 
+      top: 500px; 
       max-width: 260px;
       right: -120px;
 
@@ -108,16 +108,16 @@ footer {
     .imagem-lateral{
       width: 100%;
       left: -220px;
-      top: 450px;
+      top: 783px;
       max-width: 500px;
     }
     .imagem-lateral2{
       width: 100%;
-      top: 700px;
+      top: 1072px;
 
     }
     .header{
-      max-width: 200px;
+      margin-top: 250px;
     }
 }
 
