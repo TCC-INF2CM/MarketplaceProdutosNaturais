@@ -7,6 +7,8 @@ body {
 header {
   color: rgb(0, 0, 0);
   text-align: center;
+  margin-top: 120px;
+  
   
 }
 h1{
@@ -62,14 +64,14 @@ footer {
 
 .imagem-lateral {
   position: absolute;
-  top: 113px;
+  top: 369px;
   left: -210px;
   width: 100%;
   max-width: 500px;
 }
 .imagem-lateral2 {
   position: absolute;
-  top: 403px;
+  top: 658px;  
   right: -120px;
   width: 100%;
   max-width: 260px;
@@ -85,10 +87,38 @@ footer {
 
 @media screen and (max-width:768px) {
     .imagem-lateral2{
-      width:900px;
-      
+      width:100%;
+      top: 770px; 
+      max-width: 260px;
+      right: -120px;
+
+    }
+    .imagem-lateral{
+      top: 1024px;
+      width: 100%;
+      max-width: 300px;
+      left: -115px;
+    }
+    .header{
+      margin-top: 250px;
     }
   
+}
+@media screen and (max-width:1024px) {
+    .imagem-lateral{
+      width: 100%;
+      left: -220px;
+      top: 450px;
+      max-width: 500px;
+    }
+    .imagem-lateral2{
+      width: 100%;
+      top: 700px;
+
+    }
+    .header{
+      
+    }
 }
 
 
