@@ -7,7 +7,7 @@ body {
 header {
   color: rgb(0, 0, 0);
   text-align: center;
-  margin-top: 120px;
+  margin-top: 50px;
   
   
 }
@@ -64,14 +64,14 @@ footer {
 
 .imagem-lateral {
   position: absolute;
-  top: 369px;
+  top: 113px;
   left: -210px;
   width: 100%;
   max-width: 500px;
 }
 .imagem-lateral2 {
   position: absolute;
-  top: 658px;  
+  top: 402px;  
   right: -120px;
   width: 100%;
   max-width: 260px;
@@ -117,7 +117,7 @@ footer {
 
     }
     .header{
-      
+      max-width: 200px;
     }
 }
 
