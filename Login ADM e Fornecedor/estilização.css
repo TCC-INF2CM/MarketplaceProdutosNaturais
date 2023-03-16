@@ -1,13 +1,13 @@
 body {
   font: normal 12pt Arial;
-  background-color: #ffffff;
+  background-color: #bad9cc;
   overflow: hidden
 }
 
 header {
   color: rgb(0, 0, 0);
   text-align: center;
-  margin-top: 50px;
+  margin-top: 120px;
   
   
 }
@@ -15,9 +15,12 @@ h1{
   font-size: 30px;
   
 }
+.info{
+  display: none;
+}
 
 section {
-  background-color: white;
+  background-color: #f2f2f29f;
   border-radius: 10px;
   padding: 35px;
   width: 400px;
@@ -28,14 +31,17 @@ section {
 
 input {
   border: 2px solid black;
-  border-radius: 15px;
+  border-radius: 10px;
   height: 20pt;
   width: 100%;
-  max-width: 330px;
+  max-width: 300px;
   padding: 15px;
   font-size: 15px;
   margin: 15px;
   margin-top: 40px;
+}
+input#text , #senha{
+  margin: 23px;
 }
 
 input#botão {
@@ -44,7 +50,7 @@ input#botão {
   margin-left: auto;
   width: 100pt;
   height: 50px;
-  border-radius: 20px;
+  border-radius: 25px;
   background-color: #038c5a;
   color: white;
 
@@ -61,24 +67,17 @@ footer {
   margin-left: 5%;
 
 }
-.info{
-  font-size: 15px;
-  margin-top: 10px;
-  line-height: 16px;
-  color: red;
-  display: none;
-}
 
 .imagem-lateral {
   position: absolute;
-  top: 113px;
+  top: 369px;
   left: -210px;
   width: 100%;
   max-width: 500px;
 }
 .imagem-lateral2 {
   position: absolute;
-  top: 402px;  
+  top: 658px;  
   right: -120px;
   width: 100%;
   max-width: 260px;
@@ -95,7 +94,7 @@ footer {
 @media screen and (max-width:768px) {
     .imagem-lateral2{
       width:100%;
-      top: 500px; 
+      top: 770px; 
       max-width: 260px;
       right: -120px;
 
@@ -115,16 +114,16 @@ footer {
     .imagem-lateral{
       width: 100%;
       left: -220px;
-      top: 783px;
+      top: 450px;
       max-width: 500px;
     }
     .imagem-lateral2{
       width: 100%;
-      top: 1072px;
+      top: 700px;
 
     }
     .header{
-      margin-top: 250px;
+      
     }
 }
 
