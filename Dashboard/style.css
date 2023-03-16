@@ -11,22 +11,22 @@ html,body{
 
 header{
    background-color: #038c5a;
-   padding: 20px 2%;
+   padding: 2px 2%;
    
  }
  #logo{
-   
     height: 120px;
  }
  .logo h2{
   font-size: 15px;
   float: right;
   color: white;
-  
+  margin-top: 85px;
 
  }
  .logo-um h2{
   font-size: 15px;
+  margin-top: 85px;
  }
 
  .info-header{
@@ -45,6 +45,7 @@ header{
    height: 40px;
    width: 40px;
    margin:0 30px;
+   margin-top: 65px;
    
 
  }
@@ -115,7 +116,7 @@ header{
 
  .info-single{
   background-color: rgb(110, 133, 133);
-  border-radius: 10px;
+  border-radius: 15px;
   width: 90%;
   height: 300px;
  }
