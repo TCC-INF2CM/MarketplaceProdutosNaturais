@@ -23,17 +23,19 @@ function verificar() {
 
         n.push(numeros.indexOf(senha.charAt(i)))
         var maxN = Math.max.apply(null, n)
-        if (maxN >= 0) {
+        if (maxN > 0) {
             feed[2].style.color = "green";
         } else {
             feed[2].style.color = "red";
         }
 
-        if (senha.length >= 8) {
-            feed[0].style.color = "green";
-        } else {
+        if (senha.length <= 8 || senha.value == "") {
             feed[0].style.color = "red";
+        } else {
+            feed[0].style.color = "green";
         }
+
+
     }
 }
 

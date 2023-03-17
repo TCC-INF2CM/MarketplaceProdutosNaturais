@@ -11,13 +11,21 @@ header {
   
   
 }
+a{
+
+}
 h1{
   font-size: 30px;
   
 }
-/* .info{
-  display: none;
-} */
+.info{
+  /* */display: none;
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 20px;
+  color: red;
+  
+} 
 
 section {
   background-color: #f2f2f29f;
@@ -83,7 +91,7 @@ footer {
   max-width: 260px;
 }
 .feed{
-  font-size: 15px;
+  font-size: 16px;
   color: red;
   margin-left: 5%;
  
