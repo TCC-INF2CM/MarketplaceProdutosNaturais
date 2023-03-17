@@ -94,9 +94,16 @@
     
 }
   
-.single-box{
+.informacao{
     background-color: rgb(110, 133, 133);
-    border-radius: 10px;
-    width: 90%;
-    height: 300px;
+    height: 10%;
+    width: 70%;
+    margin: 5%;
+}
+
+.informacao th{
+  font-size: 15px;
+  color: black;
+  font-style: italic;
+  margin: 20%;
 }
