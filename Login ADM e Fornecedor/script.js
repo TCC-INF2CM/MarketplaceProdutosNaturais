@@ -56,5 +56,19 @@ text.addEventListener("input" , function() {
     }
 }
 
-
 )
+
+function esconder(){
+    var input = document.getElementById(`senha`)
+    var minhaDiv = document.getElementById(`minhaDiv`)
+    var cond = true
+
+   
+    if(cond){
+        minhaDiv.style.display = "block" 
+    }
+    else{
+        minhaDiv.style.display = "none";
+    }
+    
+}
