@@ -7,19 +7,17 @@ body {
 header {
   color: rgb(0, 0, 0);
   text-align: center;
-  margin-top: 70px;
+  margin-top: 50px;
   
   
 }
-a{
 
-}
 h1{
   font-size: 30px;
   
 }
 .info{
-  /* */display: none;
+  display: none;
   font-size: 15px;
   margin-top: 10px;
   line-height: 20px;
@@ -98,23 +96,9 @@ footer {
 }
 
 
-
 @media screen and (max-width:768px) {
-    .imagem-lateral2{
-      width:100%;
-      top: 770px; 
-      max-width: 260px;
-      right: -120px;
-
-    }
     .imagem-lateral{
-      top: 1024px;
-      width: 100%;
-      max-width: 300px;
-      left: -115px;
-    }
-    .header{
-      margin-top: 250px;
+      
     }
   
 }
@@ -122,15 +106,17 @@ footer {
     .imagem-lateral{
       width: 100%;
       left: -220px;
-      top: 450px;
+      top: 350px;
       max-width: 500px;
     }
     .imagem-lateral2{
       width: 100%;
-      top: 700px;
+      top: 640px;
+      right: 55px;
 
     }
     .header{
+      margin-top: 30px;
       
     }
 }
