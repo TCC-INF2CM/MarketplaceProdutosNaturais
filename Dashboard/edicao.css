@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    background-color: #038c5a;
+    padding: 20px 2%;
+}
+
+h2{
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+h1{
+    margin-right: 30px;
+}
+
+.logo{
+    font-size: 15px;
+}
+
+.module{
+    
+}
+
+.icon{
+    size: 100px;
+}
+
+.informations{
+    margin-left: 50%;
+    background-color: bisque;
+    width: 50%;
+    height: 70%;
+    display: inline-flex;}
