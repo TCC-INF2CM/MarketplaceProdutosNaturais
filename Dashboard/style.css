@@ -7,22 +7,30 @@
 html,body{
   height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+ 
 }
+
+
 
 header{
    background-color: #038c5a;
-   padding: 20px 2%;
+   padding: 7px 2%;
    
  }
  #logo{
    
-    height: 120px;
+    height: 80px;
  }
  .logo h2{
   font-size: 15px;
   float: right;
   color: white;
-  
+  text-align: center;
+  display: flex;
+ 
+ }
+ .icon-header p{
+  color: white;
 
  }
  .logo-um h2{
@@ -35,6 +43,7 @@ header{
    justify-content: space-between;
    margin:auto 10px;
    margin-top: 5px;
+   
  }
 
  .logo{
@@ -85,25 +94,6 @@ header{
    background-color: rgb(212, 225, 212);
    height: 100%;
    
- }
-
- .titulo-sessao{
-  background-color: rgb(255, 255, 255);
-  margin-top: 19px;
-  margin-left: 20px;
-  padding: 10px;
-  border-radius: 10px;
-
- }
- .titulo-sessao h1{
-  font-size: 20px;
-  
- }
-
- .titulo-sessao p{
-  margin-top: 5px;
-  font-size: 15px;
-  
  }
 
 .info-box{

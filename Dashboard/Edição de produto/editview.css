@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+ }
+ 
+ html,body{
+   height: 100%;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ 
+ header{
+    background-color: #038c5a;
+    padding: 20px 2%;
+    
+  }
+  #logo{
+    
+     height: 120px;
+  }
+  .logo h2{
+   font-size: 20px;
+   float: right;
+   color: white;
+  }
+
+  #account{
+    height: 120px;
+  }
+
+.acc{
+    font-size: 15px;
+    float: right;
+}
+
+.acc a{
+    text-decoration: none;
+    color: white;
+}
+
+
+  .info-header{
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    margin:auto 10px;
+    margin-top: 5px;
+  }
+ 
+  
+  .logo{
+    margin-top: 5px;
+  }
+ 
+section.module.box{
+    width: 80%;
+     border: 1px solid #ccc;
+     margin: 20px 0;
+     padding: 20px 20px;
+     border-radius: 5px;
+     margin-left: 10%;
+     margin-top: 5%;
+     background-color: #f2f2f2;
+}
+
+.prod-imagem{
+  margin: 20px 0;
+  padding: 20px 20px;
+  margin-left: 60%;
+  margin-top: -10%;
+}
+
+.prod-imagem img{
+height: 420px;
+}
+
+.button{
+  
+}
