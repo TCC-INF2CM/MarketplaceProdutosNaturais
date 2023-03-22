@@ -32,10 +32,13 @@ header{
   margin-top: 85px;
   text-align: center;
   display: flex;
+  margin-top:13%;
+  margin-left: 20px;
  
  }
  .icon-header p{
   color: white;
+  margin-top: 10%;
 
  }
  .logo-um h2{
