@@ -17,7 +17,7 @@ create table Cliente
 	Tel char(13)not null,
 	Email varchar(150)not null,
 	perfil varbinary(max)null,
-	status varchar(10)not null,
+	statusCliente varchar(20)not null,
 	primary key(id)
 )
 
@@ -47,6 +47,7 @@ create table Fornecedor
 	CEP char(8)not null,
 	City varchar(50)not null,
 	Bairro varchar(100)not null,
+	statusFornecedor varchar(20)not null,
 	primary key(id)
 )
 
@@ -56,6 +57,7 @@ create table Entregador
 	Perfil varbinary(MAX)not null,
 	CNH varchar(11)not null,
 	Tp_Veiculo Varchar(70)not null,
+	statusEntregador varchar(20),
 	primary key(id)
 )
 
@@ -93,9 +95,6 @@ insert into tpProduto(TipodeProduto)
 values('Vegetariano');
 insert into tpProduto(TipodeProduto)
 values('Baixo carboidrato');
-insert into tpProduto(TipodeProduto)
-values('artigo 34');
-
 
 create table mcProduto
 (	id int identity,
@@ -137,6 +136,7 @@ create table Imagem(
 create table Form_Pagamento
 (	id int identity,
 	Fm_pagamento varchar(50)not null,
+	statusPagamento varchar(20)not null,
 	primary key(id)
 )
 insert Form_Pagamento(Fm_pagamento)
@@ -166,7 +166,7 @@ create table Venda
 create table ItemVenda(
 	id int identity,
 	Quant int not null,
-	StatusItem int not null,
+	StatusItem varchar(20) not null,
 	Produto_id int not null,
 	Venda_id int not null,
 	Cliente_id int not null,
@@ -186,6 +186,7 @@ create table Entrega
 	Cliente_id int not null,
 	itemVenda_id int not null,
 	Endereco_id int not null,
+	statusEntrega varchar(20)not null,
 	primary key(id),
 	foreign key(Entregador_id)
 		references Entregador(id),
