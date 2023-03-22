@@ -16,13 +16,14 @@ create table Cliente
 	dtNasc date not null,
 	Tel char(13)not null,
 	Email varchar(150)not null,
-	imagem varchar(MAX)null,
+	perfil varbinary(max)null,
+	status varchar(10)not null,
 	primary key(id)
 )
 
 create table Endereco(
 	id int identity,
-	Logradouro varchar(250)not null,
+	Lagradouro varchar(250)not null,
 	CEP char(8)not null,
 	NumCasa char(5)not null,
 	Bairro varchar(180)not null,
@@ -38,14 +39,23 @@ create table Endereco(
 create table Fornecedor
 (	id int identity,
 	Nome varchar(150)not null,
-	imagem varchar(MAX)null,
+	perfil2 varbinary(MAX)null,
 	CNPJ varchar(199)not null,
 	Email varchar(150)not null,
 	Tel char(13)not null,
 	Informacao varchar(250)null,
 	CEP char(8)not null,
-	Cidade varchar(50)not null,
+	City varchar(50)not null,
 	Bairro varchar(100)not null,
+	primary key(id)
+)
+
+create table Entregador
+(	id int identity,
+	Nome varchar(150)not null,
+	Perfil varbinary(MAX)not null,
+	CNH varchar(11)not null,
+	Tp_Veiculo Varchar(70)not null,
 	primary key(id)
 )
 
@@ -56,32 +66,35 @@ create table tpProduto
 )
 
 insert into tpProduto(TipodeProduto)
-values('Ch· e Infusıes');
+values('Ch√° e Infus√µes');
 insert into tpProduto(TipodeProduto)
 values('A Granel');
 insert into tpProduto(TipodeProduto)
 values('Vitaminas e Suplementos');
 insert into tpProduto(TipodeProduto)
-values('Mercearia e EmpÛrio');
+values('Mercearia e Emp√≥rio');
+insert into tpProduto(TipodeProduto)
+values('Bem estar e Beleza');
 insert into tpProduto(TipodeProduto)
 values('Refrigferados');
 insert into tpProduto(TipodeProduto)
-values('PromoÁıes');
+values('Promo√ß√µes');
 insert into tpProduto(TipodeProduto)
-values('Sem AÁucar');
+values('Sem A√ßucar');
 insert into tpProduto(TipodeProduto)
-values('Sem Gl˙tem');
+values('Sem Gl√∫tem');
 insert into tpProduto(TipodeProduto)
 values('Sem Lactose');
 insert into tpProduto(TipodeProduto)
-values('Org‚nico');
+values('Org√¢nico');
 insert into tpProduto(TipodeProduto)
 values('Vegano');
 insert into tpProduto(TipodeProduto)
 values('Vegetariano');
 insert into tpProduto(TipodeProduto)
 values('Baixo carboidrato');
-
+insert into tpProduto(TipodeProduto)
+values('artigo 34');
 
 
 create table mcProduto
@@ -94,12 +107,13 @@ create table Produto
 (	id int identity,
 	Nome varchar(100)not null,
 	Preco decimal(10,2)not null,
-	imagem varchar(MAX),
-	Quantidade int,
+	layout varchar(MAX),
+	Marca varchar(100)not null,
+	Disponibilidade int,
 	Fornecedor_id int not null,
 	tpProduto_id int not null,
 	mcProduto_id int not null,
-	Complemento varchar(250)null
+	Complemento varchar(250)not null
 	primary key(id),
 	foreign key(Fornecedor_id) 
 		references Fornecedor(id),
@@ -109,15 +123,26 @@ create table Produto
 		references mcProduto(id)
 )
 
+create table Imagem(
+	id int identity,
+	Nome_arquivo varchar(100)not null,
+	caminho varchar(max)not null,
+	statusImage varchar(20)not null,
+	produto_id int not null,
+	primary key(id),
+	foreign key(produto_id)
+	references Produto(id)
+)
+
 create table Form_Pagamento
 (	id int identity,
 	Fm_pagamento varchar(50)not null,
 	primary key(id)
 )
 insert Form_Pagamento(Fm_pagamento)
-values('Cart„o de Debito')
+values('Cart√£o de Debito')
 insert Form_Pagamento(Fm_pagamento)
-values('Cart„o de Credito')
+values('Cart√£o de Credito')
 insert Form_Pagamento(Fm_pagamento)
 values('Pix')
 insert Form_Pagamento(Fm_pagamento)
@@ -153,13 +178,17 @@ create table ItemVenda(
 	foreign key(Venda_id)
 		references Venda(id)
 )
- 
+
+
 create table Entrega
 (	id int identity,
+	Entregador_id int not null,
 	Cliente_id int not null,
 	itemVenda_id int not null,
 	Endereco_id int not null,
 	primary key(id),
+	foreign key(Entregador_id)
+		references Entregador(id),
 	foreign key(Cliente_id)
 		references Cliente(id),
 	foreign key(itemVenda_id)
@@ -168,35 +197,6 @@ create table Entrega
 		references Endereco(id)
 )
 
-create table Entregador
-(	id int identity,
-	Nome varchar(150)not null,
-	imagem varchar(MAX)not null,
-	CNH varchar(11)not null,
-	Tp_Veiculo Varchar(70)not null,
-	Entrega_id int not null,
-	primary key(id),
-	foreign key(Entrega_id)
-		references Entrega(id)
-)
-
---Insert mcProduto(Marca)
---Values ('Le„o')
---Insert mcProduto(Marca)
---Values ('Dr.Oetker')
---Insert mcProduto(Marca)
---Values ('Desinch·')
---Insert mcProduto(Marca)
---Values ('Qualit·')
---Insert mcProduto(Marca)
---Values ('M„eTerra')
-
---Insert Produto(Nome, Complemento, Quantidade, Preco, tpProduto_id, mcProduto_id )
---Values ('Ch· Mate pcte/10Un', '', 20, 15.67, 1, 1 )
---Insert Produto(Nome, Complemento, Quantidade, Preco, tpProduto_id, mcProduto_id )
---Values ('Castanha d/ Par·', '5g por pacote', 500, 2.50, 2, 4 )
-
-
-----select * from mcProduto
-----select * from tpProduto
---select * from Produto
+--Consulta todos os(*) campos
+--E todos os registros da tabela
+--select*from tpProduto
