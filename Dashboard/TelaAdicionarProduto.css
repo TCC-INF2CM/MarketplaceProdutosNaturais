@@ -71,10 +71,14 @@ section.module.box{
   margin-top: -10%;
 }
 
-.prod-imagem img{
-height: 420px;
+.picture__input{
+  display: none;
 }
 
-.button{
-  
+.picture{
+  width: 400px;
+  aspect-ratio: 16/9;
+  background: #eee;
+  display: flex;
+  align-items: center;
 }
