@@ -1,68 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Crie sua conta</title>
     <link rel="stylesheet" href="Cadastro_final1.0.css">
 
 </head>
 <body>
+    <header>
+        <h1>Crie sua conta</h1>
+    </header>
 
-    <div class="container">
-        <div class="header">
-            <h2>Crie sua conta</h2>
+    <section>
+        <div class="container">
+            <form action="" id="form" class="form">
+                <label for="username" id="name" class="label">Nome da sua Empresa
+                    <input type="text" name="name" id="name" class="inf" placeholder="Insira a sua empresa">
+                </label>
+               
+
+                <label for="email" id="email" class="label">Email da empresa
+                    <input type="text" name="email" id="email" class="inf" placeholder="Insira o Email">
+                </label>
+               
+
+                <label for="cnpj" id="cnpj" class="label">Insira o CNPJ da empresa
+                    <input type="text" name="cnpj" id="cnpj" class="inf" placeholder="Insira o CNPJ">
+                </label>
+
+                <label for="tel" id="tel" class="label">Digite um telefone para contato
+                    <input type="text" name="tel" id="tel" class="inf" placeholder="Digite seu contato">
+                </label>
+
+                <!-- <label for="information" id="inf" class="label"></label> -->
+
+                <label for="cep" id="cep" class="label">Informe seu CEP
+                    <input type="text" name="cep" id="cep" class="inf" placeholder="Digite seu CEP">
+                </label>
+
+                <label for="city" id="city" class="label">Informe sua Cidade
+                    <input type="text" name="city" id="city" class="inf" placeholder="Digite...">
+                </label>
+
+
+                <input type="button" value="Confirmar Envio" id="botão" onclick="enviar()">
+            </form>
+
         </div>
-        <form class="form" id="from">
+    </section>
+    <footer>
+        <p> &copy; Life Tree</p>
 
-            <div class="form-control">
+    </footer>
+    <div class="Imagem">
+        <!-- <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral"> -->
+        <!-- <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral2"> -->
 
-                <label for="username">Nome</label>
-
-                <input type="text" id="username" placeholder="Insira seu nome">
-                <i class="img-error"><img src="img.svg/error-icon.svg" alt=""></i>
-                <i class="img-success"><img src="img.svg/success-icon.svg" alt=""></i>
-                <small>Erro ao digitar</small>
-
-            </div>
-
-            <div class="form-control">
-
-                <label for="email">Email</label>
-                <input type="email" id="email" placeholder="Insira seu email">
-                <i class="img-error"><img src="img.svg/error-icon.svg" alt=""></i>
-                <i class="img-success"><img src="img.svg/success-icon.svg" alt=""></i>
-                <small>Erro ao digitar</small>
-
-            </div>
-
-            <div class="form-control">
-
-                <label for="password">Crie uma Senha</label>
-                <input type="password" id="password" placeholder="Crie uma senha">
-                <i class="img-error"><img src="img.svg/error-icon.svg" alt=""></i>
-                <i class="img-success"><img src="img.svg/success-icon.svg" alt=""></i>
-                <small>Senha deve conter 8 caracteres sendo #,1 e letras</small>
-
-            </div>
-
-            <div class="form-control">
-
-                <label for="">Confirme a senha</label>
-                <input type="password" id="passwordtwo" placeholder="Confirme a senha">
-                <i class="img-error"><img src="img.svg/error-icon.svg" alt=""></i>
-                <i class="img-success"><img src="img.svg/success-icon.svg" alt=""></i>
-                <small>Senhas não conferem</small>
-
-            </div>
-
-            <button type="submit">Confimar envio</button>
-
-        </form>
-
-    </div>
-
+      </div>
+    
     <script src="cadastro1.0.js"></script>
 </body>
 
