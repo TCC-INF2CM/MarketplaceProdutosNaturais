@@ -16,34 +16,71 @@
     <section>
         <div class="container">
             <form action="" id="form" class="form">
-                <label for="username" id="name" class="label">Nome da sua Empresa
-                    <input type="text" name="name" id="name" class="inf" placeholder="Insira a sua empresa">
-                </label>
                
+                <div class="label">
+                    <label for="username">Nome da sua Empresa</label>
+                </div>
+                    <div class="input">
+                        <input type="text" name="name" id="name" class="inf" placeholder="Insira a sua empresa">
+                    </div>
+                              
+                        <div class="label">
+                            <label for="cnpj">Insira o CNPJ</label>
+                        </div>
+                            <div class="input">
+                                <input type="text" name="CNPJ" id="CNPJ" class="inf" placeholder="Insira o CNPJ">
+                            </div>
 
-                <label for="email" id="email" class="label">Email da empresa
-                    <input type="text" name="email" id="email" class="inf" placeholder="Insira o Email">
-                </label>
-               
-
-                <label for="cnpj" id="cnpj" class="label">Insira o CNPJ da empresa
-                    <input type="text" name="cnpj" id="cnpj" class="inf" placeholder="Insira o CNPJ">
-                </label>
-
-                <label for="tel" id="tel" class="label">Digite um telefone para contato
-                    <input type="text" name="tel" id="tel" class="inf" placeholder="Digite seu contato">
-                </label>
+                            <div class="label">
+                                <label for="tel">Telefone de contato</label>
+                            </div>
+                                <div class="input">
+                                    <input type="text" name="tel" id="tel" class="inf" placeholder="Insira um telefone ">
+                                </div>
 
                 <!-- <label for="information" id="inf" class="label"></label> -->
 
-                <label for="cep" id="cep" class="label">Informe seu CEP
-                    <input type="text" name="cep" id="cep" class="inf" placeholder="Digite seu CEP">
-                </label>
+                <div class="label">
+                    <label for="cep">Informe seu CEP</label>
+                </div>
+                    <div class="input">
+                        <input type="text" name="cep" id="cep" class="inf" placeholder="Digite seu CEP">
+                    </div>
 
-                <label for="city" id="city" class="label">Informe sua Cidade
-                    <input type="text" name="city" id="city" class="inf" placeholder="Digite...">
-                </label>
+               <div class="label">
+                    <label for="city">Informe sua Cidade</label>
+                </div>
+                    <div class="input">
+                        <input type="text" name="city" id="city" class="inf" placeholder="Informe sua cidade">
+                    </div>
 
+                    <div class="label">
+                        <label for="email">Email da empresa</label>
+                    </div>
+                        <div class="input">
+                            <input type="text" name="email" id="email" class="inf" placeholder="Insira o Email">
+                        </div>
+
+                        <div class="label">
+                            <label for="email2">Confirme seu email</label>
+                        </div>
+                            <div class="input">
+                                <input type="text" name="email" id="email2" class="inf" placeholder="Confirme o email">
+                            </div>
+    
+                            <div class="label">
+                                <label for="password">Crie uma senha</label>
+                            </div>
+                            <div class="input">
+                                <input type="password" name="password" id="password" placeholder="Crie uma senha">
+                            </div>
+
+                            <div class="label">
+                                <label for="password2">Confirme sua senha</label>
+                            </div>
+                            <div class="input">
+                                <input type="password" name="password2" id="password2" placeholder="Confirme sua senha">
+                            </div>
 
                 <input type="button" value="Confirmar Envio" id="botão" onclick="enviar()">
             </form>
