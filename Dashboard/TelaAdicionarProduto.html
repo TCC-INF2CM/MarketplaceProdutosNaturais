@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilização.css">
+    
+    <title>Adicionar Produto</title>
+</head>
+<body>
+    <header>
+        <div class="info-header">
+            <div class="logo">
+            <h2>Edição de produto</h2>
+            <img src="arvorelogo1.png" id="logo">
+        </div>
+
+        <div class="info-header">
+            <div class="account">
+            <div class="acc">
+                <a href="#">Fornecedor</a>
+            </div>
+            <img src="adm icon.png" id="account">
+        </div>
+
+        </div>
+    </header>
+
+    <section class="module box">
+        <div class="title">
+            <h2>
+                Adicionar produto
+            </h2>
+            <hr>
+        </div>
+        <div class="informations">
+
+            <p>Nome do produto   <input type="text"> </p>
+            <p>Quantidade <input type="number"></p>
+            <p>Preço <input type="number" min="0.00" max="10000.00" step="0.01"></p>
+            <p>Código do produto <input type="number" min="000001" max="999999"/></p>
+            <p>Descrição do Produto <input type="text" min="000001" max="999999"/></p>
+                       
+            <div class="prod-imagem">
+                <label class="picture" for="picture__input" tabIndex="0">
+                    <span class="picture__image"></span>   
+                  <input type="file" name="picture__input" id="picture__input"></label> 
+                  <script src="TelaAdicionarProduto.js">
+                </script>
+                <p>Código do  produto:</p>
+                <p class="cod-prod">000000</p>
+            </div>
+        </div>
+        
+
+        <div class="button">
+            <form action="/processar-formulario" method="post">
+                <input type="submit" value="Adicionar produto">
+              </form>
+              
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
