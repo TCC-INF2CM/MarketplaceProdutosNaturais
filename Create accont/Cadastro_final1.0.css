@@ -1,15 +1,6 @@
-
-.container {
-    border: 2px solid #ffffff;
-    width: 450px;
-    max-width: 100%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 35px;
-     width: 400px; 
-    margin: auto;
-    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.415);
-    
+body{
+    font: normal 12pt Arial;
+    background-color: #ffffff;
 }
 
 header{
@@ -18,27 +9,69 @@ header{
     margin-top: 78px;
   }
 
+h1{
+    color: black;
+    text-align: center;
+  }
 
-
-.form button {
-    background-color: #038c5a;
-    border-radius: 5px;
-    color: #ffffff;
-    padding: 15px;
-    font-size: 15px;
-    font-weight: 600;
-    width: 100%;
-    margin-top: 5px;
-    cursor: pointer;
+.container {
+    border: 2px solid #ffffff;
+    width: 450px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px;
+     width: 400px; 
+    margin: auto;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.415);
+    
 }
 
-.form button:hover {
-    background-color: #33b072;
-    transition: 0.3s;
+input{
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 20pt;
+    width: 250pt;
+    padding: 15px;
+    font-size: 15px;
+    margin: 15px;
+    margin-top: 10px;
+}
+
+
+input#botão {
+    display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100pt;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #038c5a; 
+  color: white;
+  cursor: pointer;
+}
+
+form#botão:hover {
+    background-color: #fafffc;
+    transition: 0.2s;
 }
 
 footer {
     text-align: center;
     font-style: italic, bold;
+  }
+  .imagem-lateral {
+    position: absolute;
+    top: 720px;
+    left: -205px;
+    width: 470px;
+    max-width: 100%;
+    height: auto;
+  }
+  .imagem-lateral2 {
+    position: absolute;
+    top: 720px;
+    right: -150px;
+    width: 470px;
   }
   
