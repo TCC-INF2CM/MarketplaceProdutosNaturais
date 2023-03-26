@@ -1,10 +1,10 @@
-const form = document.getElementById('form')
-const username = document.getElementById('username')
+const label = document.getElementById('label')
+const name = document.getElementById('name')
 const email = document.getElementById('email')
 const password = document.getElementById('password')
-const passwordtwo = document.getElementById('password-two')
+const password2 = document.getElementById('password2')
 
-form.addEventListener('submit', (e) => {
+label.addEventListener('enviar', (e) => {
     e.preventDefault()
 
     checkInputs()
@@ -12,18 +12,18 @@ form.addEventListener('submit', (e) => {
 
 function checkInputs() {
 
-    const usernameValue = username.value.trim()
+    const nameValue = name.value.trim()
     const emailValue = email.value.trim()
     const passwordValue = password.value.trim()
-    const passwordtwoValue = passwordtwo.value.trim()
+    const password2Value = password2.value.trim()
 
-    if(usernameValue === '') {
+    if(nameValue === '') {
         // mostrar erro
         // add classe
-        setErrorFor(username, 'Preencha esse campo')
+        setErrorFor(name, 'Preencha esse campo')
     } else {
         // adicionar a classe de sucesso
-        setSuccessFor(username)
+        setSuccessFor(name)
     }
 
     if(emailValue === '') {
@@ -49,33 +49,33 @@ function checkInputs() {
         setSuccessFor(password)
     }
 
-    if(passwordtwoValue === '') {
+    if(password2Value === '') {
         // mostrar erro
         // add classe
-        setErrorFor(passwordtwo, 'Preencha esse campo')
+        setErrorFor(password2, 'Preencha esse campo')
 
-    } else if(passwordValue !== passwordtwoValue) { 
-        setErrorFor(passwordtwo, 'Senhas não coincidem')
+    } else if(passwordValue !== password2Value) { 
+        setErrorFor(password2, 'Senhas não coincidem')
     } else {
         // adicionar a classe de sucesso
-        setSuccessFor(passwordtwo)
+        setSuccessFor(password2)
     }
 
 }
 
 function setErrorFor(input, message) {
-    const formControl = input.parentElement;
-    const small = formControl.querySelector('small')
+    const label = input.parentElement;
+    const small = form.querySelector('small')
 
     small.innerText = message
 
-    formControl.className = 'form-control error'
+    label.className = 'form error'
 }
 
 function setSuccessFor(input) {
-    const formControl = input.parentElement;
+    const label = input.parentElement;
 
-    formControl.className = 'form-control success'
+    label.className = 'form success'
 }
 
 function isEmail(email) {

@@ -6,13 +6,18 @@ body{
 header{
     color: rgb(0, 0, 0);
     text-align: center;
-    margin-top: 78px;
+    margin-top: 60px;
   }
 
 h1{
     color: black;
     text-align: center;
   }
+
+ .form-control{
+   margin-bottom: 10px;
+    padding-bottom: 20px;
+ } 
 
 .container {
     border: 2px solid #ffffff;
@@ -38,8 +43,15 @@ input{
     margin-top: 10px;
 }
 
+.inf.success{
+  border: 3px solid #4eca64;
+}
+.inf.error{
+  border: 3px solid #db5a5a;
+}
 
-input#botão {
+
+#botão {
     display: block;
   margin-right: auto;
   margin-left: auto;
@@ -51,8 +63,8 @@ input#botão {
   cursor: pointer;
 }
 
-form#botão:hover {
-    background-color: #fafffc;
+#botão:hover {
+    background-color: #42dd9d;
     transition: 0.2s;
 }
 
@@ -62,7 +74,7 @@ footer {
   }
   .imagem-lateral {
     position: absolute;
-    top: 720px;
+    top: 1200px;
     left: -205px;
     width: 470px;
     max-width: 100%;
@@ -70,8 +82,8 @@ footer {
   }
   .imagem-lateral2 {
     position: absolute;
-    top: 720px;
-    right: -150px;
+    top: 1200px;
+    right: -270px;
     width: 470px;
   }
   

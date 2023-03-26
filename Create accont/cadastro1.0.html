@@ -13,78 +13,60 @@
         <h1>Crie sua conta</h1>
     </header>
 
-    <section>
         <div class="container">
             <form action="" id="form" class="form">
                
-                <div class="label">
+                <div class="form-control">
                     <label for="username">Nome da sua Empresa</label>
-                </div>
-                    <div class="input">
-                        <input type="text" name="name" id="name" class="inf" placeholder="Insira a sua empresa">
+                        <input type="text" id="uname" class="inf" placeholder="Insira a sua empresa"> 
                     </div>
                               
-                        <div class="label">
+                        <div class="form-control">
                             <label for="cnpj">Insira o CNPJ</label>
-                        </div>
-                            <div class="input">
-                                <input type="text" name="CNPJ" id="CNPJ" class="inf" placeholder="Insira o CNPJ">
+                                <input type="text"  id="CNPJ" class="inf" placeholder="Insira o CNPJ">
                             </div>
 
-                            <div class="label">
+                            <div class="form-control">
                                 <label for="tel">Telefone de contato</label>
-                            </div>
-                                <div class="input">
-                                    <input type="text" name="tel" id="tel" class="inf" placeholder="Insira um telefone ">
+                                    <input type="tel" id="tel" class="inf" placeholder="Insira um telefone ">
+
                                 </div>
 
-                <div class="label">
+                <div class="form-control">
                     <label for="cep">Informe seu CEP</label>
-                </div>
-                    <div class="input">
-                        <input type="text" name="cep" id="cep" class="inf" placeholder="Digite seu CEP">
+                        <input type="text" id="cep" class="inf" placeholder="Digite seu CEP">
                     </div>
 
-               <div class="label">
+               <div class="form-control">
                     <label for="city">Informe sua Cidade</label>
-                </div>
-                    <div class="input">
-                        <input type="text" name="city" id="city" class="inf" placeholder="Digite o nome da sua cidade">
+                        <input type="text" id="city" class="inf" placeholder="Digite o nome da sua cidade">
                     </div>
 
-                    <div class="label">
+                    <div class="form-control">
                         <label for="email">Email da empresa</label>
-                    </div>
-                        <div class="input">
-                            <input type="text" name="email" id="email" class="inf" placeholder="Insira o Email">
+                            <input type="email" id="email" class="inf" placeholder="Insira o Email">
                         </div>
 
-                        <div class="label">
+                        <div class="form-control">
                             <label for="email2">Confirme seu email</label>
-                        </div>
-                            <div class="input">
-                                <input type="text" name="email" id="email2" class="inf" placeholder="Confirme o email">
+                                <input type="email"  id="email2" class="inf" placeholder="Confirme o email">
                             </div>
     
-                            <div class="label">
+                            <div class="form-control">
                                 <label for="password">Crie uma senha</label>
-                            </div>
-                            <div class="input">
-                                <input type="password" name="password" id="password" placeholder="Crie uma senha">
+                                <input type="password" id="password" placeholder="Crie uma senha">
                             </div>
 
-                            <div class="label">
+                            <div class="form-control">
                                 <label for="password2">Confirme sua senha</label>
-                            </div>
-                            <div class="input">
-                                <input type="password" name="password2" id="password2" placeholder="Digite sua senha">
+                                <input type="password" id="password2" placeholder="Digite sua senha">
                             </div>
 
-                <input type="button" value="Confirmar Envio" id="botão" onclick="enviar()">
+                            <!-- <input type="button" id="botão" onclick="enviar()" value="Confirmar"> -->
+               <Button type="submit" onclick="enviar()" id="botão">Confirmar</Button>
             </form>
 
         </div>
-    </section>
     <footer>
         <p> &copy; Life Tree</p>
 
