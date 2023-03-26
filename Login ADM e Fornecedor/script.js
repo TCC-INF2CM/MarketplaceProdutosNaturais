@@ -10,7 +10,7 @@ function verificar() {
     var m = [];
     var n = [];
 
-
+    
 
     for (i = 0; i < senha.length; i++) {
         m.push(maiscula.indexOf(senha.charAt(i)))
@@ -23,9 +23,9 @@ function verificar() {
 
         n.push(numeros.indexOf(senha.charAt(i)))
         var maxN = Math.max.apply(null, n)
-        if (maxN > 0) {
+        if (maxN >= 0) {
             feed[2].style.color = "green";
-        } else {
+        } else{
             feed[2].style.color = "red";
         }
 
@@ -34,7 +34,12 @@ function verificar() {
         } else {
             feed[0].style.color = "green";
         }
-
+        
+        if(feed = ""){
+            feed.style.color = "red"
+        }else{
+            feed.style.color = "green"
+        }
 
     }
 }
@@ -71,8 +76,15 @@ function esconder(){
         minhaDiv.style.display = "none";
     }
     
-    input.addEventListener("blur" , function(){
-        minhaDiv.style.display = 'block';
-    })
 
 }
+const input = document.getElementById("senha");
+const div = document.getElementById("minhaDiv");
+document.addEventListener("click", function(event) {
+    // Se o clique não foi no input nem na div, fecha a div
+    if (event.target !== input && event.target !== div) {
+      div.style.display = "none";
+    }else{
+      div.style.display = "block";
+    }
+  });

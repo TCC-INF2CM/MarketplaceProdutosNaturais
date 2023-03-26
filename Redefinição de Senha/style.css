@@ -10,6 +10,20 @@ body {
     text-align: center;
     
   }
+  .info{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 20px;
+    color: red;
+    
+  } 
+  .feed{
+    font-size: 16px;
+    color: red;
+    margin-left: 5%;
+   
+  }
   
   section {
     background-color: white;

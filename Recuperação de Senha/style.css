@@ -5,14 +5,14 @@ body {
 }
 
 h1 {
-  margin-top: 24px;
+  margin-top: 70px;
   font-size: 30px;
   text-align: center;
 
 }
 
 section {
-  background-color: white;
+  background-color: #f2f2f29f;
   border-radius: 10px;
   padding: 35px;
   width: 400px;
@@ -21,7 +21,7 @@ section {
 
 }
 
-input {
+input{
   border: 2px solid black;
   border-radius: 18px;
   height: 20pt;
@@ -34,7 +34,7 @@ input {
 
 
 
-button {
+input#botao {
   margin-top: 60px;
   display: block;
   margin-right: auto;
@@ -63,7 +63,8 @@ footer {
   position: absolute;
   top: 113px;
   left: -180px;
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
 }
 
 .imagem-lateral2 {
