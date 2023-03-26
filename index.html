@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<body>
+    <input type="text" id="myInput">
+    <div id="myDiv">
+      <!-- conteúdo da div -->
+      <h1>OLAAAAAAAAAAA</h1>
+    </div>
+    
+</body>
+<script>
+    const input = document.getElementById("myInput");
+const div = document.getElementById("myDiv");
+
+document.addEventListener("click", function(event) {
+  // Se o clique não foi no input nem na div, fecha a div
+  if (event.target !== input && event.target !== div) {
+    div.style.display = "none";
+  }
+});
+
+
+</script>
+
+</html>

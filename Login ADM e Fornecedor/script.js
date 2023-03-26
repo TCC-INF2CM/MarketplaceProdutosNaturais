@@ -64,8 +64,6 @@ function esconder(){
     var input = document.getElementById(`senha`)
     var minhaDiv = document.getElementById(`minhaDiv`)
     var cond = true
-
-   
     if(cond){
         minhaDiv.style.display = "block" 
     }
@@ -73,4 +71,8 @@ function esconder(){
         minhaDiv.style.display = "none";
     }
     
+    input.addEventListener("blur" , function(){
+        minhaDiv.style.display = 'block';
+    })
+
 }
