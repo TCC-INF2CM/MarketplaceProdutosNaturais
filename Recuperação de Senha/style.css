@@ -41,7 +41,7 @@ body {
     border-radius: 20px;
     background-color: #038c5a;
     color: white;
-  
+    cursor: pointer;
   }
   
   footer {
