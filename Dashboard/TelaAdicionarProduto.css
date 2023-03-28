@@ -9,6 +9,7 @@
 html,body{
  height: 100%;
  font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(212, 225, 212);
 }
 
 header{
@@ -104,7 +105,7 @@ display: none;
 
 .picture {
 width: 300px;
-height: 300px;
+height: 500px;
 background: #ddd;
 display: block;
 align-items: center;
