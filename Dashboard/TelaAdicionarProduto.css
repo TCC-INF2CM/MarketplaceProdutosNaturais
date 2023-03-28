@@ -1,36 +1,64 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 html,body{
- height: 100%;
- font-family: Arial, Helvetica, sans-serif;
-}
-
-header{
-  background-color: #038c5a;
-  padding: 20px 2%;
-  
-}
-#logo{
-  
-   height: 120px;
-}
-.prod-imagem{
-  top: 200px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
  
 }
 
 
-.logo h2{
- font-size: 20px;
- float: right;
- color: white;
-}
+
+header{
+   background-color: #038c5a;
+   padding: 7px 2%;
+   
+ }
+ #logo{
+    height: 80px;
+ }
+ .logo h2{
+  font-size: 15px;
+  float: right;
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-top:13%;
+  margin-left: 20px;
+ 
+ }
+ .icon-header p{
+  color: white;
+  margin-top: 10%;
+  margin-left: 12px;
+
+ }
+ .logo-um h2{
+  font-size: 15px;
+ }
+
+ .info-header{
+   color: black;
+   display: flex;
+   justify-content: space-between;
+   margin:auto 10px;
+   margin-top: 5px;
+   
+ }
+
+ .logo{
+   margin-top: 5px;
+ }
+
+ .icon-header img{
+   height: 40px;
+   width: 40px;
+   margin:0 30px;
+  
+ }
 
 #account{
   height: 120px;
@@ -46,19 +74,6 @@ header{
   color: white;
 }
 
-
-.info-header{
-  color: black;
-  display: flex;
-  justify-content: space-between;
-  margin:auto 10px;
-  margin-top: 5px;
-}
-
-
-.logo{
-  margin-top: 5px;
-}
 
 .informations p {
   text-align: left;
@@ -88,14 +103,12 @@ section.module.box{
 
 .informations{
   margin-top: 40px;
+  flex-direction: row
 }
 
 .prod-imagem{
-margin: 20px 0;
-padding: 20px 20px;
-margin-left: 60%;
-margin-top: -10%;
-height: 200px;
+
+  margin-left: 50%;
 }
 
 #picture__input {
@@ -103,8 +116,8 @@ display: none;
 }
 
 .picture {
-width: 300px;
-height: 300px;
+width: 400px;
+height: 400px;
 background: #ddd;
 display: block;
 align-items: center;
