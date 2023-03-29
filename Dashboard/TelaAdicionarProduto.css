@@ -39,7 +39,7 @@ header{
 
 .acc{
   font-size: 15px;
-  float: right;
+  
 }
 
 .acc a{
@@ -55,14 +55,16 @@ header{
   margin:auto 10px;
   margin-top: 5px;
 }
-
+#button{
+  margin-left: 50px;
+}
 
 .logo{
   margin-top: 5px;
 }
 
 .informations p {
-  text-align: left;
+  margin-left: 50px;
   left: 200px;
 }
 input{
@@ -92,10 +94,10 @@ section.module.box{
 }
 
 .prod-imagem{
-
-padding: 20px;
+margin: 20px 0;
+padding: 20px 20px;
 margin-left: 60%;
-margin-top: 160px;
+margin-top: 50px;
 height: 100px;
 }
 
@@ -104,18 +106,19 @@ display: none;
 }
 
 .picture {
-width: 300px;
-height: 300px;
+width: 400px;
+height: 400px;
 background: #ddd;
-display: block;
+justify-content: center;
+margin-left: 30px;
+text-align: center;
+display: flex;
 align-items: center;
-top: 500px;
-justify-content:center;
-color: #aaa;
-border: 1.5px dashed currentcolor;
+top: 100px;
+margin-top: -400px;
+color: black;
+border: 1.5px dashed #038c5a ;
 cursor: pointer;
-font-family: sans-serif;
-transition: color 300ms ease-in-out, background 300ms ease-in-out;
 outline: none;
 overflow: hidden;
 }
@@ -124,7 +127,7 @@ overflow: hidden;
 }
 
 .picture:hover {
-color: #777;
+color: black;
 background: #ccc;
 }
 
