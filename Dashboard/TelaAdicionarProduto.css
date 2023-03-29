@@ -1,37 +1,64 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 html,body{
- height: 100%;
- font-family: Arial, Helvetica, sans-serif;
- background-color: rgb(212, 225, 212);
-}
-
-header{
-  background-color: #038c5a;
-  padding: 20px 2%;
-  
-}
-#logo{
-  
-   height: 120px;
-}
-.prod-imagem{
-  top: 200px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
  
 }
 
 
-.logo h2{
- font-size: 20px;
- float: right;
- color: white;
-}
+
+header{
+   background-color: #038c5a;
+   padding: 7px 2%;
+   
+ }
+ #logo{
+    height: 80px;
+ }
+ .logo h2{
+  font-size: 15px;
+  float: right;
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-top:13%;
+  margin-left: 20px;
+ 
+ }
+ .icon-header p{
+  color: white;
+  margin-top: 10%;
+  margin-left: 12px;
+
+ }
+ .logo-um h2{
+  font-size: 15px;
+ }
+
+ .info-header{
+   color: black;
+   display: flex;
+   justify-content: space-between;
+   margin:auto 10px;
+   margin-top: 5px;
+   
+ }
+
+ .logo{
+   margin-top: 5px;
+ }
+
+ .icon-header img{
+   height: 40px;
+   width: 40px;
+   margin:0 30px;
+  
+ }
 
 #account{
   height: 120px;
@@ -91,6 +118,7 @@ section.module.box{
 
 .informations{
   margin-top: 40px;
+  flex-direction: row
 }
 
 .prod-imagem{
@@ -121,9 +149,6 @@ border: 1.5px dashed #038c5a ;
 cursor: pointer;
 outline: none;
 overflow: hidden;
-}
-#prod-imagem{
-  margin-top: 300px;
 }
 
 .picture:hover {
