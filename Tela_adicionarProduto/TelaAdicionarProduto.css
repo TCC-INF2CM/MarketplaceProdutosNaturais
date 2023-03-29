@@ -182,3 +182,7 @@ max-width: 100%;
   background-color: #038c5a; 
   color: white;
 }
+.botão:hover {
+  background-color: #42dd9d;
+  transition: 0.2s;
+}
