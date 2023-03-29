@@ -172,3 +172,13 @@ box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 .picture__img {
 max-width: 100%;
 }
+.botão {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100pt;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #038c5a; 
+  color: white;
+}
