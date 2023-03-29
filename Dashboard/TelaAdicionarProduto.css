@@ -1,36 +1,64 @@
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  
-
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
 html,body{
- height: 100%;
- font-family: Arial, Helvetica, sans-serif;
-}
-
-header{
-  background-color: #038c5a;
-  padding: 20px 2%;
-  
-}
-#logo{
-  
-   height: 120px;
-}
-.prod-imagem{
-  top: 200px;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
  
 }
 
 
-.logo h2{
- font-size: 20px;
- float: right;
- color: white;
-}
+
+header{
+   background-color: #038c5a;
+   padding: 7px 2%;
+   
+ }
+ #logo{
+    height: 80px;
+ }
+ .logo h2{
+  font-size: 15px;
+  float: right;
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-top:13%;
+  margin-left: 20px;
+ 
+ }
+ .icon-header p{
+  color: white;
+  margin-top: 10%;
+  margin-left: 12px;
+
+ }
+ .logo-um h2{
+  font-size: 15px;
+ }
+
+ .info-header{
+   color: black;
+   display: flex;
+   justify-content: space-between;
+   margin:auto 10px;
+   margin-top: 5px;
+   
+ }
+
+ .logo{
+   margin-top: 5px;
+ }
+
+ .icon-header img{
+   height: 40px;
+   width: 40px;
+   margin:0 30px;
+  
+ }
 
 #account{
   height: 120px;
@@ -38,7 +66,7 @@ header{
 
 .acc{
   font-size: 15px;
-  float: right;
+  
 }
 
 .acc a{
@@ -54,14 +82,16 @@ header{
   margin:auto 10px;
   margin-top: 5px;
 }
-
+#button{
+  margin-left: 50px;
+}
 
 .logo{
   margin-top: 5px;
 }
 
 .informations p {
-  text-align: left;
+  margin-left: 50px;
   left: 200px;
 }
 input{
@@ -88,14 +118,15 @@ section.module.box{
 
 .informations{
   margin-top: 40px;
+  flex-direction: row
 }
 
 .prod-imagem{
 margin: 20px 0;
 padding: 20px 20px;
 margin-left: 60%;
-margin-top: -10%;
-height: 200px;
+margin-top: 50px;
+height: 100px;
 }
 
 #picture__input {
@@ -103,24 +134,25 @@ display: none;
 }
 
 .picture {
-width: 300px;
-height: 300px;
+width: 400px;
+height: 400px;
 background: #ddd;
-display: block;
+justify-content: center;
+margin-left: 30px;
+text-align: center;
+display: flex;
 align-items: center;
-top: 500px;
-justify-content:center;
-color: #aaa;
-border: 1.5px dashed currentcolor;
+top: 100px;
+margin-top: -400px;
+color: black;
+border: 1.5px dashed #038c5a ;
 cursor: pointer;
-font-family: sans-serif;
-transition: color 300ms ease-in-out, background 300ms ease-in-out;
 outline: none;
 overflow: hidden;
 }
 
 .picture:hover {
-color: #777;
+color: black;
 background: #ccc;
 }
 
@@ -129,6 +161,7 @@ border-color: turquoise;
 color: turquoise;
 background: #eee;
 }
+
 
 .picture:focus {
 color: #777;
