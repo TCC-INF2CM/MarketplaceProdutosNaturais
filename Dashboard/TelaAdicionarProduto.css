@@ -68,7 +68,16 @@ header{
   font-size: 15px;
   
 }
+#botão {
+  width: 100pt;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #038c5a;
+  color: white;
+  border-color: black;
+  margin-top: 40px;
 
+}
 .acc a{
   text-decoration: none;
   color: white;
