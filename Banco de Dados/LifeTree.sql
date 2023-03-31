@@ -17,7 +17,16 @@ create table Cliente
 	Tel char(13)not null,
 	Email varchar(150)not null,
 	perfil varbinary(max)null,
+	senha varchar(250) not null,
 	statusCliente varchar(20)not null,
+	primary key(id)
+)
+
+create table ADM(
+	id int identity,
+	Nome varchar(150)not null,
+	email varchar(250)not null,
+	senha varchar(150)not null,
 	primary key(id)
 )
 
@@ -46,7 +55,7 @@ create table Fornecedor
 	Informacao varchar(250)null,
 	CEP char(8)not null,
 	City varchar(50)not null,
-	Bairro varchar(100)not null,
+	senha varchar(150)not null,
 	statusFornecedor varchar(20)not null,
 	primary key(id)
 )
@@ -57,6 +66,7 @@ create table Entregador
 	Perfil varbinary(MAX)not null,
 	CNH varchar(11)not null,
 	Tp_Veiculo Varchar(70)not null,
+	senha varchar(150)not null,
 	statusEntregador varchar(20),
 	primary key(id)
 )
@@ -108,7 +118,7 @@ create table Produto
 	Preco decimal(10,2)not null,
 	layout varchar(MAX),
 	Marca varchar(100)not null,
-	Disponibilidade int,
+	Quantidade int,
 	Fornecedor_id int not null,
 	tpProduto_id int not null,
 	mcProduto_id int not null,
@@ -136,7 +146,6 @@ create table Imagem(
 create table Form_Pagamento
 (	id int identity,
 	Fm_pagamento varchar(50)not null,
-	statusPagamento varchar(20)not null,
 	primary key(id)
 )
 insert Form_Pagamento(Fm_pagamento)
@@ -151,6 +160,7 @@ values('Boleto 3x')
 create table Venda
 (	id int identity,
 	TT_compra decimal(10,2)not null,
+	statusPagamento varchar(20)not null,
 	Pagamento_id int not null,
 	Cliente_id int not null,
 	Produto_id int not null,
