@@ -44,11 +44,11 @@
         <div class="content">
             <div class="titulo-sessao">
                 <h1>Dashboard</h1>
-                <h2>Resultado de vendas</h2>
+                <hr>
+                <p>Life Tree</p>
             </div>
 
             <div class="info-box">
-                <div class="grafico">
                  <!--Load the AJAX API-->
                  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                  <script type="text/javascript">
@@ -79,16 +79,11 @@
  
                          // Set chart options
                          var options = {
-                            
+                             'title': 'Resultados de vendas',
                              'width': 900,
-                             'height': 1500,
+                             'height': 900,
                              'is3D':true,
-                             'backgroundColor': 'rgb(212, 225, 212)',
-                             'legenda.left' : 'left'
-                        
-                             
-                             
-                             
+                             'backgroundColor': '#038c5a'
                              
                          };
  
@@ -96,11 +91,9 @@
                          var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
                          chart.draw(data, options);
                      }
-                   
                  </script>
                  <!--Div that will hold the pie chart-->
                  <div id="chart_div"></div>
-                </div>
                 </div> <!-- colocar as informações de venda -->
                 <br>
                 
