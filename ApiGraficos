@@ -82,7 +82,8 @@
                              'title': 'Resultados de vendas',
                              'width': 900,
                              'height': 900,
-                             'is3D':true
+                             'is3D':true,
+                             'backgroundColor': '#038c5a'
                              
                          };
  
