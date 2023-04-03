@@ -11,9 +11,9 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Meses', 'Vendas', 'Devoluções'],
-          ['Janeiro','' ,''],
+          ['Janeiro','8000 ' ,'80'],
           ['Fevereiro','' ,''],
-          ['Março','' ,''],
+          ['Março','1500' ,'500'],
           ['Abril','' ,''],
           ['Maio','' ,''],
           ['Junho','' ,''],
@@ -22,7 +22,7 @@
           ['Setembro','' ,''],
           ['Outubro','' ,''],
           ['Novembro','' ,''],
-          ['Dezembro','87' ,'32'],
+          ['Dezembro','' ,'1']
          
         ]);
 
@@ -40,24 +40,9 @@
             y: {
               Venda: {label: 'Vendas'}, // Left y-axis.
               Devoluções: {side: 'right', label: 'Devoluções'} // Right y-axis.
-            }
+            },
           }
         };
-
-        var classicOptions = {
-          width: 400,
-          series: {
-            0: {targetAxisIndex: 0},
-            1: {targetAxisIndex: 1}
-          },
-          title: 'Nearby galaxies - distance on the left, brightness on the right',
-          vAxes: {
-            // Adds titles to each axis.
-            0: {title: 'Vendas'},
-            1: {title: 'Devoluções'}
-          }
-        };
-
         function drawMaterialChart() {
           var materialChart = new google.charts.Bar(chartDiv);
           materialChart.draw(data, google.charts.Bar.convertOptions(materialOptions));
@@ -67,6 +52,6 @@
     </script>
   </head>
   <body>
-    <div id="chart_div" style="width: 700px; height: 400px;"></div>
+    <div id="chart_div" style="width: 800px; height: 500px;"></div>
   </body>
 </html>
