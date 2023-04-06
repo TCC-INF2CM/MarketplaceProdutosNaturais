@@ -105,14 +105,16 @@ header {
 
 .nome h1{
     margin-top: 15%;
-    margin-left: 20%;
+    margin-left: 20px;
+   
 }
 
 .container{
     background-color: #d2d2db;
     margin-top: 10%;
-    height: 70%;
-    width: 60%;
+    height: 39%;
+    width: 55%;
+    margin-left: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -128,7 +130,8 @@ header {
 }
 
 .container-items h4{
-    margin: 30px;
+  margin-top: 3%;
+  margin-left: 10%;
 }
 
 
@@ -145,5 +148,10 @@ header {
 }
 
 .fornecedores h4{
-    margin: 30px;
+    margin-top: 3%;
+    margin-left: 10%;
+
 }
+
+#ID{}
+
