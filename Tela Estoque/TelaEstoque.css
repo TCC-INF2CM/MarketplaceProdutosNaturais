@@ -18,10 +18,9 @@
    
  }
  #logo{
-   height: 7px;
-   padding: 7px 2%;
+   padding: 7px 3%;
    height: 80px;
-   margin-top: -47px;
+   margin-top: -43px;
    
  
  }
@@ -32,7 +31,7 @@
   margin-top: 85px;
   text-align: center;
   display: flex;
-  margin-top: 13%;
+  margin-top: 18%;
   margin-left: 20px;
  }
  
@@ -55,7 +54,7 @@
     color: black;
     display: flex;
     justify-content: space-between;
-    margin:auto 10px;
+    margin: 10px;
     margin-top: 5px;
  }
  
@@ -126,6 +125,7 @@
     top: 200px;
  }
 
+ 
  
  
  
