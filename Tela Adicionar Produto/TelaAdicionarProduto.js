@@ -27,4 +27,5 @@ inputFile.addEventListener("change", function (e) {
     pictureImage.innerHTML = pictureImageTxt;
     
   }
+  
 });
