@@ -140,11 +140,8 @@ section.module.box{
 
 .informations{
   margin-top: 40px;
-  flex-direction: row
+  flex-direction: row;
 }
-
-
-
 
 .prod-imagem{
 margin: 20px 0;
@@ -159,15 +156,14 @@ display: none;
 }
 
 .picture {
-width: 300px;
-height: 300px;
+width: 400px;
+height: 400px;
 background: #ddd;
 justify-content: center;
-margin-left: 0px;
+margin-left: 20%;
 text-align: center;
 display: flex;
 align-items: center;
-top: 100px;
 margin-top: -300px;
 color: black;
 border: 1.5px dashed #038c5a ;
