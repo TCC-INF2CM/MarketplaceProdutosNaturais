@@ -66,7 +66,7 @@ ul{
   margin-left: 20px;
 }
 
-.icon-header h2 {
+.icon-header h2 { 
   font-size: 15px;
   float: right;
   color: white;
@@ -77,10 +77,6 @@ ul{
   margin-left: 20px;
 }
 
-.logo-um h2 {
-  font-size: 15px;
-  margin-top: 85px;
-}
 
 .info-header {
   color: black;
