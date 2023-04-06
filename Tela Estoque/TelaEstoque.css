@@ -21,7 +21,8 @@
    height: 7px;
    padding: 7px 2%;
    height: 80px;
-   margin-top: -55px;
+   margin-top: -47px;
+   
  
  }
  .logo h2{
@@ -43,7 +44,7 @@
    text-align: center;
    display: flex;
    margin-top: -32%;
-   margin-left: 20px;
+   margin-left: 40px;
  }
  
  .logo-um h2{
@@ -55,10 +56,6 @@
     display: flex;
     justify-content: space-between;
     margin:auto 10px;
-    margin-top: 5px;
- }
- 
- .logo{
     margin-top: 5px;
  }
  
