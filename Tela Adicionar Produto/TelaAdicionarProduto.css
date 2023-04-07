@@ -66,10 +66,10 @@ header{
  }
 
  .sidebar{
-  width: 17%;
+  width: 20%;
   height: 100%;
   background-color: #d2d2db;
-  padding: 0 8px;
+  
 }
 
 .sidebar h1{
@@ -95,8 +95,14 @@ header{
    width: 40px;
    margin:0 30px;
    margin-top: 20px;
-  
  }
+ .main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+
+}
+
 
 #account{
   height: 120px;
@@ -149,12 +155,13 @@ input{
   
 }
 section.module.box{
-   width: 80%;
+   width: 70%;
+   height: 70%;
    border: 1px solid #ccc;
    margin: 20px 0;
    padding: 20px 20px;
    border-radius: 5px;
-   margin-left: 10%;
+   margin-left: 5%;
    margin-top: 50px;
    background-color: #f2f2f2;
 }
@@ -185,7 +192,7 @@ width: 400px;
 height: 400px;
 background: #ddd;
 justify-content: center;
-margin-left: 20%;
+margin-left: 5%;
 text-align: center;
 display: flex;
 align-items: center;
