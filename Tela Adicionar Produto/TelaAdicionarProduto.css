@@ -52,18 +52,43 @@ header{
 }
  
 
- .info-header{
-   color: black;
-   display: flex;
-   justify-content: space-between;
-   margin:auto 10px;
-   margin-top: 5px;
-   
- }
+.info-header{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin:auto 10px;
+  margin-top: 5px;
+  
+}
 
  .logo{
    margin-top: 5px;
  }
+
+ .sidebar{
+  width: 17%;
+  height: 100%;
+  background-color: #d2d2db;
+  padding: 0 8px;
+}
+
+.sidebar h1{
+  color: black;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+.sidebar a{
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 35px;
+  margin-left: 30px;
+  color: black;
+
+}
+
 
  .icon-header img{
    height: 40px;
