@@ -63,18 +63,6 @@ header{
   
 
 }
-
-/* .vendas{
-width: 900px; 
-height: 900px;
-background-color:rgb(110, 133, 133);
-max-width: max-content;
-max-height: max-content;
-} */
-
-/* #chart_div{
-} */
-
 .main{
   display: flex;
   flex-wrap: wrap;
@@ -131,3 +119,16 @@ max-height: max-content;
  font-size: 20px;
  margin-bottom: 10px;
 }
+
+
+g line {
+  stroke : black;
+}
+ 
+g rect {
+  fill:rgb(212, 225, 212)
+}
+g text{
+  fill: black;
+  font-size: 10%; 
+} 

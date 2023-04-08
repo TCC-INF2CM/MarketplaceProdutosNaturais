@@ -39,6 +39,7 @@
       <a href="http://127.0.0.1:5500/Tela%20Adicionar%20Produto/TelaAdicionarProduto.html">Editar Produto</a>
       <a href="http://127.0.0.1:5500/Tela%20Dashboard%20Fornecedor/TelaDsFornecedor.html">Estatistica de Venda</a>
       <a href="http://127.0.0.1:5500/Tela%20Estoque/TelaEstoque.html">Estoque</a>
+      <a href="http://127.0.0.1:5500/Tela%20Produto/TelaProduto.html">Produto</a>
 
       <br>
       <hr>
@@ -46,15 +47,16 @@
 
     <div class="content">
       <div class="titulo-sessao">
-        <h1>Dashboard</h1>
-        <hr>
         <h1>Estatística de vendas</h1>
+      <p id="title">Vendas do ano</p>
+         <p id="subtitle">Valores das vendas separadas por mês</p>
       </div>
 
       <div class="info-box">
         <html>
 
         <head>
+          <h1>Valores</h1>
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript">
             google.charts.load('current', { 'packages': ['bar'] });
@@ -81,6 +83,7 @@
               var options = {
                 width: 800,
                 legend: { position: 'none' },
+<<<<<<< Updated upstream
                 chart: {
                   title: 'Vendas do ano',
                   subtitle: 'valores das vendas separadas por mês',
@@ -95,6 +98,17 @@
                   // backgroundColor:{}
                 },
               };
+=======
+               
+                axes: {
+                  x: {
+                    0: { side: 'top', label: '' , }, // Top x-axis.
+                    
+                  }
+                }
+              };             
+
+>>>>>>> Stashed changes
               var chart = new google.charts.Bar(document.getElementById('top_x_div'));
               // Convert the Classic options to Material options.
               chart.draw(data, google.charts.Bar.convertOptions(options));
