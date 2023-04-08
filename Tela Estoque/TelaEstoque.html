@@ -15,16 +15,16 @@
     <header>
 
         <div class="info-header">
+            
             <div class="logo">
                 <h2>Estatisticas de Venda</h2>
                 <img src="/img/arvorelogo.png" id="logo">
             </div>
+
             <div class="icon-header">
                 <img src="/img/adm icon.png" alt="ADM">
-                <p>Fornecedor</p>
+                <h1>Fornecedor</h1>
             </div>
-
-
         </div>
     </header> <!--header acabou-->
 
@@ -40,44 +40,45 @@
 
         <div class="addProduto">
             <h1>Produtos</h1>
-            <input type="button" value="Adicionar novo">
+            <input type="button" id="AddNew" value="Adicionar novo">
         </div>
         <br>
+        
         <div class="infClick">
-
-            <a href="#"> TODOS </a>
-            <a href="#"> PUBLICADOS </a>
-            <a href="#"> LIXO </a>
-
-            <input type="search">
-            <input type="button" value="Pesquisar produto">
+            <input type="search" id="barraP"> 
+            <input type="button" id="pesquisaP" value="Pesquisar produto">
         </div>
-        <div class="container">
-            <div class="container-items">
-                <h4><img src="#" alt="camera"></h4>
-                <h4> NOME </h4>
-                <h4> ESTOQUE </h4>
-                <h4> PREÇO </h4>
-
-            </div>
 
 
-            <div class="Tabela">
-                <img src="/img/fotoProd icon.png" alt="Foto">
-                <h4 class="Nome">Whey Pro Protein</h4>
-                <h4 class="Estoque">Em Estoque</h4>
-                <h4 class="Preço">R$99,99</h4>
-            </div>
-            <hr>
-            <div class="tabela2">
-                <img src="/img/fotoProd icon.png" alt="Foto">
-                <h4 class="Nome">Granola 100g</h4>
-                <h4 class="Estoque">Fora de Estoque</h4>
-                <h4 class="Preço"></h4>
-            </div>
+        <div class="api">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+                google.charts.load('current', { 'packages': ['table'] });
+                google.charts.setOnLoadCallback(drawTable);
 
+                function drawTable() {
+                    var data = new google.visualization.DataTable();
+                    data.addColumn('string', 'Nome');
+                    data.addColumn('number', 'Preço');
+                    data.addColumn('boolean', 'Estoque');
+                    data.addRows([
+                        ['Whey Pro Protein - 1kg - Max Titanium', { v: 10000, f: 'R$ 99,99' }, true],
+                        ['Granola 100g', { v: 8000, f: 'R$ 7,99' }, false],
+                        ['Hambúrguer Vegetal Fazenda Futuro 230g', { v: 12500, f: 'R$ 21,99' }, true],
+                        ['Leite de Amedôas Nuts 1L', { v: 7000, f: 'R$ 12,99' }, true],
+                        ['Erva Doce 100g ', { v: 7000, f: 'R$ 5,99' }, true],
+                        ['Bold thin', { v: 7000, f: 'R$ 12,99' }, false],
+                        ['Garrafinha Proteína Vegetal Chocolate Avelã Muke 34g ', { v: 7000, f: 'R$ 16,90' }, false],
+                        ['Creatina 250g Monohidratada', { v: 7000, f: 'R$ 94,91' }, true]
+                        
+                    ]);
 
+                    var table = new google.visualization.Table(document.getElementById('table_div'));
 
+                    table.draw(data, { showRowNumber: false, width: '900px', height: '400px' });
+                }
+            </script>
+            <div id="table_div"></div>
         </div>
     </section>
 
