@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TelaEstoque.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Estoque</title>
 </head>
 <body>
@@ -14,12 +14,12 @@
         
         <div class="info-header">
             <div class="logo">
-            <h2>Estoque</h2>
+            <h2>Estatisticas de Venda</h2>
             <img src="/img/arvorelogo.png" id="logo">
         </div>
         <div class="icon-header">
             <img src="/img/adm icon.png" alt="ADM">
-            <h2>Fornecedor</h2>
+            <p>Fornecedor</p>
          </div>
 
 
@@ -28,10 +28,10 @@
 
     <section class="main">
         <div class="sidebar">
-            <h1>Estatisticas</h1>
-            <a href="http://127.0.0.1:5500/Tela%20Dashboard%20Fornecedor/TelaDsFornecedor.html">Estatistica de Venda</a>
-            <a href="http://127.0.0.1:5500/Tela%20Adicionar%20Produto/TelaAdicionarProduto.html">Adicionar Produto</a>
-            <a href="http://127.0.0.1:5500/Tela%20Estoque/TelaEstoque.html">Estoque</a>
+            <h1>ESTATISTICAS</h1>
+            <a href="#"> Painel de Controle</a>
+            <a href="#"> Editar Produtos</a>
+            <a href="#"> Visualizar estaísticas</a>
             <br>
             <hr>
         </div><!--side bar-->
@@ -50,31 +50,29 @@
             <input type="search">
             <input type="button" value="Pesquisar produto">
         </div>
-
-
-
-
-
-        
-    <style class="table">
-        
-        table{
-            width: 500px;
-            padding: 15px;
-            border: 1px solid black;
-        }
-    </style>
-        <div class="tabela">
-           <table>
-
-            <tr>
-                <th><img src="#" alt="camera"></th>
-                <th>Nome</th>
-                <th>Estoque</th>
-                <th>Preço</th>
-            </tr>
-           
-           </table>
+        <div class="container">
+            <div class="container-items">
+             <h4><img src="#" alt="camera"></h4>
+             <h4> NOME </h4>
+             <h4> ESTOQUE </h4>
+             <h4> PREÇO </h4>
+             
+            </div>
+         
+  
+          <div class="Tabela">
+              <img src="/img/fotoProd icon.png" alt="Foto">
+             <h4 class="Nome">Whey Pro Protein</h4>
+             <h4 class="Estoque">Em Estoque</h4>
+             <h4 class="Preço">R$99,99</h4>
+          </div>
+          <hr>
+          <div class="tabela2">
+            <img src="/img/fotoProd icon.png" alt="Foto">
+            <h4 class="Nome">Granola 100g</h4>
+            <h4 class="Estoque">Fora de Estoque</h4>
+            <h4 class="Preço"></h4>
+          </div>
            
            
 
