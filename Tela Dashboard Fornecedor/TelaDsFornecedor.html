@@ -47,8 +47,8 @@
 
     <div class="content">
       <div class="titulo-sessao">
-        <h1>Estatística de vendas</h1>
-      <p id="title">Vendas do ano</p>
+        <h1 id="Estatistica">Estatística de vendas</h1>
+      <p class="title">Vendas do ano</p>
          <p id="subtitle">Valores das vendas separadas por mês</p>
       </div>
 
@@ -56,7 +56,7 @@
         <html>
 
         <head>
-          <h1>Valores</h1>
+          <h1 class="Va1">Valores</h1>
           <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
           <script type="text/javascript">
             google.charts.load('current', { 'packages': ['bar'] });
@@ -81,34 +81,16 @@
               ]);
 
               var options = {
-                width: 800,
+                width: 700,
+                align: 'center',
                 legend: { position: 'none' },
-<<<<<<< Updated upstream
-                chart: {
-                  title: 'Vendas do ano',
-                  subtitle: 'valores das vendas separadas por mês',
-                  strokeBackgroundColor: 'rgb(212, 225, 212)'
-
-                },
                 axes: {
                   x: {
-                    0: { side: 'top', label: 'Valores' ,'backgroundColor': 'rgb(212, 225, 212)' }, // Top x-axis.
+                    0: { side: 'top', label: '' }, // Top x-axis.
                     
                   }
-                  // backgroundColor:{}
                 },
               };
-=======
-               
-                axes: {
-                  x: {
-                    0: { side: 'top', label: '' , }, // Top x-axis.
-                    
-                  }
-                }
-              };             
-
->>>>>>> Stashed changes
               var chart = new google.charts.Bar(document.getElementById('top_x_div'));
               // Convert the Classic options to Material options.
               chart.draw(data, google.charts.Bar.convertOptions(options));
