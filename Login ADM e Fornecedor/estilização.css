@@ -14,6 +14,7 @@ header {
 
 h1{
   font-size: 30px;
+  margin-top: 170px;
   
 }
 .info{
@@ -32,6 +33,7 @@ section {
   width: 400px;
   margin: auto;
   box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.415);
+  
 
 }
 
@@ -50,7 +52,7 @@ input#text , #senha{
   margin: 23px;
 }
 
-input#botão {
+button#botão {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -59,6 +61,8 @@ input#botão {
   border-radius: 25px;
   background-color: #038c5a;
   color: white;
+  border-color: black;
+  margin-top: 40px;
 
 }
 
@@ -71,19 +75,20 @@ footer {
   text-decoration: none;
   margin-top: 10%;
   margin-left: 5%;
+  margin-top: 50px;
 
 }
 
 .imagem-lateral {
   position: absolute;
-  top: 113px;
-  left: -210px;
+  top: 370px;
+  left: -180px;
   width: 100%;
   max-width: 500px;
 }
 .imagem-lateral2 {
   position: absolute;
-  top: 403px;  
+  top: 660px;
   right: -120px;
   width: 100%;
   max-width: 260px;
