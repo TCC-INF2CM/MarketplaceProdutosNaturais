@@ -14,7 +14,7 @@ header {
 
 h1{
   font-size: 30px;
-  margin-top: 50px;
+  margin-top: 170px;
   
 }
 .info{
@@ -33,6 +33,7 @@ section {
   width: 400px;
   margin: auto;
   box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.415);
+  
 
 }
 
@@ -80,14 +81,14 @@ footer {
 
 .imagem-lateral {
   position: absolute;
-  top: 113px;
+  top: 370px;
   left: -180px;
   width: 100%;
   max-width: 500px;
 }
 .imagem-lateral2 {
   position: absolute;
-  top: 403px;  
+  top: 660px;
   right: -120px;
   width: 100%;
   max-width: 260px;
