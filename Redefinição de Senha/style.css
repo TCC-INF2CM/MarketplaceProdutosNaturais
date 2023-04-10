@@ -5,24 +5,10 @@ body {
   }
   
   h1{
-    margin-top: 24px;
+    margin-top: 170px;
     font-size: 30px;
     text-align: center;
     
-  }
-  .info{
-    display: block;
-    font-size: 15px;
-    margin-top: 10px;
-    line-height: 20px;
-    color: red;
-    
-  } 
-  .feed{
-    font-size: 16px;
-    color: red;
-    margin-left: 5%;
-   
   }
   
   section {
@@ -71,13 +57,13 @@ body {
   
   .imagem-lateral {
     position: absolute;
-    top: 113px;
-    left: -180px;
+    top: 370px;
+    left: -210px;
     width: 500px;
   }
   .imagem-lateral2 {
     position: absolute;
-    top: 403px;
+    top: 660px;
     right: -120px;
     width: 260px;
   }
