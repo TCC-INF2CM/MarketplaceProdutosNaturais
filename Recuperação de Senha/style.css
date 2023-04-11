@@ -5,14 +5,14 @@ body {
   }
   
   h1{
-    margin-top: 24px;
+    margin-top: 50px;
     font-size: 30px;
     text-align: center;
     
   }
   
   section {
-    background-color: white;
+    background-color: #f2f2f29f;
     border-radius: 10px;
     padding: 35px;
     width: 400px;
@@ -23,22 +23,23 @@ body {
   
   input {
     border: 2px solid black;
-    border-radius: 18px;
+    border-radius: 10px;
     height: 20pt;
-    width: 250pt;
+    width: 100%;
+    max-width: 330px;
     padding: 15px;
     font-size: 15px;
     margin: 15px;
     margin-top: 40px;
   }
   
-  input#botão {
+  button {
     display: block;
     margin-right: auto;
     margin-left: auto;
     width: 100pt;
     height: 50px;
-    border-radius: 20px;
+    border-radius: 25px;
     background-color: #038c5a;
     color: white;
     cursor: pointer;
