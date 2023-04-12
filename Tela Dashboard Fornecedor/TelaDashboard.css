@@ -22,21 +22,27 @@ header{
 }
 
 .logo h2{
- font-size: 15px;
- float: right;
- color: white;
- margin-top: 25px;
- text-align: center;
- display: flex;
- margin-top:13%;
- margin-left: 20px;
-
+  font-size: 15px;
+  float: right;
+  color: white;
+  margin-top: 85px;
+  text-align: center;
+  display: flex;
+  margin-top: 13%;
+  margin-left: 20px;
 }
-.icon-header p{
- color: white;
- margin-top: 10%;
 
+.icon-header h2{
+  font-size: 15px;
+  float: right;
+  color: white;
+  margin-top: 85px;
+  text-align: center;
+  display: flex;
+  margin-top: 12%;
+  margin-left: px;
 }
+
 .logo-um h2{
  font-size: 15px;
  margin-top: 85px;
@@ -59,7 +65,7 @@ header{
   height: 40px;
   width: 40px;
   margin:0 30px;
-  margin-top: 2px;
+  margin-top: 5%;
   
 
 }

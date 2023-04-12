@@ -36,8 +36,8 @@ header {
   display: flex;
   margin-top: 13%;
   margin-left: 20px;
-
 }
+
 
 .icon-header h2 {
   font-size: 15px;
@@ -47,7 +47,7 @@ header {
   text-align: center;
   display: flex;
   margin-top: 13%;
-  margin-left: 20px;
+ 
 
 }
 
@@ -191,7 +191,7 @@ section.module.box {
   margin: 20px 0;
   padding: 20px 20px;
   margin-left: 55%;
-  margin-top: -15px;
+  margin-top: 8%;
   height: 100px;
 }
 
