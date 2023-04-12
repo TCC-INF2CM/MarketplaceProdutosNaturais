@@ -63,38 +63,39 @@ create table Entregador
 
 create table tpProduto
 (	id int identity,
-	TipodeProduto varchar(150)not null,
+	TpProduto varchar(150)not null,
 	primary key(id)
 )
 
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Chá e Infusões');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('A Granel');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Vitaminas e Suplementos');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Mercearia e Empório');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Bem estar e Beleza');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Refrigferados');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Promoções');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Sem Açucar');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Sem Glútem');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Sem Lactose');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Orgânico');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Vegano');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Vegetariano');
-insert into tpProduto(TipodeProduto)
+insert into tpProduto(TpProduto)
 values('Baixo carboidrato');
+
 
 create table mcProduto
 (	id int identity,
@@ -107,7 +108,6 @@ create table Produto
 	Nome varchar(100)not null,
 	Preco decimal(10,2)not null,
 	layout varchar(MAX),
-	Marca varchar(100)not null,
 	Disponibilidade int,
 	Fornecedor_id int not null,
 	tpProduto_id int not null,
@@ -124,8 +124,7 @@ create table Produto
 
 create table Imagem(
 	id int identity,
-	Nome_arquivo varchar(100)not null,
-	caminho varchar(max)not null,
+	Img varchar(max)not null,
 	statusImage varchar(20)not null,
 	produto_id int not null,
 	primary key(id),
@@ -136,7 +135,7 @@ create table Imagem(
 create table Form_Pagamento
 (	id int identity,
 	Fm_pagamento varchar(50)not null,
-	statusPagamento varchar(20)not null,
+	StatusPg varchar(20)null,
 	primary key(id)
 )
 insert Form_Pagamento(Fm_pagamento)
@@ -197,3 +196,7 @@ create table Entrega
 	foreign key(Endereco_id)
 		references Endereco(id)
 )
+
+--Consulta todos os(*) campos
+--E todos os registros da tabela
+--select*from tpProduto

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilização.css">
+    <title>www.lifetree.com.br</title>
+</head>
+
+<body>
+    <header>
+        
+        <h1>Life Tree</h1>
+    </header>
+    <section>
+        <div on>
+            <input type="text" id="text" placeholder="Fornecedor/ ADM">
+            <input type="password" id="senha" placeholder="Senha" onkeyup="verificar()" onfocus="esconder()">
+            
+            
+            <div class="info" id="minhaDiv">
+                <div class="feed">Numeros de caracteres: Minino 8 </div>
+                <div class="feed">Letras maiscula: ABC</div>
+                <div class="feed">Numeros entre 0 e 9</div>
+            </div>
+
+            <a href="/Recuperação de Senha/recuperação.html" id="esquecisenha">Esqueceu a senha?</a>
+            <button disabled id="botão" onclick="entrar()">Entrar</button>
+        </div>
+
+    </section>
+    <footer>
+        <p> &copy; Life Tree</p>
+
+    </footer>
+    <div class="Imagem">
+        <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral">
+        <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral2">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
