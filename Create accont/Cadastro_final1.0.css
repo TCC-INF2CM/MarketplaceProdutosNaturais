@@ -1,0 +1,89 @@
+body{
+    font: normal 12pt Arial;
+    background-color: #ffffff;
+}
+
+header{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 60px;
+  }
+
+h1{
+    color: black;
+    text-align: center;
+  }
+
+ .form-control{
+   margin-bottom: 10px;
+    padding-bottom: 20px;
+ } 
+
+.container {
+    border: 2px solid #ffffff;
+    width: 450px;
+    max-width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 35px;
+     width: 400px; 
+    margin: auto;
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.415);
+    
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 20pt;
+    width: 250pt;
+    padding: 15px;
+    font-size: 15px;
+    margin: 15px;
+    margin-top: 10px;
+}
+
+.inf.success{
+  border: 3px solid #4eca64;
+}
+.inf.error{
+  border: 3px solid #db5a5a;
+}
+
+
+#botão {
+    display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100pt;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #038c5a; 
+  color: white;
+  cursor: pointer;
+}
+
+#botão:hover {
+    background-color: #42dd9d;
+    transition: 0.2s;
+}
+
+footer {
+    text-align: center;
+    font-style: italic, bold;
+  }
+  .imagem-lateral {
+    position: absolute;
+    top: 1200px;
+    left: -205px;
+    width: 470px;
+    max-width: 100%;
+    height: auto;
+  }
+  .imagem-lateral2 {
+    position: absolute;
+    top: 1200px;
+    right: -270px;
+    width: 470px;
+  }
+  
