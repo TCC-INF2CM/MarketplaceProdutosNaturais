@@ -82,3 +82,32 @@ document.addEventListener("click", function (event) {
         div.style.display = "block";
     }
 });
+
+
+const usuario = [
+    {
+        login: 'fornecedor@gmail.com',
+        pass: 'Fornecedor123'
+
+    },
+    {
+        login: 'Adm@gmail.com',
+        pass: 'Administrador123'
+    }
+]
+
+
+function verify(){
+
+    var email = window.getElementById(`text`).value
+    var password = window.getElementById(`senha`).value
+
+    for(let i in usuario){
+        if(email == usuario[i].login){
+            entrar()
+        }else{
+            
+        }
+    }
+
+}
