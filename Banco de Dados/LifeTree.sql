@@ -8,22 +8,33 @@ use LifeTree
 Go
 
 --criar tabela
+
+create table ADM
+(
+	id int identity,
+	Nome varchar(150)not null,
+	Email varchar(200)not null,
+	senha varchar(150)not null,
+	primary key(id)
+)
+
 create table Cliente
 (	
 	id int identity,
-	Nome varchar(100)not null,
+	Nome varchar(150)not null,
 	CPF char(11)not null,
 	dtNasc date not null,
 	Tel char(13)not null,
-	Email varchar(150)not null,
-	perfil varbinary(max)null,
+	Email varchar(200)not null,
+	senha varchar(150)not null,
+	img varbinary(max)null,
 	statusCliente varchar(20)not null,
 	primary key(id)
 )
 
 create table Endereco(
 	id int identity,
-	Lagradouro varchar(250)not null,
+	Logradouro varchar(250)not null,
 	CEP char(8)not null,
 	NumCasa char(5)not null,
 	Bairro varchar(180)not null,
@@ -39,9 +50,10 @@ create table Endereco(
 create table Fornecedor
 (	id int identity,
 	Nome varchar(150)not null,
-	perfil2 varbinary(MAX)null,
+	img varbinary(MAX)null,
 	CNPJ varchar(199)not null,
-	Email varchar(150)not null,
+	Email varchar(200)not null,
+	Senha varchar(150)not null,
 	Tel char(13)not null,
 	Informacao varchar(250)null,
 	CEP char(8)not null,
@@ -54,9 +66,10 @@ create table Fornecedor
 create table Entregador
 (	id int identity,
 	Nome varchar(150)not null,
-	Perfil varbinary(MAX)not null,
+	Img varbinary(MAX)not null,
 	CNH varchar(11)not null,
-	Tp_Veiculo Varchar(70)not null,
+	Email varchar(200)not null,
+	Senha varchar(150)not null,
 	statusEntregador varchar(20),
 	primary key(id)
 )
@@ -76,15 +89,15 @@ values('Vitaminas e Suplementos');
 insert into tpProduto(TpProduto)
 values('Mercearia e Empório');
 insert into tpProduto(TpProduto)
-values('Bem estar e Beleza');
+values('Bem-estar e Beleza');
 insert into tpProduto(TpProduto)
-values('Refrigferados');
+values('Refrigerados');
 insert into tpProduto(TpProduto)
 values('Promoções');
 insert into tpProduto(TpProduto)
 values('Sem Açucar');
 insert into tpProduto(TpProduto)
-values('Sem Glútem');
+values('Sem Glúten');
 insert into tpProduto(TpProduto)
 values('Sem Lactose');
 insert into tpProduto(TpProduto)
