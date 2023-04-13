@@ -52,7 +52,7 @@ input#text , #senha{
   margin: 23px;
 }
 
-button#botão {
+input#botão {
   display: block;
   margin-right: auto;
   margin-left: auto;

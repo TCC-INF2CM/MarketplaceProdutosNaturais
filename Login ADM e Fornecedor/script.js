@@ -36,29 +36,28 @@ function verificar() {
     }
 }
 
-function entrar() {
-    window.location.href = "https://www.google.com.br";
-}
+function entrar2() {
+    
+    var email = document.getElementById(`text`).value
+    var pass = document.getElementById(`senha`).value    
+    var botão = document.getElementById(`botão`)
 
-var senha = document.getElementById('text')
-var botão = document.getElementById('botão')
+    var emailADM = 'Adm@gmail.com';
 
-var senha2 = ["000" , "111"]
-
-senha.addEventListener("input", function () {
-    if (senha2.indexOf(senha) > -1) {
-        var minhaF = function verificar() {minhaF()}
-        
-        botão.disabled = false
-    } else {
-
-        botão.disabled = true
-
+    botão.addEventListener('click' , function entrar(){
+        if(email.value == emailADM){
+            window.location.replace = "https://www.twitch.tv/gaules";
+        }
     }
+    
+    )
+    
+
+
+
+
+
 }
-
-)
-
 function esconder() {
     var input = document.getElementById(`senha`)
     var minhaDiv = document.getElementById(`minhaDiv`)
