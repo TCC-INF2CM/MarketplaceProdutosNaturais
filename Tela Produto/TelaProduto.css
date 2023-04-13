@@ -20,7 +20,7 @@ header {
     height: 7px;
     padding: 7px 2%;
     height: 80px;
-    margin-top: -55px;
+    margin-top: -50px;
 }
   
 .logo h2 {
@@ -71,12 +71,38 @@ header {
 .main{
    display: flex;
    flex-wrap: wrap;
+   height: 100%;
+
+
+}
+
+.sidebar {
+  width: 17%;
+  height: 100%;
+  background-color: #d2d2db;
+  padding: 0 8px;
+}
+
+.sidebar h1 {
+  color: black;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 35px;
+  margin-left: 30px;
+  color: black;
 
 }
 
 .image{
     width: 40%;
-    background-color: rgb(184, 200, 184);
+    background-color: rgb(255, 255, 255);
 }
 
 .icon1{
@@ -90,7 +116,7 @@ header {
 
 .content{
     height: 100%;
-    width: 60%;
+    width: 43%;
     margin-top: 20px;  
 }
 
