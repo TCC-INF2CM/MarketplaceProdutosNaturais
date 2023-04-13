@@ -4,24 +4,25 @@
   box-sizing: border-box;
 }
 
-html,body{
- height: 100%;
- font-family: Arial, Helvetica, sans-serif;
-
+html,body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-header{
+
+header {
   background-color: #038c5a;
   padding: 5px 2%;
   height: 80px;
 }
+
 #logo{
-  padding: 7px 2%;
   height: 7px;
-  margin-top: -45px;
+  padding: 7px 2%;
   height: 80px;
+  margin-top: -45px;
 }
 
-.logo h2{
+.logo h2 {
   font-size: 15px;
   float: right;
   color: white;
@@ -32,66 +33,63 @@ header{
   margin-left: 20px;
 }
 
-.icon-header h2{
+.icon-header h2 { 
   font-size: 15px;
   float: right;
   color: white;
   margin-top: 85px;
   text-align: center;
   display: flex;
-  margin-top: 12%;
-  margin-left: px;
+  margin-top: 15%;
+  margin-left: 20px;
 }
 
-.logo-um h2{
- font-size: 15px;
- margin-top: 85px;
-}
 
-.info-header{
+.info-header {
   color: black;
   display: flex;
   justify-content: space-between;
-  margin:auto 10px;
-  margin-top: 5px;
-  
-}
-
-.logo{
+  margin: auto 10px;
   margin-top: 5px;
 }
 
-.icon-header img{
+.logo {
+  margin-top: 5px;
+}
+
+.icon-header img {
   height: 40px;
   width: 40px;
-  margin:0 30px;
-  margin-top: 5%;
-  
-
+  margin-top: 10%;
 }
-.main{
+
+.main {
   display: flex;
   flex-wrap: wrap;
-  height: 100%;
+  height: 1200px;
+}
+
+.main {
+  background-color: rgb(212, 225, 212);
 }
 
 
-.sidebar{
+.sidebar {
   width: 17%;
   height: 100%;
   background-color: #d2d2db;
   padding: 0 8px;
 }
 
-.sidebar h1{
+.sidebar h1 {
   color: black;
   font-size: 20px;
   margin-left: 20%;
   margin-top: 20px;
 }
 
-.sidebar a{
-  display: flex;
+.sidebar a {
+  display: block;
   text-decoration: none;
   font-size: 17px;
   margin-top: 35px;
@@ -100,31 +98,42 @@ header{
 
 }
 
-.content{
+.titulo-sessao h1 {
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.titulo-sessao h2 {
+  margin-top: 50px;
+  margin-left: 70px;
+  font-size: 20px;
+}
+
+.content {
   width: 80%;
   background-color: rgb(212, 225, 212);
   height: 100%;
+
 }
 
 .info-box{
  font-size: 20px;
  margin-top: 5%;
- margin-left: 10%;
+ margin-left: ;
 }
 
 
-.info-single{
- background-color: rgb(110, 133, 133);
- border-radius: 15px;
- width: 90%;
- height: 300px;
+.info-single {
+  background-color: rgb(110, 133, 133);
+  border-radius: 15px;
+  width: 90%;
+  height: 300px;
 }
 
-.info-box h1{
- font-size: 20px;
- margin-bottom: 10px;
+.info-box h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
 }
-
 
 g line {
   stroke : black;
@@ -140,13 +149,13 @@ g text{
 } 
 
 .title{  
-  font-size: 26px;
+  font-size: 22px;
   color: black;
-  margin-top: 10px;
+  margin-top: 15px;
   font-weight: bolder;}
 
 #subtitle{
-  font-size: 18px;
+  font-size: 20px;
   color: black;
   margin-top: 2px;
   font-weight: bolder;
@@ -154,11 +163,11 @@ g text{
 
 #Estatistica{
     margin-top: 25px;
-    font-size: 28px;
+    font-size: 25px;
 } 
 
 .Va1{
-  font-size: 3em;
+  font-size: 20px;
   text-align: center;
   font-weight: bold;
 }
