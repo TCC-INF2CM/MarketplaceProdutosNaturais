@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TelaEditarrProduto.css">
+    
+    <title>Editar Produto</title>
+</head>
+<body>
+
+
+    <header>    
+        <div class="info-header">
+            <div class="logo">
+            <h2>Editar Produto</h2>
+            <img src="/img/arvorelogo.png" id="logo">
+        </div>
+        <div class="icon-header">
+            <img src="/img/adm icon.png" alt="ADM">
+            <h2>Fornecedor</h2>
+         </div>
+        </div>
+    </header> <!--header acabou-->
+
+    <section class="main">
+
+   
+
+    <div class="sidebar">
+        <strong>
+          <h1>Painel de controle</h1>
+        </strong>
+        <a href="http://127.0.0.1:5500/Tela%20Adicionar%20Produto/TelaAdicionarProduto.html">Editar Produto</a>
+        <a href="http://127.0.0.1:5500/Tela%20Dashboard%20Fornecedor/TelaDsFornecedor.html">Estatistica de Venda</a>
+        <a href="http://127.0.0.1:5500/Tela%20Estoque/TelaEstoque.html">Estoque</a>
+  
+        <br>
+        <hr>
+      </div><!--side bar-->
+
+    <section class="module box">
+        <div class="title">
+            <h2> Adicionar produto</h2>
+            <hr>
+        </div>
+
+        <div class="informations">
+
+            <p>Nome do produto<input type="text"> </p>
+            <p>Quantidade <input type="number"></p>
+            <p>Preço <input type="number" min="0.00" max="10000.00" step="0.01"></p>
+            <p>Descrição do Produto <input type="text" min="000001" max="999999"/></p>
+                       
+            <div class="prod-imagem">
+                <label class="picture" for="picture__input" tabIndex="0">
+                    <span class="picture__image"></span>   
+                  <input type="file" name="picture__input" id="picture__input"></label> 
+                  <script src="TelaAdicionarProduto.js">
+                </script>
+            </div>
+        </div>
+        
+
+        <div class="button">
+            <form action="/processar-formulario" method="post">
+                <input type="button" value="Adicionar Produto" class="botão" href="/Tela Editar Produto/TelaEditarrProduto.html" >
+              </form>
+              
+        </div>
+    </section>
+
+</section>
+    <script src="TelaEditarrProduto.js"></script>
+</body>
+</html>
