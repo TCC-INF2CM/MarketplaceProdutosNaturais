@@ -1,7 +1,7 @@
 body{
     font: normal 12pt Arial;
-    background-color: #ffffff;
-}
+    background-color: #bad9cc;
+  }
 
 header{
     color: rgb(0, 0, 0);
@@ -23,7 +23,7 @@ h1{
     border: 2px solid #ffffff;
     width: 450px;
     max-width: 100%;
-    background-color: white;
+    background-color: #f2f2f29f;
     border-radius: 15px;
     padding: 35px;
      width: 400px; 
