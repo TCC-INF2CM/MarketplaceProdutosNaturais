@@ -40,7 +40,7 @@ header{
   text-align: center;
   display: flex;
   margin-top: 12%;
-  margin-left: px;
+  
 }
 
 .logo-um h2{
@@ -73,6 +73,7 @@ header{
   display: flex;
   flex-wrap: wrap;
   height: 100%;
+  background-color:rgb(212, 225, 212); 
 }
 
 

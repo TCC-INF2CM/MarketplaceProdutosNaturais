@@ -58,12 +58,14 @@ body {
   .imagem-lateral {
     position: absolute;
     top: 370px;
-    left: -210px;
-    width: 500px;
+    left: -180px;
+    width: 100%;
+    max-width: 500px;
   }
   .imagem-lateral2 {
     position: absolute;
     top: 660px;
     right: -120px;
-    width: 260px;
+    width: 100%;
+    max-width: 260px;
   }
