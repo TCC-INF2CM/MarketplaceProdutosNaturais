@@ -8,7 +8,6 @@
 html,body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif;
-
 }
   
 header {
@@ -21,7 +20,7 @@ header {
     height: 7px;
     padding: 7px 2%;
     height: 80px;
-    margin-top: -50px;
+    margin-top: -49px;
 }
   
 .logo h2 {
@@ -117,7 +116,7 @@ header {
 
 .content{
     height: 100%;
-    width: 43%;
+    width: 40%;
     margin-top: 20px;  
 }
 
