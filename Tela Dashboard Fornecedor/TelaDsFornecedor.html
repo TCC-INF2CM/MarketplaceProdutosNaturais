@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="TelaDashboard.css">
-  <title>Dashboard Fornecedor</title>
+  <title>Dashboard</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
     <div class="info-header">
       <div class="logo">
         <h2>Estatistica de venda</h2>
-        <img src="/img/arvorelogo1.png" id="logo">
+        <img src="/img/arvorelogo.png" id="logo">
       </div>
       <div class="icon-header">
         <img src="/img/adm icon.png" alt="ADM">
@@ -44,12 +44,13 @@
       <br>
       <hr>
     </div><!--side bar-->
-      <div class="content">
-        <div class="titulo-sessao">
-          <h1>Estatistica de vendas</h1>
-          <h2>Valores das vendas separadas por mês</h2>
-        </div>
-  
+
+    <div class="content">
+      <div class="titulo-sessao">
+        <h1 id="Estatistica">Estatística de vendas</h1>
+      <p class="title">Vendas do ano</p>
+         <p id="subtitle">Valores das vendas separadas por mês</p>
+      </div>
 
       <div class="info-box">
         <html>
@@ -81,7 +82,7 @@
 
               var options = {
                 width: 1200,
-                // align: 'center',
+                align: 'center',
                 legend: { position: 'none' },
                 axes: {
                   x: {
