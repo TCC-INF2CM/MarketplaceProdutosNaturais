@@ -51,13 +51,13 @@ header {
 }
 
 .logo h2 {
-   font-size: 15px;
-   float: right;
-   color: white;
-   text-align: center;
-   display: flex;
-   margin-top: 10%;
-   margin-left: 20px;
+    font-size: 15px;
+    float: right;
+    color: white;
+    text-align: center;
+    display: flex;
+    margin-top: 15%;
+    margin-left: 20px;
 }
 
 .addProduto h1 {
