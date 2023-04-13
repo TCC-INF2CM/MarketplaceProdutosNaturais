@@ -19,17 +19,17 @@ header {
   height: 7px;
   padding: 7px 2%;
   height: 80px;
-  margin-top: -45px;
+  margin-top: -49px;
 }
 
 .logo h2 {
   font-size: 15px;
   float: right;
   color: white;
-  margin-top: 85px;
+
   text-align: center;
   display: flex;
-  margin-top: 13%;
+  margin-top: 10%;
   margin-left: 20px;
 }
 
