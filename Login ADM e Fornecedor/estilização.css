@@ -52,7 +52,7 @@ input#text , #senha{
   margin: 23px;
 }
 
-input#botão {
+button#botão {
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -63,6 +63,7 @@ input#botão {
   color: white;
   border-color: black;
   margin-top: 40px;
+  text-decoration: none;
 
 }
 
