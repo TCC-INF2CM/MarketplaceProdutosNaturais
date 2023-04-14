@@ -59,9 +59,9 @@ function entrar() {
 }
 
 function finalizar(){
-    var senha1 = document.getElementById(``)
 
     window.alert(`Senha Redefinida`)
+    
 }
 
 

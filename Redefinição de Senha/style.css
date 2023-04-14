@@ -41,8 +41,17 @@ body {
     border-radius: 20px;
     background-color: #038c5a;
     color: white;
+    text-decoration: #038c5a;
+
   
   }
+
+
+  input#botão a{
+    text-decoration: #038c5a;
+
+  }
+
   
   footer {
     text-align: center;
