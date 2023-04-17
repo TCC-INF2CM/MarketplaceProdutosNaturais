@@ -47,30 +47,18 @@ create table Endereco(
 		references Cliente(id)
 )
 
-create table Fornecedor
+create table Funcionario
 (	id int identity,
 	Nome varchar(150)not null,
 	img varbinary(MAX)null,
-	CNPJ varchar(199)not null,
+	CPF varchar(199)not null,
 	Email varchar(200)not null,
 	Senha varchar(150)not null,
 	Tel char(13)not null,
-	Informacao varchar(250)null,
 	CEP char(8)not null,
 	City varchar(50)not null,
 	Bairro varchar(100)not null,
-	statusFornecedor varchar(20)not null,
-	primary key(id)
-)
-
-create table Entregador
-(	id int identity,
-	Nome varchar(150)not null,
-	Img varbinary(MAX)not null,
-	CNH varchar(11)not null,
-	Email varchar(200)not null,
-	Senha varchar(150)not null,
-	statusEntregador varchar(20),
+	statusFuncionario varchar(20)not null,
 	primary key(id)
 )
 
@@ -120,15 +108,12 @@ create table Produto
 (	id int identity,
 	Nome varchar(100)not null,
 	Preco decimal(10,2)not null,
-	layout varchar(MAX),
+	Imagem varchar(MAX),
 	Disponibilidade int,
-	Fornecedor_id int not null,
 	tpProduto_id int not null,
 	mcProduto_id int not null,
 	Complemento varchar(250)not null
 	primary key(id),
-	foreign key(Fornecedor_id) 
-		references Fornecedor(id),
 	foreign key(tpProduto_id)
 		references tpProduto(id),
 	foreign key(mcProduto_id)
@@ -138,7 +123,6 @@ create table Produto
 create table Imagem(
 	id int identity,
 	Img varchar(max)not null,
-	statusImage varchar(20)not null,
 	produto_id int not null,
 	primary key(id),
 	foreign key(produto_id)
@@ -159,6 +143,9 @@ insert Form_Pagamento(Fm_pagamento)
 values('Pix')
 insert Form_Pagamento(Fm_pagamento)
 values('Boleto 3x')
+insert Form_Pagamento(Fm_pagamento)
+values('Dinheiro')
+
 
 create table Venda
 (	id int identity,
@@ -189,25 +176,6 @@ create table ItemVenda(
 		references Produto(id),
 	foreign key(Venda_id)
 		references Venda(id)
-)
-
-
-create table Entrega
-(	id int identity,
-	Entregador_id int not null,
-	Cliente_id int not null,
-	itemVenda_id int not null,
-	Endereco_id int not null,
-	statusEntrega varchar(20)not null,
-	primary key(id),
-	foreign key(Entregador_id)
-		references Entregador(id),
-	foreign key(Cliente_id)
-		references Cliente(id),
-	foreign key(itemVenda_id)
-		references ItemVenda(id),
-	foreign key(Endereco_id)
-		references Endereco(id)
 )
 
 --Consulta todos os(*) campos
