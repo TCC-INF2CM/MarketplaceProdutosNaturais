@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #639379;
+    width: 100%;
+    height: 100px;
+    display: inline-flex;
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin-left: 300px;
+    margin-top: 17px;
+}
+
+.carrinho{
+    margin-left: 25%;
+    display: flex;
+    opacity: 0.55;
+}
+
+.carrinho img{
+    height: 50px;
+    margin-top: 25px;
+}
+
+.carrinho h2{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+.pagamento{
+    margin-left: 30rem;
+    display: flex;
+}
+
+.pagamento img{
+    height: 50px;
+    margin-top: 25px;
+}
+
+.pagamento h2{
+    margin-top: 35px;
+    margin-left: 10px;
+}
+
+section{
+    display: inline-flex;
+}
+
+.pedido{
+    margin-left: 10%;
+    margin-top: 2%;
+    width: 45%;
+    display: flex;
+}
+
+.revisao h1{
+    font-size: 40px;
+    font-family: 'Bree Serif', serif;
+    font-weight: normal; 
+}
+
+.revisao a{
+    font-size: 30px;
+    color: #105B34;
+}
+
+.info{
+    margin-top: 30px;
+    font-family: 'Bree Serif', serif;
+    font-size: 25px;
+}
+
+.total{
+    display: inline-flex;
+}
