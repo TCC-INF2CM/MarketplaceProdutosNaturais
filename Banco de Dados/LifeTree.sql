@@ -9,13 +9,22 @@ Go
 
 --criar tabela
 
+create table Cargo(
+	id int identity,
+	nmCargo varchar(100) not null,
+	primary key(id)
+
+)
+
 create table ADM
 (
 	id int identity,
 	Nome varchar(150)not null,
 	Email varchar(200)not null,
 	senha varchar(150)not null,
-	primary key(id)
+	primary key(id),
+	cargo_id INT NOT NULL,
+	FOREIGN KEY (cargo_id) REFERENCES Cargo(id)
 )
 
 create table Cliente
@@ -48,18 +57,27 @@ create table Endereco(
 )
 
 create table Funcionario
-(	id int identity,
-	Nome varchar(150)not null,
-	img varbinary(MAX)null,
-	CPF varchar(199)not null,
-	Email varchar(200)not null,
-	Senha varchar(150)not null,
-	Tel char(13)not null,
-	CEP char(8)not null,
-	City varchar(50)not null,
-	Bairro varchar(100)not null,
-	statusFuncionario varchar(20)not null,
-	primary key(id)
+(	
+   id   INT IDENTITY,
+   Nome VARCHAR(100) NOT NULL,
+   CPF  CHAR(11)     NOT NULL,
+   RG VARCHAR(12)  NOT NULL,
+   Sexo CHAR(1)      NOT NULL,
+   dataNasc DATE  NOT NULL,
+   Img VARBINARY(MAX) NULL,
+   telefone VARCHAR(25)  NOT NULL,
+   Email VARCHAR(100) NULL, 
+   Logradouro VARCHAR(100) NOT NULL, -- nome da rua, avenida e etc
+   Numero_resid VARCHAR(10)  NOT NULL,
+   Complemento VARCHAR(100) NULL,
+   CEP CHAR(8)  NOT NULL,
+   Bairro VARCHAR(100) NOT NULL,
+   Cidade VARCHAR(100) NOT NULL,
+   UF CHAR(2)  NOT NULL,
+   cargo_id INT NOT NULL,
+
+   PRIMARY KEY (id),
+   FOREIGN KEY (cargo_id) REFERENCES Cargo(id)
 )
 
 create table tpProduto
@@ -110,6 +128,7 @@ create table Produto
 	Preco decimal(10,2)not null,
 	Imagem varchar(MAX),
 	Disponibilidade int,
+	cod_barra varchar(13)not null,
 	tpProduto_id int not null,
 	mcProduto_id int not null,
 	Complemento varchar(250)not null
@@ -122,7 +141,9 @@ create table Produto
 
 create table Imagem(
 	id int identity,
+	nomeImg varchar(100)not null,
 	Img varchar(max)not null,
+	StatusImg varchar(20)not null,
 	produto_id int not null,
 	primary key(id),
 	foreign key(produto_id)
