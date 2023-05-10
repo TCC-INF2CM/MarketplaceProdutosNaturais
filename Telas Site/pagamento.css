@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 header {
@@ -51,15 +52,17 @@ header {
     margin-left: 10px;
 }
 
-section{
-    display: inline-flex;
-}
 
-.pedido{
+
+.main{
     margin-left: 10%;
     margin-top: 2%;
     width: 45%;
+    height: 70%;
     display: flex;
+    background-color: aliceblue;
+
+   
 }
 
 .revisao h1{
@@ -80,5 +83,4 @@ section{
 }
 
 .total{
-    display: inline-flex;
 }
