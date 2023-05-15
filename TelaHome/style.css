@@ -133,7 +133,7 @@ input[type="text"] {
     border-radius: 10px;
     width: 300px;
     font-size: 13px;
-    margin-top: -110px;
+    margin-top: -150px;
 }
 button[type="submit"] {
     padding: 10px;
@@ -143,5 +143,5 @@ button[type="submit"] {
     border-radius: 5px;
     margin-left: 10px;
     font-size: 13px;
-    margin-top: -110px;
+    margin-top: -150px;
 }
