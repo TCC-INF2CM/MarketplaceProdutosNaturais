@@ -129,6 +129,7 @@ create table Produto
 	Imagem varchar(MAX),
 	Disponibilidade int,
 	cod_barra varchar(13)not null,
+	Peso decimal(6,2),
 	tpProduto_id int not null,
 	mcProduto_id int not null,
 	Complemento varchar(250)not null
