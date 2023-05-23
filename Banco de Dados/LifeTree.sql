@@ -201,6 +201,14 @@ create table ItemVenda(
 		references Venda(id)
 )
 
+CREATE TABLE CUPOM(
+	ID INT IDENTITY,
+	NOME VARCHAR(10)NOT NULL,
+	STATUSCP VARCHAR(20)NOT NULL,
+
+	
+)
+
 --Consulta todos os(*) campos
 --E todos os registros da tabela
 --select*from tpProduto
