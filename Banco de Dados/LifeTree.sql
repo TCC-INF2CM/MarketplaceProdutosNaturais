@@ -16,16 +16,13 @@ create table Cargo(
 
 )
 
-create table ADM
-(
-	id int identity,
-	Nome varchar(150)not null,
-	Email varchar(200)not null,
-	senha varchar(150)not null,
-	primary key(id),
-	cargo_id INT NOT NULL,
-	FOREIGN KEY (cargo_id) REFERENCES Cargo(id)
+CREATE TABLE Cupom(
+	ID INT IDENTITY,
+	NOME VARCHAR(10)NOT NULL,
+	STATUSCP VARCHAR(20)NOT NULL,
+	Primary key(id)
 )
+
 
 create table Cliente
 (	
@@ -38,7 +35,10 @@ create table Cliente
 	senha varchar(150)not null,
 	img varbinary(max)null,
 	statusCliente varchar(20)not null,
-	primary key(id)
+	Cupom_id int not null,
+	primary key(id),
+	foreign key(Cupom_id)
+		references Cupom(id)
 )
 
 create table Endereco(
@@ -201,13 +201,6 @@ create table ItemVenda(
 		references Venda(id)
 )
 
-CREATE TABLE CUPOM(
-	ID INT IDENTITY,
-	NOME VARCHAR(10)NOT NULL,
-	STATUSCP VARCHAR(20)NOT NULL,
-
-	
-)
 
 --Consulta todos os(*) campos
 --E todos os registros da tabela
