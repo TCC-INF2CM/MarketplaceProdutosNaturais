@@ -199,18 +199,65 @@ button[type="submit"] {
   margin-left: 1%;
 }
 
-.quantity{
+.estoque{
   font-size: 20px;
 }
 
+.ad_prod{
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.qty {
+  background: #038c5a;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 0 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 45px;
+  margin-left: 7%;
+}
+
+
+.qty span {
+  margin: 0 15px;
+  background: #038c5a;
+}
+
+.qty button {
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #038c5a;
+  border: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+}
+
+.qty button:hover {
+  background: #ddd;
+}
 
 .button input{
-  margin-top: 5%;
-  margin-left: 7%;
+  margin-left: 45%;
   background-color: #038c5a;
   height: 50px;
   width: 200px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size:20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: #ffffff; 
@@ -222,7 +269,7 @@ button[type="submit"] {
 .description h1{
   font-size: 30px;
   margin-top: 5%;
-  margin-left: 50%;
+  margin-left: 55%;
 }
 
 .text{
