@@ -133,3 +133,18 @@ button[type="submit"] {
     margin-top: -150px;
 }
 
+
+
+.main_Cont{
+  float: left;
+  white-space: nowrap;
+ margin-left: 10%;
+}
+.Car_Prod{
+  display: inline-block;
+}
+.Sec_Cont{
+  float: right;
+ margin-right: 20%;
+ align-items: center;
+}
