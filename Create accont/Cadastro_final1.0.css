@@ -74,7 +74,7 @@ footer {
   }
   .imagem-lateral {
     position: absolute;
-    top: 1200px;
+    top: 580px;
     left: -205px;
     width: 470px;
     max-width: 100%;
@@ -82,7 +82,7 @@ footer {
   }
   .imagem-lateral2 {
     position: absolute;
-    top: 1200px;
+    top: 585px;
     right: -270px;
     width: 470px;
   }
