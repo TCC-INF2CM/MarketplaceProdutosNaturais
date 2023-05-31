@@ -1,14 +1,11 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow: hidden;
+    
+    display: flex;
 }
 
-.pag{
-    margin-left: 10%;
-    margin-top: 600px;
-    height: 350px;
-    width: 80%;
+.pag_1{
+    
     background-color: cadetblue;
+    align-items: center;
 }
+

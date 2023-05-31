@@ -77,7 +77,6 @@ header {
 .info{
     float: left;
     white-space: nowrap;
-    background: #105B34;
     margin-top: 25px;
     font-family: 'Bree Serif', serif;
     font-size: 25px;
@@ -88,7 +87,6 @@ header {
 .finalizar_pag{
     float: right;
     margin-right: 25%;
-    background: #105B34;
     margin-top: -101px;
     width: 300px;
 }
@@ -100,13 +98,67 @@ header {
 }
 
 .tipo_pag{
-    background-color: rgb(188, 81, 81);
-    width: 60%;
+    background-color: #F2EFEB;
+    margin-top: 13%;
+    margin-left: 25%;
+    width: 50%;
     height: 300px;
-    flex-direction: column;
+    border-radius: 10px;
 }
 
-.tipo_pag input [type="checkbox"] {
-   
-    
+.pag_1{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
 }
+
+.pag_1 img{
+    height: 30px;
+    margin-left: 10px;
+}
+
+.pag_1 h2{
+    margin-left: 10px;
+}
+
+.pag_1 h3{
+    opacity: 0.5;
+    margin-top: 60px;
+    margin-left: -35px;
+}
+
+.pag_2{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.pag_2 img{
+    height: 30px;
+    margin-left: 10px;
+}
+
+.pag_2 h2{
+    margin-left: 10px;
+}
+
+.pag_2 h3{
+    opacity: 0.5;
+    margin-top: 60px;
+    margin-left: -187px;
+}
+
+.button input{
+    margin-top: 20px;
+    margin-left: 40%;
+    background-color: #038c5a;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff; 
+  }
+
+
+

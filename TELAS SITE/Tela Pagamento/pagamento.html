@@ -50,12 +50,31 @@
         <h2>Total</h2>
     </div>
     
-    <div class="tipo_pag">
-        <input type="checkbox" name="Pix" id="pix" placeholder="Pix">
+    <section class="tipo_pag">
+        <div class="pag_1">
+            <input type="checkbox" name="pix" id="pix">
+            <img src="/img/pix icon.png" alt="">
+            <h2>Pix</h2>
+            
+            <h3>Copie o código Pix na próxima etapa e faça o pagamento na instituição financeira de sua escolha</h3>
+        </div>
+        <br> 
+        <hr>
+        <div class="pag_2">
+            <input type="checkbox" name="cartao" id="cartao">
+            <img src="/img/cartao icon.png" alt="">
+            <h2>Cartão de Credito</h2>
+            <h3>
+                Pagamento via cartao de credito, em até 6 vezes sem juros</h3>
+        </div>
+        <br>
+        <hr>
 
-        <input type="checkbox" name="Cartã de Crédito" id="cartao_credito">
-    </div>
-
+        <div class="button"> <!--BOTÃO-->
+            <input type="button" onclick="enviar()" value="Concluir Pedido">
+        </div> <!--BOTÃO-->
+    </section>
+    
 
 </body>
 </html>
