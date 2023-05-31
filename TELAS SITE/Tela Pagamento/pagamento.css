@@ -75,22 +75,38 @@ header {
 }
 
 .info{
+    float: left;
+    white-space: nowrap;
     background: #105B34;
-
     margin-top: 25px;
     font-family: 'Bree Serif', serif;
     font-size: 25px;
-    height: 350px;
-    width: 40%;
+    width: fit-content;
 }
 
-aside{
-    margin-left: 50%;
-    margin-top: -350px;
+
+.finalizar_pag{
+    float: right;
+    margin-right: 25%;
+    background: #105B34;
+    margin-top: -101px;
+    width: 300px;
 }
 
-aside h2{
-    padding: 20px;
-    margin-left: 30%;
-    margin-top: -50px;
-} 
+.finalizar_pag h2{
+    margin-left:60%;
+    margin-top: -25px;
+    padding: 10px;
+}
+
+.tipo_pag{
+    background-color: rgb(188, 81, 81);
+    width: 60%;
+    height: 300px;
+    flex-direction: column;
+}
+
+.tipo_pag input [type="checkbox"] {
+   
+    
+}
