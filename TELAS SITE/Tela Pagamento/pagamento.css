@@ -84,17 +84,21 @@ header {
 }
 
 
-.finalizar_pag{
+.img_cartao{
     float: right;
     margin-right: 25%;
-    margin-top: -101px;
+    margin-top: -125px;
     width: 300px;
 }
 
-.finalizar_pag h2{
-    margin-left:60%;
-    margin-top: -25px;
-    padding: 10px;
+.total{
+    float: right;
+    margin-top: -8rem;
+    margin-right: -16rem;
+    white-space: nowrap;
+    font-family: 'Bree Serif', serif;
+    font-size: 23px;
+    width: fit-content;
 }
 
 .tipo_pag{
