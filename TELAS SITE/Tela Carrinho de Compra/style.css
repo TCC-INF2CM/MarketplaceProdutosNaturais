@@ -139,12 +139,31 @@ button[type="submit"] {
   float: left;
   white-space: nowrap;
  margin-left: 10%;
+ margin-top: 3%;
 }
+
+.First_Tit{
+  float: left;
+  margin-bottom: 3%;
+}
+
 .Car_Prod{
-  display: inline-block;
+  display: flex;
+  margin-top: 30%;
+  margin-bottom: 4%;
 }
+
+
+.divisor{
+float: left;
+margin-top: 3%;
+margin-left: 30%;
+  border-left: 3px solid black;
+  height:700px;
+}
+
 .Sec_Cont{
-  float: right;
- margin-right: 20%;
- align-items: center;
+  float: left;
+ margin-left: 10%;
+ margin-top: 3%;
 }
