@@ -141,7 +141,7 @@ button[type="submit"] {
    letter-spacing: 2dp;
    line-height: 90px;
     background-color: #92DE8B;
-    margin-top: 1%;
+  
     border-radius: 15px;
     
 }
@@ -150,8 +150,8 @@ button[type="submit"] {
 
 .info-1{
  float: left;
-margin-left: 10%;
-margin-top: 8%;   
+margin-left: 5%;
+margin-top: 5%;   
 }
 
 #meuperfil, a{
@@ -165,7 +165,7 @@ color: #038C5A;
 .info-2{
     float: left;
   margin-left: 10%;
-  margin-top: 14.8%;
+  margin-top: 12%;
 }
 
 
