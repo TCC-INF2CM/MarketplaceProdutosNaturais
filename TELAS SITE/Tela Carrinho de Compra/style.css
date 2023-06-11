@@ -138,32 +138,131 @@ button[type="submit"] {
 .main_Cont{
   float: left;
   white-space: nowrap;
- margin-left: 10%;
+ margin-left: 3%;
  margin-top: 3%;
 }
 
 .First_Tit{
   float: left;
+  margin-left: 10%;
   margin-bottom: 3%;
 }
 
 .Car_Prod{
   display: flex;
-  margin-top: 30%;
-  margin-bottom: 4%;
+  margin-top: 10%;
 }
 
 
+.CheckBox{
+  float: left;
+  margin-top: 10%;
+  margin-right: 3%;
+}
+input[type="checkbox"]{
+appearance: none;
+-webkit-appearance: none;
+height: 40px;
+width: 40px;
+background-color: #d5d5d5;
+border-radius: 7px;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Vou usar o site Font Awesome para fazer o confirmado */
+
+input[type="checkbox"]::after{
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+  content: "\f00c";
+  font-size: 38px;
+  color: white;
+  display: none;
+}
+
+input[type="checkbox"]:hover{
+  background-color: #a5a5a5;
+}
+
+input[type="checkbox"]:checked{
+  background-color: #5bcd3e;
+}
+
+input[type="checkbox"]:checked::after{
+  display: block;
+}
+
+.Prod_Name{
+  float: left;
+  margin-left: 2%;
+ 
+}
+
+.Prod_Qtd{
+  float: left;
+  margin-top: 15%;
+  margin-left: 1%;
+}
+
+.qty {
+  background: #038c5a;
+  display: -webkit-inline-box;
+  padding: 0 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 60px;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 45px;
+  margin-left: 100%;
+}
+
+
+.qty span {
+  margin: 0 15px;
+  background: #038c5a;
+}
+
+.qty button {
+  
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #038c5a;
+  border: 0;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+}
+
+.qty button:hover {
+  background: #ddd;
+}
+
+.Prof_Preco{
+  float: left;
+  margin-top: 2%;
+  display: inline-block;
+}
+
 .divisor{
-float: left;
-margin-top: 3%;
-margin-left: 30%;
+  float: left;
+  margin-top: 3%;
   border-left: 3px solid black;
   height:700px;
 }
 
 .Sec_Cont{
   float: left;
- margin-left: 10%;
+ margin-left: 3%;
  margin-top: 3%;
 }
