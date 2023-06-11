@@ -202,35 +202,38 @@ input[type="checkbox"]:checked::after{
 }
 
 .Prod_Qtd{
-  float: left;
-  margin-top: 15%;
-  margin-left: 1%;
+  
+  margin-top: 10%;
+}
+
+.Prod_Qtd .qty{
+  margin-left: 50%;
 }
 
 .qty {
   background: #038c5a;
   display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   padding: 0 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 60px;
+  min-width: 100px;
   border-radius: 10px;
   overflow: hidden;
   height: 45px;
-  margin-left: 100%;
+  margin-left: 7%;
 }
-
 
 .qty span {
   margin: 0 15px;
   background: #038c5a;
 }
 
-.qty button {
-  
+.qty button { 
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,10 +251,26 @@ input[type="checkbox"]:checked::after{
   background: #ddd;
 }
 
+.button input{
+  margin-left: 25%;
+  background-color: #038c5a;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  font-size:20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #ffffff; 
+  margin-bottom: 5%;
+}
+
 .Prof_Preco{
-  float: left;
-  margin-top: 2%;
-  display: inline-block;
+ display: flex;
+ float: left;
+ margin-top: 15%;
+}
+
+.Prof_Preco .Real_Preco{
+  margin-left: 40%;
 }
 
 .divisor{
@@ -265,4 +284,31 @@ input[type="checkbox"]:checked::after{
   float: left;
  margin-left: 3%;
  margin-top: 3%;
+}
+
+.Second_Tit{
+  margin-bottom: 10%;
+}
+
+.Prod_Slc{
+  margin-bottom: 20%;
+}
+
+.Total_Price{
+  display: flex;
+  margin-bottom: 20%;
+}
+.Total_Price .PriceFaice{
+  margin-left: 50%;
+  display: inline-block;
+}
+
+.Frete_Info{
+  display: flex;
+  margin-bottom: 30%;
+}
+
+.Frete_Info .Free{
+  margin-left: 50%;
+  color: #038c5a;
 }
