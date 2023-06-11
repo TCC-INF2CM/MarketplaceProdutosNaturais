@@ -73,6 +73,27 @@ div.head{
   display: none;
 }
 
+#minhaconta{
+  margin-top: 10%;
+  
+}
+
+
+#icminhaconta{
+  margin-top: 90px;
+  margin-left: 70%;
+  width: 50px;
+  height: 50px;
+ 
+ 
+}
+ 
+.carrinho{
+  margin-top: 10%;
+  margin-left: 90%;
+}
+
+
 #Tds-Dpt{
   list-style: none;
   margin-left: 70px;
@@ -135,7 +156,7 @@ button[type="submit"] {
 
 .square{
  
-  float: left;
+float: left;
  width: 400px;
  height: 400px;
  letter-spacing: 2dp;
@@ -146,17 +167,20 @@ button[type="submit"] {
   
 }
 
-h3{
-  margin-inline: 200px;
-  margin-top: 10dp;
+.h3{
+margin-left: 40%;
+margin-top: 20%;
+
   
 }
 
 #Ftperfil{
+  margin-top: 5%;
   width: 80px;
   height: 80px;
-  margin-left: 11px;
+  margin-left: 40px;
   margin-right: 200%;
+  border-radius: 50px;
 }
 
 #meuperfil{
