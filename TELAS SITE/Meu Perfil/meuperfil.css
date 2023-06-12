@@ -1,3 +1,4 @@
+
 body {
   background-color: #7DA88E;
   margin:0; padding:0;
@@ -15,7 +16,7 @@ body {
   --color-black-1: #212b38;
 }
 #barra{
-margin-top: 60px;
+margin-top: 10px;
 position: absolute;
 margin-bottom: 180px;
 }
@@ -188,8 +189,8 @@ div.head{
   position: relative;
 }
 #logo-home{
-  width: 90px;
-  height: 90px;
+  width: 60px;
+  height: 60px;
   margin-left: 110px;
   margin-top: 10px;
 
@@ -288,14 +289,6 @@ input[type="text"] {
 }
 
 
-#icminhaconta{
-  margin-top: 90px;
-  margin-left: 70%;
-  width: 50px;
-  height: 50px;
- 
- 
-}
  
 .carrinho{
   margin-top: 10%;
@@ -364,6 +357,7 @@ button[type="submit"] {
 }
 
 .square{
+  margin-top: 0.2%;
 float: left;
  width: 400px;
  height: 400px;
@@ -374,6 +368,7 @@ float: left;
 }
 
 .img{
+  margin-top: 2%;
   float: left;
   margin-right: 10%;
   background-image: url(/img/123456.png.png);
@@ -404,7 +399,7 @@ float: left;
   float: left;
   margin-top: 3%;
   border-left: 400px solid black;
-  height: 5px;
+  height: 2px;
   width: 1000px;
 }
 
@@ -417,9 +412,7 @@ float: left;
   border-radius: 50px;
 }
 
-#meuperfil{
-  margin-left: 3%;
-}
+
 
 #imgp{
   width: 50px;
@@ -452,6 +445,7 @@ margin-top: 12%;
 #password{
   height: 40px;
   border-radius: 10px;
+  border-width: 1px;
 }
 
 
