@@ -364,23 +364,48 @@ button[type="submit"] {
 }
 
 .square{
- 
 float: left;
  width: 400px;
  height: 400px;
  letter-spacing: 2dp;
  line-height: 90px;
   background-color: #92DE8B;
-
   border-radius: 15px;
+}
+
+.img{
+  float: left;
+  margin-right: 10%;
+  background-image: url(/img/123456.png.png);
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  background-repeat: none;
+  background-position: 0;
+  background-size: 100px;
+}
+
+.tetux{
+  float: left;
+  margin-top: 5%;
+}
+
+.perfius{
+  margin-top: 10%;
+  float: left;
+}
+
+.prefius{
+  float: left;
   
 }
 
-.h3{
-margin-left: 40%;
-margin-top: 20%;
-
-  
+.divisor{
+  float: left;
+  margin-top: 3%;
+  border-left: 400px solid black;
+  height: 5px;
+  width: 1000px;
 }
 
 #Ftperfil{
@@ -444,10 +469,7 @@ border-radius: 50px;
 }
 
 footer{
-float: left;
-display: block;
-margin-top: 1%;
-width: 100%;
-height: 56px;
+  padding: auto;
+  height: 10px auto;
 background-color: #038C5A;
 }
