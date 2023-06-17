@@ -31,10 +31,9 @@ header {
   font-size: 15px;
   float: right;
   color: white;
-  margin-top: 85px;
   text-align: center;
   display: flex;
-  margin-top: 13%;
+  margin-top: 10%;
   margin-left: 20px;
 }
 
@@ -200,12 +199,11 @@ section.module.box {
 }
 
 .picture {
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem ;
   background: #ddd;
   justify-content: center;
   margin-left: 5%;
-  text-align: center;
   display: flex;
   align-items: center;
   margin-top: -300px;
