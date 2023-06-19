@@ -1,10 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow: hidden;
+  
 }
 
 header {
@@ -12,20 +12,22 @@ header {
     width: 100%;
     height: 100px;
     display: flex;
-    display: inline-flex;
 }
 
 .logo img{
     height: 70px;
     width: 70px;
-    margin-left: 300px;
+    margin-left: 20rem;
     margin-top: 17px;
 }
+
+
+
 
 .carrinho{
     margin-left: 25%;
     display: flex;
-    
+
 }
 
 .carrinho img{
@@ -35,14 +37,15 @@ header {
 
 .carrinho h2{
     margin-top: 35px;
-    margin-left: 10px;
+    margin-left: 10%;
+    font-weight: bold;
     font-size: 25px;
 }
 
 .pagamento{
-  opacity: 0.55;
-    margin-left: 30rem;
+    margin-left: 25%;
     display: flex;
+    opacity: 0.55;
 }
 
 .pagamento img{
@@ -51,9 +54,9 @@ header {
 }
 
 .pagamento h2{
-    margin-top: 35px;
-    margin-left: 10px;
-    font-size: 25px;
+   margin-top: 35px;
+   font-size: 25px;
+   margin-left: 10%;
 }
 
 
