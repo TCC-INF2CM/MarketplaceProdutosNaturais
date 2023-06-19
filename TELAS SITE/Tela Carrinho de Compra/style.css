@@ -3,8 +3,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  
+    
 }
 
 header {
@@ -56,7 +55,7 @@ header {
 .pagamento h2{
    margin-top: 35px;
    font-size: 25px;
-   margin-left: 10%;
+   margin-left: 7%;
 }
 
 
@@ -177,7 +176,7 @@ input[type="checkbox"]:checked::after{
 }
 
 .button input{
-  margin-left: 25%;
+  margin-left: 70%;
   background-color: #038c5a;
   height: 50px;
   width: 200px;
@@ -236,4 +235,20 @@ input[type="checkbox"]:checked::after{
 .Frete_Info .Free{
   margin-left: 50%;
   color: #038c5a;
+}
+
+.divisor{
+  margin-left: 10%;
+}
+
+.arvore{
+  margin-top: 32%;
+  float: right;
+  opacity: 0.55;
+}
+
+.arvore img{
+  height:16rem;
+  width: 15rem;
+  float: inline-end;
 }
