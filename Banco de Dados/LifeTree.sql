@@ -10,23 +10,34 @@ Go
 --criar tabela
 
 create table Cargo(
-	id int identity,
+	id bigint identity,
 	nmCargo varchar(100) not null,
 	primary key(id)
 
 )
 
-CREATE TABLE Cupom(
+create table ADM
+(
+	id bigint identity,
+	Nome varchar(150)not null,
+	Email varchar(200)not null,
+	senha varchar(150)not null,
+	primary key(id),
+	cargo_id BIGINT NOT NULL,
+	FOREIGN KEY (cargo_id) REFERENCES Cargo(id)
+)
+
+CREATE TABLE CUPOM(
 	ID INT IDENTITY,
 	NOME VARCHAR(10)NOT NULL,
 	STATUSCP VARCHAR(20)NOT NULL,
-	Primary key(id)
+	primary key(id)
 )
 
 
 create table Cliente
 (	
-	id int identity,
+	id bigint identity,
 	Nome varchar(150)not null,
 	CPF char(11)not null,
 	dtNasc date not null,
@@ -35,14 +46,14 @@ create table Cliente
 	senha varchar(150)not null,
 	img varbinary(max)null,
 	statusCliente varchar(20)not null,
-	Cupom_id int not null,
+	Cupom_id int,
 	primary key(id),
 	foreign key(Cupom_id)
-		references Cupom(id)
+		references CUPOM(id)
 )
 
 create table Endereco(
-	id int identity,
+	id bigint identity,
 	Logradouro varchar(250)not null,
 	CEP char(8)not null,
 	NumCasa char(5)not null,
@@ -51,14 +62,14 @@ create table Endereco(
 	UF char(2)not null,
 	Complemento varchar(250)null,
 	primary key(id),
-	Cliente_id int not null,
+	Cliente_id bigint not null,
 	foreign key(Cliente_id) 
 		references Cliente(id)
 )
 
 create table Funcionario
 (	
-   id   INT IDENTITY,
+   id   BIGINT IDENTITY,
    Nome VARCHAR(100)NOT NULL,
    CPF  CHAR(11)NOT NULL,
    RG VARCHAR(12)NOT NULL,
@@ -74,14 +85,14 @@ create table Funcionario
    Bairro VARCHAR(100)NOT NULL,
    Cidade VARCHAR(100)NOT NULL,
    UF CHAR(2)NOT NULL,
-   cargo_id INT NOT NULL,
+   cargo_id BIGINT NOT NULL,
 
    PRIMARY KEY (id),
    FOREIGN KEY (cargo_id) REFERENCES Cargo(id)
 )
 
 create table tpProduto
-(	id int identity,
+(	id bigint identity,
 	TpProduto varchar(150)not null,
 	primary key(id)
 )
@@ -117,21 +128,21 @@ values('Baixo carboidrato');
 
 
 create table mcProduto
-(	id int identity,
+(	id bigint identity,
 	Marca varchar(100)not null,
 	primary key(id)
 )
 
 create table Produto
-(	id int identity,
+(	id bigint identity,
 	Nome varchar(100)not null,
 	Preco decimal(10,2)not null,
 	Imagem varchar(MAX),
 	Quantidade int,
 	cod_barra varchar(13)not null,
 	Peso decimal(6,2),
-	tpProduto_id int not null,
-	mcProduto_id int not null,
+	tpProduto_id bigint not null,
+	mcProduto_id bigint not null,
 	Complemento varchar(250)not null
 	primary key(id),
 	foreign key(tpProduto_id)
@@ -141,20 +152,19 @@ create table Produto
 )
 
 create table Imagem(
-	id int identity,
-	nomeImg varchar(100)not null,
+	id bigint identity,
 	Img varchar(max)not null,
 	StatusImg varchar(20)not null,
-	produto_id int not null,
+	produto_id bigint not null,
 	primary key(id),
 	foreign key(produto_id)
 	references Produto(id)
 )
 
 create table Form_Pagamento
-(	id int identity,
+(	id bigint identity,
 	Fm_pagamento varchar(50)not null,
-	StatusPg varchar(20)null,
+	StatusPg varchar(20),
 	primary key(id)
 )
 insert Form_Pagamento(Fm_pagamento)
@@ -170,12 +180,12 @@ values('Dinheiro')
 
 
 create table Venda
-(	id int identity,
+(	id bigint identity,
 	TT_compra decimal(10,2)not null,
 	Dt_Venda date not null,
-	Pagamento_id int not null,
-	Cliente_id int not null,
-	Produto_id int not null,
+	Pagamento_id bigint not null,
+	Cliente_id bigint not null,
+	Produto_id bigint not null,
 	primary key(id),
 	foreign key(Pagamento_id) 
 		references Form_pagamento(id),
@@ -186,12 +196,12 @@ create table Venda
 )
 
 create table ItemVenda(
-	id int identity,
+	id bigint identity,
 	Quant int not null,
 	StatusItem varchar(20) not null,
-	Produto_id int not null,
-	Venda_id int not null,
-	Cliente_id int not null,
+	Produto_id bigint not null,
+	Venda_id bigint not null,
+	Cliente_id bigint not null,
 	primary key(id),
 	foreign key(Cliente_id) 
 		references Cliente(id),
@@ -204,4 +214,4 @@ create table ItemVenda(
 
 --Consulta todos os(*) campos
 --E todos os registros da tabela
---select*from tpProduto
+--select*from Form_Pagamento
