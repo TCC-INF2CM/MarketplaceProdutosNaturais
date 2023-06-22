@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+    overflow: hidden;
 }
 
 header {
@@ -15,10 +15,16 @@ header {
 
 }
 
+.logo {
+    width: 25%;
+    margin-left: 20%;
+    display: flex;
+
+}
+
 .logo img{
     height: 70px;
     width: 70px;
-    margin-left: 20rem;
     margin-top: 17px;
 }
 
@@ -26,7 +32,8 @@ header {
 
 
 .carrinho{
-    margin-left: 25%;
+    width: 25%;
+    margin-left: 25px;
     display: flex;
     opacity: 0.55;
 }
@@ -38,11 +45,12 @@ header {
 
 .carrinho h2{
     margin-top: 38px;
-    margin-left: 10%;
+    margin-left: 15px;
 }
 
 .pagamento{
-    margin-left: 25%;
+    width: 25%;
+    margin-left: 3%;
     display: flex;
 }
 
@@ -53,7 +61,7 @@ header {
 
 .pagamento h2{
     margin-top: 38px;
-    margin-left: 10%;
+    margin-left: 10px;
 }
 
 

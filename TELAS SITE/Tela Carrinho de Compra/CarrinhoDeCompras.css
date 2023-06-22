@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    background-color: #639379;
+    width: 100%;
+    height: 100px;
+    display: flex;
+
+}
+
+.logo {
+    width: 25%;
+    margin-left: 20%;
+    display: flex;
+
+}
+
+.logo img{
+    height: 70px;
+    width: 70px;
+    margin-top: 17px;
+}
+
+
+
+
+.carrinho{
+    width: 25%;
+    margin-left: 25px;
+    display: flex;
+    opacity: 0.55;
+}
+
+.carrinho img{
+    height: 50px;
+    margin-top: 25px;
+}
+
+.carrinho h2{
+    margin-top: 38px;
+    margin-left: 15px;
+}
+
+.pagamento{
+    width: 25%;
+    margin-left: 3%;
+    display: flex;
+}
+
+.pagamento img{
+    height: 50px;
+    margin-top: 25px;
+}
+
+.pagamento h2{
+    margin-top: 38px;
+    margin-left: 10px;
+}
+
+
+.main_Cont{
+    float: left;
+    white-space: nowrap;
+   margin-left: 3%;
+   margin-top: 3%;
+  }
+  
+  .First_Tit{
+    float: left;
+    margin-left: 10%;
+    margin-bottom: 3%;
+  }
+  
+  .Car_Prod{
+    display: flex;
+    margin-top: 10%;
+  }
+  
+  
+  .CheckBox{
+    float: left;
+    margin-top: 10%;
+    margin-right: 3%;
+  }
+  input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  height: 40px;
+  width: 40px;
+  background-color: #d5d5d5;
+  border-radius: 7px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  /* Vou usar o site Font Awesome para fazer o confirmado */
+  
+  input[type="checkbox"]::after{
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+    content: "\f00c";
+    font-size: 38px;
+    color: white;
+    display: none;
+  }
+  
+  input[type="checkbox"]:hover{
+    background-color: #a5a5a5;
+  }
+  
+  input[type="checkbox"]:checked{
+    background-color: #5bcd3e;
+  }
+  
+  input[type="checkbox"]:checked::after{
+    display: block;
+  }
+  
+  .Prod_Name{
+    float: left;
+    margin-left: 2%;
+   
+  }
+  
+  .Prod_Qtd{
+    
+    margin-top: 10%;
+  }
+  
+  .Prod_Qtd .qty{
+    margin-left: 50%;
+  }
+  
+  .qty {
+    background: #038c5a;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 0 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 45px;
+    margin-left: 7%;
+  }
+  
+  .qty span {
+    margin: 0 15px;
+    background: #038c5a;
+  }
+  
+  .qty button { 
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #038c5a;
+    border: 0;
+    padding: 0 10px;
+    font-size: 20px;
+    height: 100%;
+  }
+  
+  .qty button:hover {
+    background: #ddd;
+  }
+  
+  .button input{
+    margin-left: 40%;
+    background-color: #038c5a;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff; 
+    margin-bottom: 5%;
+  }
+  
+  .Prof_Preco{
+   display: flex;
+   float: left;
+   margin-top: 15%;
+  }
+  
+  .Prof_Preco .Real_Preco{
+    margin-left: 40%;
+  }
+  
+  .divisor{
+    float: left;
+    margin-top: 3%;
+    border-left: 3px solid black;
+    height:700px;
+  }
+  
+  .Sec_Cont{
+    width: 50rem;
+    float: left;
+   margin-left: 3%;
+   margin-top: 3%;
+  }
+  
+  .Second_Tit{
+    margin-bottom: 10%;
+  }
+  
+  .Prod_Slc{
+    margin-bottom: 5%;
+  }
+  
+  .Total_Price{
+    display: flex;
+    margin-bottom: 5%;
+  }
+  .Total_Price .PriceFaice{
+    margin-left: 50%;
+    display: inline-block;
+  }
+  
+  .Frete_Info{
+    display: flex;
+    margin-bottom: 30%;
+  }
+  
+  .Frete_Info .Free{
+    margin-left: 50%;
+    color: #038c5a;
+  }
+  
+  .divisor{
+    margin-left:15%;
+  }
+  
+.arvore{
+    margin-top: -160px;
+    float: right;
+    opacity: 0.55;
+  }
+  
+.arvore img{
+    height:16rem;
+    width: 15rem;
+    float: inline-end;
+  }
+
