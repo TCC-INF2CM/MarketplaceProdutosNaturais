@@ -460,6 +460,14 @@ body {
   width: 200px;
   border-radius: 50px;
   }
+
+ .imgfundo {
+    position: absolute;
+    top: 630px;
+    left: 50px;
+    width: 300px;
+    max-width: 350px;
+  }
   
   
   footer{
