@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="DashboardADM.css">
+  <title>Dashboard ADM</title>
+</head>
+
+<body>
+  <!--header-->
+  <header>
+
+    <div class="info-header">
+      <div class="logo">
+        <h2>Dashboard</h2>
+        <img src="/img/arvorelogo1.png" id="logo">
+      </div>
+      <div class="icon-header">
+        <img src="/img/adm icon.png" alt="ADM">
+        <h2>Administrador</h2>
+      </div>
+    </div>
+  </header>
+  <!--header acabou-->
+
+
+
+
+  <section class="main">
+    <div class="sidebar">
+      <strong>
+        <h1>Estatisticas</h1>
+      </strong>
+      <a href="http://127.0.0.1:5500/TelasADM/Tela%20Dashboard%20ADM/TelaDashboard.html"> Painel de Controle</a>
+      <a href="http://127.0.0.1:5500/TelasADM/Tela%20Editar%20Fornecedor/TelaEditarForncedor.html">Editar Funcionários</a>
+
+      <br>
+      <hr>
+    </div>
+    <!--side bar-->
+
+    <div class="content">
+      <div class="titulo-sessao">
+        <h1>Dashboard</h1>
+        <h2>Resultado de vendas mensal</h2>
+      </div>
+
+      <div class="info-box">
+        <div class="grafico">
+          <!--Load the AJAX API-->
+          <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+          <script type="text/javascript">
+
+            // Load the Visualization API and the corechart package.
+            google.charts.load('current', { 'packages': ['corechart'] });
+
+            // Set a callback to run when the Google Visualization API is loaded.
+            google.charts.setOnLoadCallback(drawChart);
+
+            // Callback that creates and populates a data table,
+            // instantiates the pie chart, passes in the data and
+            // draws it.
+            function drawChart() {
+
+              // Create the data table.
+              var data = new google.visualization.DataTable();
+              data.addColumn('string', 'Topping');
+              data.addColumn('number', 'Slices');
+              data.addRows([
+                ['A granel', 300],
+                ['Emporios', 200],
+                ['Suplementos e Vitaminas', 500],
+                ['Beleza', 100],
+                ['Refrigerados', 600]
+              ]);
+
+              // Set chart options
+              var options = {
+                'title': 'Vendas',
+                'width': 600,
+                'height': 1428,
+                'is3D': true,
+                'backgroundColor': 'rgb(212, 225, 212)',
+                
+
+              };
+
+              // Instantiate and draw our chart, passing in some options.
+              var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+              chart.draw(data, options);
+            }
+          </script>
+          <!--Div that will hold the pie chart-->
+          <div id="chart_div"></div>
+        </div>
+      </div> <!-- colocar as informações de venda -->
+      <br>
+
+    </div>
+    <!--conteudo-->
+  </section>
+  <div class="legenda">
+  <ul>
+    <li><span class="legenda-bolinha legenda-bolinha-vermelha"></span>Emporios</li>
+    <li><span class="legenda-bolinha legenda-bolinha-verde"></span>Beleza</li>
+    <li><span class="legenda-bolinha legenda-bolinha-azul"></span>A granel</li>
+    <li><span class="legenda-bolinha legenda-bolinha-amarela"></span>Suplementos e Vitaminas</li>
+    <li><span class="legenda-bolinha legenda-bolinha-roxo"></span>Refrigerados</li>
+  </ul>
+</div>
+  <footer>
+
+  </footer>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Produto.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <title>Produto</title>
+</head>
+
+<body>
+  <div class="head">
+
+  </div>
+  <div class="container">
+    <a href="#"><img src="/img/arvorelogo1.png" id="logo-home"></a>
+    <p>Life Tree</p>
+
+    <div class="cliente-acess">
+      <div class="container-cliente">
+        <div class="menu-bar2">
+          <img src="/img/adm icon.png" id="logo-cliente">
+          <ul>
+            <li><a href="#">Entrar</a>
+                <div class="dropdown-menu-cliente">
+                    <ul>
+                      <li><a href="#">Login e Cadastro</a></li>
+                      <li><a href="#">Meus pedidos</a></li>
+                      <li><a href="#">Sair</a></li>
+                    </ul>
+                  </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+        
+      </div>
+    
+  </div>
+
+    <form>
+      <input type="text" id="barra" placeholder="O que você está procurando?">
+      
+    </form>
+  </div>
+
+  <div class="container-tds-dep">
+    <div class="menu-bar">
+      <ul>
+        <li><a href="#">Todos os Departamentos <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Chá e Infusões</a></li>
+                  <li><a href="#">Vitaminas e Suplementos</a></li>
+                  <li><a href="#">Mercearia e Empório</a></li>
+                  <li><a href="#">Promoções</a></li>
+                  <li><a href="#">Bem-estar e Beleza</a></li>
+                </ul>
+              </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  
+
+  
+
+  <div class="content">  <!--CONTEUDO-->
+
+    <div class="image"> <!--Div Imagens-->
+      <div class="icon1">
+          <img src="/img/whey.jfif" alt="">
+      </div>
+  </div>
+    
+    <div class="inf"> <!--ELEMENTOS-->
+
+        <div class="nome"> Whey Protein Max Titanium</div>
+        <p>Marca: Giga</p>
+
+        <div class="stars">
+            <img src="/img/arvorelogo.png" alt="Estrela 1">
+            <img src="/img/arvorelogo.png" alt="Estrela 2">
+            <img src="/img/arvorelogo.png" alt="Estrela 3">
+            <img src="/img/arvorelogo.png" alt="Estrela 4">
+            <img src="/img/arvorelogo.png" alt="Estrela 5">
+        </div> <!--CONTEUDO-->
+
+        <div class="price"> <!--PREÇO-->
+            <h5>R$</h5>
+            <h1>45,99</h1>
+            <p>à vista(5% off)</p>
+        </div> <!--PREÇO--> 
+
+        <div class="estoque"> <!--QUANTIDADE-->
+            <p>Quantidade: 54 em estoque</p>
+        </div> <!--QUANTIDADE-->
+
+        <div class="cod"> <!--COD-->
+            <p>Código do Produto: 83428478</p>
+        </div> <!--COD-->
+
+       <div class="ad_prod">
+
+          <div class="qty">
+            <button>-<i class="bx bx-minus"></i></button>
+            <span>1</span>
+            <button>+</button><i class="bx bx-plus"></i></button>
+          </div>
+
+        <div class="button"> <!--BOTÃO-->
+            <input type="button" onclick="enviar()" value="Comprar produto">
+        </div> <!--BOTÃO-->
+
+      </div>
+
+        <div class="description"> <!--DESCRIÇÃO-->
+            <h1>Descrição</h1>
+            <div class="text">
+                <h2>Whey fornece 21g de proteína, 4.686 mg de BCAAs e 10g de aminoácidos essenciais em 30g de produto. Ainda, é uma proteína zero  </h2>
+            </div>
+        </div><!--DESCRIÇÃO-->
+        
+    </div> <!--ELEMENTOS-->
+    
+</div> <!--CONTEUDO-->
+
+<footer>
+    <div class="box">
+      <h1>Inicio</h1>
+      <p>Home</p>
+      <p>Meus Pedidos</p>
+    </div>
+
+    <div class="box">
+       <h1>Fale Conosco</h1>
+    
+       <p>Email para contato: sac@lifetree.com.br</p>
+       <p>Whatsapp: (11) 999999999</p>
+     
+      </div>
+
+     <div class="box">
+        <h1>Sobre nós</h1>
+        <p>Nós equipe Life Tree estamos no mercado em busca da facilidade na escolha de produtos naturais de sua preferencia com o maior cuidado e desejo de facilitar para você</p>
+      </div>
+
+    <img src="/img/arvorelogo.png" alt="" srcset="">
+</footer>
+
+
+</body>
+
+</html>

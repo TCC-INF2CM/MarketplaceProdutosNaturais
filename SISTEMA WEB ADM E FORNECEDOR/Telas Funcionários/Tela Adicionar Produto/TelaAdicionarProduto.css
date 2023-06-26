@@ -1,0 +1,241 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(212, 225, 212);
+}
+
+header {
+  background-color: #038c5a;
+  padding: 5px 2%;
+  height: 80px;
+}
+
+#logo {
+  height: 7px;
+  padding: 7px 2%;
+  height: 80px;
+  margin-top: -50px;
+}
+
+.logo h2 {
+  font-size: 15px;
+  float: right;
+  color: white;
+  text-align: center;
+  display: flex;
+  margin-top: 10%;
+  margin-left: 20px;
+}
+
+.info-header {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 10px;
+  margin-top: 5px;
+  align-items: center;
+}
+
+.icon-header h2 {
+  font-size: 15px;
+  float: right;
+  color: white;
+  margin-top: 85px;
+  text-align: center;
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 10px
+  
+}
+
+.logo {
+  margin-top: 5px;
+  align-items: center;
+}
+
+.sidebar {
+  width: 17%;
+  height: 890px;
+  background-color: #d2d2db;
+
+}
+
+.sidebar h1 {
+  color: black;
+  font-size: 20px;
+  margin-left: 20%;
+  margin-top: 20px;
+}
+
+.sidebar a {
+  display: block;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 35px;
+  margin-left: 30px;
+  color: black;
+
+}
+
+
+.icon-header img {
+  height: 40px;
+  width: 40px;
+
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+
+#account {
+  height: 120px;
+}
+
+.acc {
+  font-size: 15px;
+
+}
+
+#botão {
+  width: 100pt;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #038c5a;
+  color: white;
+  border-color: black;
+  margin-top: 40px;
+
+}
+
+.acc a {
+  text-decoration: none;
+  color: white;
+}
+
+
+.info-header {
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 10px;
+  margin-top: 5px;
+}
+
+#button {
+  margin-left: 50px;
+}
+
+.logo {
+  margin-top: 5px;
+}
+
+.informations p {
+  margin-left: 50px;
+  left: 200px;
+}
+
+input {
+  height: 30px;
+  width: 220pt;
+  display: block;
+  margin-bottom: 20px;
+
+}
+
+section.module.box {
+  width: 70%;
+  height: 70%;
+  border: 1px solid #ccc;
+  margin: 20px 0;
+  padding: 20px 20px;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+}
+
+#account {
+  height: 60px;
+  width: 60px;
+}
+
+.informations {
+  margin-top: 40px;
+  flex-direction: row;
+}
+
+.prod-imagem {
+  margin: 20px 0;
+  padding: 20px 20px;
+  margin-left: 55%;
+  margin-top: 8%;
+  height: 100px;
+}
+
+#picture__input {
+  display: none;
+}
+
+.picture {
+  width: 25rem;
+  height: 25rem ;
+  background: #ddd;
+  justify-content: center;
+  margin-left: 5%;
+  display: flex;
+  align-items: center;
+  margin-top: -300px;
+  color: black;
+  border: 1.5px dashed #038c5a;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+}
+
+.picture:hover {
+  color: black;
+  background: #ccc;
+}
+
+.picture:active {
+  border-color: turquoise;
+  color: turquoise;
+  background: #eee;
+}
+
+
+.picture:focus {
+  color: #777;
+  background: #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+  max-width: 100%;
+}
+
+.botão {
+  display: block;
+  margin-left: 400px;
+  width: 100pt;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #038c5a;
+  margin-top: -35px;
+  color: white;
+}
+
+.botão:hover {
+  background-color: #42dd9d;
+  transition: 0.2s;
+}
