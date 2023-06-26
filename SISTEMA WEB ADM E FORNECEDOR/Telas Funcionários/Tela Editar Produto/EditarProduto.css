@@ -1,13 +1,13 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+
 }
 
 html,
 body {
-  height: 100%;
+  
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(212, 225, 212);
 
@@ -17,7 +17,7 @@ header {
   background-color: #038c5a;
   padding: 5px 2%;
   height: 80px;
-
+  
 }
 
 #logo {
@@ -31,31 +31,14 @@ header {
   font-size: 15px;
   float: right;
   color: white;
-  margin-top: 85px;
   text-align: center;
   display: flex;
-  margin-top: 13%;
+  margin-top: 10%;
   margin-left: 20px;
 }
 
-.icon-header{
-  margin-top: ;
-}
-
-.icon-header h2 {
-  font-size: 15px;
-  float: right;
-  color: white;
-  margin-top: 85px;
-
-  margin-top: 13%
-}
 
 
-.logo-um h2 {
-  font-size: 15px;
-  margin-top: 85px;
-}
 
 
 .info-header {
@@ -64,16 +47,34 @@ header {
   justify-content: space-between;
   margin: auto 10px;
   margin-top: 5px;
-
+  align-items: center;
 }
 
- {
+
+.icon-header h2 {
+  font-size: 15px;
+  float: right;
+  color: white;
+  margin-top: 85px;
+  text-align: center;
+  display: flex;
   margin-top: 5px;
+  margin-left: 20px;
+  margin-right: 10px
+  
+}
+
+
+
+
+.logo {
+  margin-top: 5px;
+  align-items: center;
 }
 
 .sidebar {
-  width: 20%;
-  height: 100%;
+  width: 17%;
+  height: 890px;
   background-color: #d2d2db;
 
 }
@@ -99,15 +100,13 @@ header {
 .icon-header img {
   height: 40px;
   width: 40px;
-  margin: 0 30px;
-  margin-top: 20px;
+
 }
 
 .main {
   display: flex;
   flex-wrap: wrap;
   height: 100%;
-
 }
 
 
