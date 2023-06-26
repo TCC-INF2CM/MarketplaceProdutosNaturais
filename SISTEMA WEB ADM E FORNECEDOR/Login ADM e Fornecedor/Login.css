@@ -25,8 +25,23 @@ body {
     color: red;
     
   } 
+
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-left: 6%;
+}
+
+#esquecisenha {
+    text-decoration: none;
+}
+
+#criar_conta{
+  margin-top: 10px;
+}
   
-  section {
+section {
+    display: flex;
     background-color: #f2f2f29f;
     border-radius: 10px;
     padding: 35px;
@@ -75,13 +90,7 @@ body {
     font-style: italic, bold;
   }
   
-  #esquecisenha {
-    text-decoration: none;
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-top: 50px;
-  
-  }
+
   
   .imagem-lateral {
     position: absolute;
@@ -129,6 +138,7 @@ body {
         
       }
   }
+
   
   #criar_conta{
     text-decoration: none;
