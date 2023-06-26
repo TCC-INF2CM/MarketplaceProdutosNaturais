@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  
 }
 
 html,
@@ -24,7 +24,7 @@ header {
   height: 7px;
   padding: 7px 2%;
   height: 80px;
-  margin-top: -50px;
+  margin-top: -43px;
 }
 
 .logo h2 {
@@ -64,9 +64,6 @@ header {
   
 }
 
-
-
-
 .logo {
   margin-top: 5px;
   align-items: center;
@@ -95,6 +92,7 @@ header {
   color: black;
 
 }
+
 
 
 .icon-header img {

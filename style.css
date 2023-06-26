@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    height: 80px;
+    background-color: #038c5a;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+
+.info-header-1{
+    display: flex;
+    margin-left: 10%;
+}
+
+.logo h2{
+    margin-top: 20px;
+
+}
+
+.info-header-1 img{
+    height: 60px;
+    margin-top: -10px;
+}
+

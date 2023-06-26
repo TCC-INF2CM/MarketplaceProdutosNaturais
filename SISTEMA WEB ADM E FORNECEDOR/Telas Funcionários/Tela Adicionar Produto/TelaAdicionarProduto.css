@@ -2,22 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
-html,
-body {
-  
+html,body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(212, 225, 212);
-
 }
 
 header {
   background-color: #038c5a;
   padding: 5px 2%;
   height: 80px;
-  
 }
 
 #logo {
@@ -37,10 +32,6 @@ header {
   margin-left: 20px;
 }
 
-
-
-
-
 .info-header {
   color: black;
   display: flex;
@@ -49,7 +40,6 @@ header {
   margin-top: 5px;
   align-items: center;
 }
-
 
 .icon-header h2 {
   font-size: 15px;
@@ -63,9 +53,6 @@ header {
   margin-right: 10px
   
 }
-
-
-
 
 .logo {
   margin-top: 5px;
