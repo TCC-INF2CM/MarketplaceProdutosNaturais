@@ -9,29 +9,13 @@ Go
 
 --criar tabela
 
-create table Cargo(
-	id bigint identity,
-	nmCargo varchar(100) not null,
-	primary key(id)
+use [lifetree-tcc]
 
-)
-
-create table ADM
-(
-	id bigint identity,
-	Nome varchar(150)not null,
-	Email varchar(200)not null,
-	senha varchar(150)not null,
-	primary key(id),
-	cargo_id BIGINT NOT NULL,
-	FOREIGN KEY (cargo_id) REFERENCES Cargo(id)
-)
-
-CREATE TABLE CUPOM(
-	ID INT IDENTITY,
+CREATE TABLE Cupom(
+	ID BIGINT IDENTITY,
 	NOME VARCHAR(10)NOT NULL,
 	STATUSCP VARCHAR(20)NOT NULL,
-	primary key(id)
+	Primary key(id)
 )
 
 
@@ -45,11 +29,12 @@ create table Cliente
 	Email varchar(200)not null,
 	senha varchar(150)not null,
 	img varbinary(max)null,
+	NivelAcess varchar(10)null,
 	statusCliente varchar(20)not null,
-	Cupom_id int,
+	Cupom_id bigint not null,
 	primary key(id),
 	foreign key(Cupom_id)
-		references CUPOM(id)
+		references Cupom(id)
 )
 
 create table Endereco(
@@ -78,6 +63,7 @@ create table Funcionario
    Img VARBINARY(MAX)NULL,
    telefone VARCHAR(9)NOT NULL,
    Email VARCHAR(100)NULL, 
+   NivelAcess varchar(10)null,
    Logradouro VARCHAR(100)NOT NULL, -- nome da rua, avenida e etc
    Numero_resid VARCHAR(10)NOT NULL,
    Complemento VARCHAR(100)NULL,
@@ -85,14 +71,11 @@ create table Funcionario
    Bairro VARCHAR(100)NOT NULL,
    Cidade VARCHAR(100)NOT NULL,
    UF CHAR(2)NOT NULL,
-   cargo_id BIGINT NOT NULL,
-
-   PRIMARY KEY (id),
-   FOREIGN KEY (cargo_id) REFERENCES Cargo(id)
+   PRIMARY KEY (id)
 )
 
 create table tpProduto
-(	id bigint identity,
+(	id BIGint identity,
 	TpProduto varchar(150)not null,
 	primary key(id)
 )
@@ -153,6 +136,7 @@ create table Produto
 
 create table Imagem(
 	id bigint identity,
+	nomeImg varchar(100)not null,
 	Img varchar(max)not null,
 	StatusImg varchar(20)not null,
 	produto_id bigint not null,
@@ -164,7 +148,7 @@ create table Imagem(
 create table Form_Pagamento
 (	id bigint identity,
 	Fm_pagamento varchar(50)not null,
-	StatusPg varchar(20),
+	StatusPg varchar(20)null,
 	primary key(id)
 )
 insert Form_Pagamento(Fm_pagamento)
@@ -185,14 +169,11 @@ create table Venda
 	Dt_Venda date not null,
 	Pagamento_id bigint not null,
 	Cliente_id bigint not null,
-	Produto_id bigint not null,
 	primary key(id),
 	foreign key(Pagamento_id) 
 		references Form_pagamento(id),
 	foreign key(Cliente_id) 
-		references Cliente(id),
-	foreign key(Produto_id)
-		references Produto(id)
+		references Cliente(id)
 )
 
 create table ItemVenda(
@@ -201,17 +182,9 @@ create table ItemVenda(
 	StatusItem varchar(20) not null,
 	Produto_id bigint not null,
 	Venda_id bigint not null,
-	Cliente_id bigint not null,
 	primary key(id),
-	foreign key(Cliente_id) 
-		references Cliente(id),
 	foreign key(Produto_id)
 		references Produto(id),
 	foreign key(Venda_id)
 		references Venda(id)
 )
-
-
---Consulta todos os(*) campos
---E todos os registros da tabela
---select*from Form_Pagamento
