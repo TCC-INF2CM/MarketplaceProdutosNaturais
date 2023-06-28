@@ -6,11 +6,7 @@ GO
 --Acessar bd
 use LifeTree
 Go
-
 --criar tabela
-
-use [lifetree-tcc]
-
 CREATE TABLE Cupom(
 	ID BIGINT IDENTITY,
 	NOME VARCHAR(10)NOT NULL,
@@ -29,7 +25,6 @@ create table Cliente
 	Email varchar(200)not null,
 	senha varchar(150)not null,
 	img varbinary(max)null,
-	NivelAcess varchar(10)null,
 	statusCliente varchar(20)not null,
 	Cupom_id bigint not null,
 	primary key(id),
@@ -81,27 +76,27 @@ create table tpProduto
 )
 
 insert into tpProduto(TpProduto)
-values('Chá e Infusões');
+values('Ch� e Infus�es');
 insert into tpProduto(TpProduto)
 values('A Granel');
 insert into tpProduto(TpProduto)
 values('Vitaminas e Suplementos');
 insert into tpProduto(TpProduto)
-values('Mercearia e Empório');
+values('Mercearia e Emp�rio');
 insert into tpProduto(TpProduto)
 values('Bem-estar e Beleza');
 insert into tpProduto(TpProduto)
 values('Refrigerados');
 insert into tpProduto(TpProduto)
-values('Promoções');
+values('Promo��es');
 insert into tpProduto(TpProduto)
-values('Sem Açucar');
+values('Sem A�ucar');
 insert into tpProduto(TpProduto)
-values('Sem Glúten');
+values('Sem Gl�ten');
 insert into tpProduto(TpProduto)
 values('Sem Lactose');
 insert into tpProduto(TpProduto)
-values('Orgânico');
+values('Org�nico');
 insert into tpProduto(TpProduto)
 values('Vegano');
 insert into tpProduto(TpProduto)
@@ -152,9 +147,9 @@ create table Form_Pagamento
 	primary key(id)
 )
 insert Form_Pagamento(Fm_pagamento)
-values('Cartão de Debito')
+values('Cart�o de Debito')
 insert Form_Pagamento(Fm_pagamento)
-values('Cartão de Credito')
+values('Cart�o de Credito')
 insert Form_Pagamento(Fm_pagamento)
 values('Pix')
 insert Form_Pagamento(Fm_pagamento)
