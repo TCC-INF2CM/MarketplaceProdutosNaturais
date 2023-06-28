@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crie sua conta</title>
-    <link rel="stylesheet" href="/SISTEMA WEB ADM E FORNECEDOR/Create accont/Cadastro_final1.0.css">
+    <link rel="stylesheet" href="CriarConta.css">
 
 </head>
 
@@ -22,28 +22,28 @@
                     <label for="username">Nome</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="name" id="name" class="inf" placeholder="Seu Nome de usuário">
+                    <input type="text" name="name" id="name" class="inf" placeholder="Nome Completo">
                 </div>
 
                 <div class="label">
                     <label for="CPF">Insira seu CPF</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="CPF" id="CPF" class="inf" placeholder="Insira CPF">
+                    <input type="text" name="CPF" id="CPF" class="inf" placeholder="xxx.xxx.xxx-xx">
                 </div>
 
                 <div class="label">
                     <label for="tel">Telefone</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="tel" id="tel" class="inf" placeholder="(55)11999_">
+                    <input type="text" name="tel" id="tel" class="inf" required placeholder="(xx) xxxxx-xxxx">
                 </div>
 
                 <div class="input">
-                    <label for="cep">Insira sua data de Nascimento</label>
+                    <label for="date">Insira sua data de Nascimento</label>
                 </div>
                 <div class="input">
-                    <input type="text" name="dtNsc" id="dtNsc" class="inf" placeholder="Digite seu aniversário">
+                    <input type="date" name="dtNsc" id="dtNsc" class="inf" placeholder="Digite seu aniversário">
                 </div>
 
                 <div class="label">
@@ -75,7 +75,7 @@
                 </div>
 
                             <!-- <input type="button" id="botão" onclick="enviar()" value="Confirmar"> -->
-               <Button type="submit" onclick="enviar()" id="botão">Confirmar</Button>
+               <Button type="submit" onclick="enviar()"id="botão">Confirmar</Button>
             </form>
 
         </div>
@@ -89,7 +89,7 @@
 
     </div>
 
-    <script src="cadastro1.0.js"></script>
+    <script src="CriarConta.js"></script>
 </body>
 
 </html>

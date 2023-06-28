@@ -35,8 +35,7 @@ h1{
 
 input{
     border: 2px solid black;
-    border-radius: 15px;
-    height: 20pt;
+    border-radius: 50px;
     width: 250pt;
     padding: 15px;
     font-size: 15px;
@@ -88,3 +87,6 @@ footer {
     width: 470px;
   }
   
+  label{
+    margin-left: 20px;
+  }
