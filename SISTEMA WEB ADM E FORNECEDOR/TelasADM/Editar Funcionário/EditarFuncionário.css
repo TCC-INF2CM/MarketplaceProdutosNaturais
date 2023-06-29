@@ -111,10 +111,11 @@ header {
 
 .container{
     background-color: #d2d2db;
+    margin-left: 5%;
     margin-top: 10%;
     height: 39%;
-    width: 55%;
-    margin-left: 25px;
+    width:30%;
+   
     display: flex;
     flex-direction: column;
 }
@@ -136,18 +137,18 @@ header {
 
 
 
-.fornecedores{
+.funcionarios{
     display: inline-flex;
     background-color: #F2F2F2;
 }
 
-.fornecedores img{
+.funcionarios img{
     height: 15px;
     width: 15px;
     margin: 30px;
 }
 
-.fornecedores h4{
+.funcionarios h4{
     margin-top: 3%;
     margin-left: 10%;
 
