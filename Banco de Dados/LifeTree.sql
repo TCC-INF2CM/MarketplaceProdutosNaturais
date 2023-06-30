@@ -55,17 +55,11 @@ create table Funcionario
    RG VARCHAR(12)NOT NULL,
    Sexo CHAR(1)NOT NULL,
    dataNasc DATE NOT NULL,
-   Img VARBINARY(MAX)NULL,
    telefone VARCHAR(9)NOT NULL,
-   Email VARCHAR(100)NULL, 
+   Email VARCHAR(100) not NULL, 
+   Senha varchar(150)not null,
    NivelAcess varchar(10)null,
-   Logradouro VARCHAR(100)NOT NULL, -- nome da rua, avenida e etc
-   Numero_resid VARCHAR(10)NOT NULL,
-   Complemento VARCHAR(100)NULL,
-   CEP CHAR(8)NOT NULL,
-   Bairro VARCHAR(100)NOT NULL,
-   Cidade VARCHAR(100)NOT NULL,
-   UF CHAR(2)NOT NULL,
+   statusFunc varchar(20)not null,
    PRIMARY KEY (id)
 )
 
