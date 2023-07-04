@@ -77,7 +77,6 @@ header {
    font-size: 15px;
    float: right;
    color: white;
-   margin-top: 10px;
    text-align: center;
    display: flex;
    margin-top: 15%;
@@ -110,6 +109,7 @@ header {
    height: 40px;
    width: 40px;
    margin-top: 10px;
+   margin-right: 10px;
 }
 
 .main {

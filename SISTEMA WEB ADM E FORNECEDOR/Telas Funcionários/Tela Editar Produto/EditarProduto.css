@@ -24,7 +24,7 @@ header {
   height: 7px;
   padding: 7px 2%;
   height: 80px;
-  margin-top: -43px;
+  margin-top: -45px;
 }
 
 .logo h2 {
@@ -33,7 +33,7 @@ header {
   color: white;
   text-align: center;
   display: flex;
-  margin-top: 10%;
+  margin-top:11%;
   margin-left: 20px;
 }
 
@@ -50,6 +50,16 @@ header {
   align-items: center;
 }
 
+.icon-header{
+  align-items: center;
+  text-align: center;
+}
+
+.icon-header img {
+  height: 40px;
+  width: 40px;
+  margin-top: -15px;
+}
 
 .icon-header h2 {
   font-size: 15px;
@@ -58,9 +68,9 @@ header {
   margin-top: 85px;
   text-align: center;
   display: flex;
-  margin-top: 5px;
+  margin-top: -4px;
   margin-left: 20px;
-  margin-right: 10px
+
   
 }
 
@@ -95,11 +105,7 @@ header {
 
 
 
-.icon-header img {
-  height: 40px;
-  width: 40px;
 
-}
 
 .main {
   display: flex;
