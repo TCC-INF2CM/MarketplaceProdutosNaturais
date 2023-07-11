@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  
+
 }
 
 header {
@@ -211,10 +211,11 @@ header {
   }
   
   .Sec_Cont{
-    width: 50rem;
+    display: block;
+    margin-left: 20px;
+    width: 40%;
     float: left;
-   margin-left: 3%;
-   margin-top: 3%;
+    margin-top: 3%;
   }
   
   .Second_Tit{
@@ -251,6 +252,7 @@ header {
 .arvore{
     margin-top: -160px;
     float: right;
+    margin-right: 30px;
     opacity: 0.55;
   }
   
