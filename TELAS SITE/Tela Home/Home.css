@@ -24,26 +24,26 @@ margin-right: 290px;
 font-size: 15px;
 color: white;
 margin-left: 100%;
-margin-top: 00px;
+align-items: center;
 
 }
 #logo-cliente{
 width: 30px;
 height: 30px;             /*LOGO CLIENTE*/
-margin-right: 350px;
-margin-top: -165px;
+margin-left: 54%;
+margin-top: -160px;
 }
+
 .carrinho{
   border-radius: 11px;
-  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  /*/ background: linear-gradient(145deg, #e6e6e6, #ffffff);
   box-shadow:2px 3px 6px #6e6e6e,
-           -2px -3px 6px #ffffff;
+           -2px -3px 6px #ffffff;  /*/
   width: 150px;
   height: 80px;
   margin-top: -150px;
   
 }
-
 .carrinho h1{
   color: #000000;
   margin-left: 110px;
@@ -51,11 +51,12 @@ margin-top: -165px;
   font-size: 25px;
 } 
 
+
 #carrinho-logo{
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-top: -50px;
-  margin-left: 15px;
+  margin-left: 100%;
 }
 .menu-bar2 ul {
 list-style: none;
@@ -98,10 +99,8 @@ display: block;
 
 .menu-bar2 ul li:hover .dropdown-menu-cliente {
 display: block;
-width: 500px;   
+width: 200px;   
 height: 30px;           /*AQUI TA O VERDE DO HOVER*/
-right: 5px;
-top: 20px;
 background-color: #27ae60;
 
 }
@@ -157,7 +156,7 @@ div.head{
 .menu-bar ul li {
   /* width: 120px; */
   padding: 13px 30px;
-  /* text-align: center; */
+  text-align: center; 
   position: relative;
   margin-left: 70px;
 }
