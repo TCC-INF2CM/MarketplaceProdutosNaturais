@@ -54,14 +54,15 @@ margin-top: -160px;
 }
 #contador{
   margin-top: 10%;
-  margin-left: 20%;
+  margin-left: 10%;
 } 
 .menu-bar2 ul {
 list-style: none;
 display: flex;
 font-size: 15px;
-margin-left: 1200px;
+margin-left: 1100px;
 margin-top: -101px;
+
 }
 
 .menu-bar2 ul li {
@@ -73,6 +74,7 @@ margin-left: 30px;
 }
 
 .menu-bar2 ul li a {
+  
 font-size: 15px;
 color: var(--color-white);  /*AQUI O ENTRAR*/
 text-decoration: none;
@@ -98,10 +100,8 @@ display: block;
 
 .menu-bar2 ul li:hover .dropdown-menu-cliente {
 display: block;
-width: 200px;   
+width: 100px;   
 height: 30px;           /*AQUI TA O VERDE DO HOVER*/
-background-color: #27ae60;
-margin-left: -150px;
 }
 
 .menu-bar2 ul li:hover .dropdown-menu-cliente ul {
@@ -154,8 +154,7 @@ div.head{
 
 .menu-bar ul li {
   /* width: 120px; */
-  padding: 13px 30px;
-  text-align: center; 
+  padding: 13px 30px; 
   position: relative;
   margin-left: 70px;
 }
@@ -181,6 +180,7 @@ div.head{
 /* dropdown menu style */
 .dropdown-menu {
   display: none;
+  
 }
 
 .menu-bar ul li:hover .dropdown-menu {
