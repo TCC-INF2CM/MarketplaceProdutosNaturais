@@ -41,23 +41,21 @@ margin-top: -160px;
            -2px -3px 6px #ffffff;  /*/
   width: 150px;
   height: 80px;
-  margin-top: -150px;
+  margin-top: -140px;
+  display: flex;
   
 }
-.carrinho h1{
-  color: #000000;
-  margin-left: 110px;
-  margin-top: 30px;
-  font-size: 25px;
-} 
-
 
 #carrinho-logo{
   width: 30px;
   height: 30px;
-  margin-top: -50px;
+  margin-top: 10px;
   margin-left: 100%;
 }
+#contador{
+  margin-top: 10%;
+  margin-left: 20%;
+} 
 .menu-bar2 ul {
 list-style: none;
 display: flex;
@@ -95,6 +93,7 @@ padding-top: 50px;
 /* dropdown menu style */
 .dropdown-menu-cliente {
 display: block;
+
 }
 
 .menu-bar2 ul li:hover .dropdown-menu-cliente {
@@ -102,7 +101,7 @@ display: block;
 width: 200px;   
 height: 30px;           /*AQUI TA O VERDE DO HOVER*/
 background-color: #27ae60;
-
+margin-left: -150px;
 }
 
 .menu-bar2 ul li:hover .dropdown-menu-cliente ul {
