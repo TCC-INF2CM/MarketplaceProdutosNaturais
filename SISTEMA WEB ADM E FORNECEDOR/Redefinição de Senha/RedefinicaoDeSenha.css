@@ -22,8 +22,7 @@ section {
     width: 400px;
     margin: auto;
     box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.415);
-    align-items: center;
-    text-align: center;
+    
 }
   
 input {

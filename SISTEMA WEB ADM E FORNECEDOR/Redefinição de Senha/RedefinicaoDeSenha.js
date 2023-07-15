@@ -3,7 +3,6 @@ const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required'); 
 
 
-
 function setError(index) {
     campos[index].style.border ='2px solid #e63636';
     spans[index].style.display = 'block';
@@ -36,3 +35,20 @@ function comparePassword(){
     }
 }
 
+
+///// function eyeClick (){
+    //let inputTypeIsPassword = passwordInput.type = 'password';
+    //if(inputTypeIsPassword){
+     //   showPassword
+    //} else {
+     //   hidePassword()
+    //}
+//}
+
+//function showPassword(){
+  //  passwordInput.setAttribute('type', 'text');
+///}
+
+//function hidePassword(){
+  //  passwordInput.setAttribute('type', 'password'); //
+// }
