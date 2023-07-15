@@ -10,31 +10,36 @@
 <body>
     <h1>Redefinição de Senha</h1>
 
+
     <section>
-        <div id="div1">
-            <p>Redefine sua senha inserindo suas nova senha</p>
-        </div>
-        <div id="div2">
-            <input type="password" id="novaSenha" placeholder="Digite sua nova senha">
-            <br>
-            <input type="password" id="novaSenha" placeholder="Digite a senha novamente">
-            <br>
-           <a href="/TelasADM/Tela Dashboard ADM/TelaDashboard.html"><input type="button" value="Finalizar" id="botão" onclick="finalizar()"></a>
+        <p>Redefine sua senha inserindo suas nova senha</p>
+      <form id="form">
 
-        </div>
+         <input type="password" id="password" class="input required" placeholder="Digite sua nova senha" 
+         oninput="mainPasswordValidate()">
+         <img src="/img/eye-icon.svg" id="eye-icon">
+         <span class="span-required">Senha deve conter 8 caracteres</span>
+         <br>
+
+         <input type="password" id="password-two" class="inpuy required" placeholder="Repita sua senha" oninput="comparePassword()">
+         <span class="span-required">Suas senhas devem ser compativeis</span>
+        <br>
+
+        <button type="submit">Atualizar Senha</button>
+        
+      </form>
     </section>
-
+    
     <footer>
         <p>&copy; Life Tree</p>
     </footer>
 
-    <div id="div3" class="Imagem">
-        <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral">
-
+    <div class="img">
+        <img src="/img/arvorelogo.png" alt="Imagem" class="imagem-lateral">
         <img src="/img/arvorelogo1.png" alt="Imagem" class="imagem-lateral2">
     </div>
 
-    <script src="script.js"></script>
+    <script src="RedefinicaoDeSenha.js"></script>
 
 </body>
 </html>

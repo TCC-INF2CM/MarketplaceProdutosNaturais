@@ -1,5 +1,5 @@
 function verificar(){
-    var senha = document.getElementById('senha').value;
+    var senha = document.getElementById('password').value;
     var feed = document.getElementsByClassName('feed')
 
 
