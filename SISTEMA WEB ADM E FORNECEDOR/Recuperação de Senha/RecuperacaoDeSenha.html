@@ -13,18 +13,21 @@
     <h1>Recuperação de Senha</h1>
 
     <section>
-    
-        <div id="div1">
+
             <p>Para recuperar a sua senha, informe o seu email que enviaremos um link para a alteração de senha</p>
-        </div>
+      
 
-        <div id="div2">
-            <input type="email" id="email" placeholder="Email">
+        <form id="form">
+           
+            <input type="email" id="email" class="input required" placeholder="Digite seu Email" oninput="emailValidate()">
+            
+            <span class="span-required">Digite um Email válido</span>
+         <br>
+            
             <br>
-
-            <button type="button" value="Entrar" id="botao" onclick="recoverPassword()" disabled="true">Enviar</button>
-
-        </div>
+            <button type="submit" value="Entrar" onclick="recoverPassword()">Enviar</button>
+        </form>
+        
     </section>
 
     <footer>

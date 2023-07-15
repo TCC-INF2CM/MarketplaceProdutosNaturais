@@ -2,6 +2,11 @@ const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required'); 
 
+form.addEventListener('submit', (event) =>{
+    event.preventDefault();
+    mainPasswordValidate();
+    comparePassword();
+})
 
 function setError(index) {
     campos[index].style.border ='2px solid #e63636';
