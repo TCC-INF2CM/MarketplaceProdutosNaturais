@@ -5,16 +5,3 @@ myCarousel.addEventListener('slide.bs.carousel', event => {
     circle
 })
 
-var contador = 0;
-
-function AddProducts(){
-  contador ++;
-  document.getElementById('contador').innerHTML = contador;
-}
-
-function RemoveProducts(){
-  if(contador > 0){
-    contador --;
-  }
-  document.getElementById('contador').innerHTML = contador;
-}
