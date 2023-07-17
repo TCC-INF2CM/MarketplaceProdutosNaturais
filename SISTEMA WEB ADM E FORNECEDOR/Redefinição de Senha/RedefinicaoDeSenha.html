@@ -10,23 +10,22 @@
 <body>
     <h1>Redefinição de Senha</h1>
 
-
     <section>
         <p>Redefine sua senha inserindo suas nova senha</p>
-      <form id="form">
+      <form id="form"> <!--Inicio do Formulario-->
 
-         <input type="password" id="password" class="input required" placeholder="Digite sua nova senha" 
-         oninput="mainPasswordValidate()">
-         <span class="span-required">Senha deve conter 8 caracteres</span>
-         <br>
+        <input type="password" id="password" class="input required" placeholder="Digite sua nova senha" oninput="mainPasswordValidate()">
+        <span class="span-required">Senha deve conter 8 caracteres</span>
+        <br>
 
          <input type="password" id="password-two" class="inpuy required" placeholder="Repita sua senha" oninput="comparePassword()">
          <span class="span-required">Senhas devem ser compativeis</span>
         <br>
 
-       <button type="submit" onclick="">Atualizar Senha</button>
+       <button type="submit" onclick="">Atualizar Senha</button> <!--Botao-->
         
-      </form>
+      </form> <!--Fim do Formulario-->
+
     </section>
     
     <footer>
