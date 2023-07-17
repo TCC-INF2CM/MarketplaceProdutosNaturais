@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crie sua conta</title>
     <link rel="stylesheet" href="CriarConta.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 
 </head>
 
@@ -16,66 +18,50 @@
     </header>
 
         <div class="container">
+
+
             <form action="" id="form" class="form">
 
-                <div class="label">
-                    <label for="username">Nome</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="name" id="name" class="inf" placeholder="Nome Completo">
-                </div>
+                <!--NOME (CAMPO 0)--> 
+                    <label for="Nome">Nome</label>
+                    <input type="text" name="name" id="Nome" class="input required" placeholder="Nome Completo" oninput="nomeValidate()">
 
-                <div class="label">
+                <!--CPF (CAMPO 1)-->
                     <label for="CPF">Insira seu CPF</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="CPF" id="CPF" class="inf" placeholder="xxx.xxx.xxx-xx">
-                </div>
+                    <input type="text" autocomplete="off" maxlength="14" name="CPF" id="CPF" class="input required" placeholder="000.000.000-00" oninput="cpfValidate()">
 
-                <div class="label">
-                    <label for="tel">Telefone</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="tel" id="tel" class="inf" required placeholder="(xx) xxxxx-xxxx">
-                </div>
+            
+                <!--TELEFONE (CAMPO 2)-->    
+                    <label for="Telefone">Telefone</label>
+                    <input type="text" name="tel" id="telefone" class="input required"placeholder="(00) 00000-0000"  oninput="telefoneValidate()">
+              
+                <!--DATA DE NASCIMENTO (CAMPO 3)-->    
+                    <label for="Data">Insira sua data de Nascimento</label>
+                    <input type="date" name="dtNsc" id="datanasc" class="input required" placeholder="Digite seu aniversário" oninput="datanascValidate()">
 
-                <div class="input">
-                    <label for="date">Insira sua data de Nascimento</label>
-                </div>
-                <div class="input">
-                    <input type="date" name="dtNsc" id="dtNsc" class="inf" placeholder="Digite seu aniversário">
-                </div>
+                <!--EMAIL (CAMPO 4)-->
+                    <label for="Email">Email</label>
+                    
+                    <input type="email" name="email" id="email" class="input required" placeholder="Insira o seu Email" onkeyup="emailValidate()">
+                    
+                    
+                 <!--(CAMPO 5)--> 
+                    <label for="Email2">Confirme seu email</label>  
+                    <input type="email" name="email" id="email2" class="input required" placeholder="Confirme o email" oninput="compareEmail()">
+                <!--EMAIL-->
 
-                <div class="label">
-                    <label for="email">Email</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="email" id="email" class="inf" placeholder="Insira o seu Email">
-                </div>
+                <!--SENHA (CAMPO 6)-->
+                    <label for="Senha">Crie uma senha</label>
+                    <input type="password" name="password" id="password" class="input required" placeholder="Crie uma senha" oninput="mainPasswordValidate()">
+               
+                <!--(CAMPO 7)-->    
+                    <label for="Senha2">Confirme sua senha</label>
+                    <input type="password" name="password2" id="password2" class="input required" placeholder="Confirme sua senha" oninput="comparePassword()">
 
-                <div class="label">
-                    <label for="email2">Confirme seu email</label>
-                </div>
-                <div class="input">
-                    <input type="text" name="email" id="email2" class="inf" placeholder="Confirme o email">
-                </div>
-
-                <div class="label">
-                    <label for="password">Crie uma senha</label>
-                </div>
-                <div class="input">
-                    <input type="password" name="password" id="password" placeholder="Crie uma senha">
-                </div>
-
-                <div class="label">
-                    <label for="password2">Confirme sua senha</label>
-                </div>
-                <div class="input">
-                    <input type="password" name="password2" id="password2" placeholder="Confirme sua senha">
-                </div>
+                <!--SENHA-->
 
                             <!-- <input type="button" id="botão" onclick="enviar()" value="Confirmar"> -->
-               <Button type="submit" onclick="enviar()"id="botão">Confirmar</Button>
+               <button type="submit" onclick="">Confirmar</button>
             </form>
 
         </div>
