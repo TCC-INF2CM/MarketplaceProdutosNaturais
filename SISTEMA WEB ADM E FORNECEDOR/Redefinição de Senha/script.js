@@ -44,9 +44,8 @@ function verificar(){
     }
 }
 
-function entrar() {
+function Entrar() {
     var campo1 = document.getElementById(`password`)
-
     var campo2 = document.getElementById(`password-two`)
 
     if (campo1.value == campo2.value) {

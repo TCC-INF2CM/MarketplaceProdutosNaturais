@@ -28,3 +28,8 @@ function emailValidate(){
         removeError(0);
     }
 }
+
+function sendEmail(){
+    window.alert("Email enviado com sucesso");
+    window.location.href = "https://www.spotify.com"
+}

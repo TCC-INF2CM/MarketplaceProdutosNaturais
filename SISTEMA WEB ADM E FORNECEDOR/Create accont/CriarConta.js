@@ -38,19 +38,17 @@ function nomeValidate(){
     }
 }
 
-// Validação do campo CPF (mascara)
+
+// Validação CPF (Mascara) 
 function cpfValidate(){
-    var cpf = document.getElementById('CPF');
-    if (cpf.value.length == 3 || cpf.value.length == 7 ) {
-        cpf.value += ".";
-    } else if (cpf.value.length == 11) {
-        cpf.value += "-";
-    }
+    $('#CPF').mask('999.999.999-99')
 }
+
 
 // Validação Telefone (Mascara)
 function telefoneValidate(){
-    $('#telefone').mask("(11) 99999-9999");
+    $('#telefone').mask('(99) 99999-9999');
+
 }
 
 // Validação dos campos de Email
@@ -128,3 +126,13 @@ function comparePassword(){
 //    tel.value += "-"
 //    }
 
+
+// Mascara CPF ("." & "-")
+// function cpfValidate(){
+//    var cpf = document.getElementById('CPF');
+//   if (cpf.value.length == 3 || cpf.value.length == 7 ) {
+//       cpf.value += ".";
+//    } else if (cpf.value.length == 11) {
+//        cpf.value += "-";
+//    }   
+//}

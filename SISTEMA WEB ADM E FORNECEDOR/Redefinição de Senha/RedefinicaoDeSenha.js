@@ -40,6 +40,15 @@ function comparePassword(){
     }
 }
 
+function Entrar() {
+    if (campos[0].value == campos[1].value) {
+        window.alert("Senha Redefinida com sucesso!")
+        window.location.href = "https://www.google.com.br";
+    } else {
+        window.alert("Os valores dos campos devem ser iguais! , tente novamente!");
+    }
+ 
+}
 
 ///// function eyeClick (){
     //let inputTypeIsPassword = passwordInput.type = 'password';
