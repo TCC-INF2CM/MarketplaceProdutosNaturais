@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CarrinhoDeCompras.css">
+    <script async src="CarrinhoDeCompras.js"></script>
     <title>Carrinho de Compras</title>
 </head>
 <body>
@@ -36,14 +37,13 @@
               <div class="Prod_Img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/280px-Red_Apple.jpg" alt="Product image" height="250" width="250" > </div>
                <div class="Prod_Name"><h3>Produto nome exemplo</h3>
                 <div class="Prod_Qtd"> <h3>Qtd</h3><div class="qty">
-                  <button>-<i class="bx bx-minus"></i></button>
-                  <span>1</span>
-                  <button>+</button><i class="bx bx-plus"></i></button></div> 
+                  <button class="minus">-<i class="bx bx-minus"></i></button>
+                  <span id="valor">1</span>
+                  <button class="plus">+</button><i class="bx bx-plus"></i></button></div> 
                   
                 <div class="Prof_Preco"><h3>Preço</h3><h2 class="Real_Preco">R$99,50</h2></div>
               </div>
-                
-              </div>
+              <div class="Remove"> <input type="button" onclick="" value="Remover Produto"> </div>              </div>
             
             </section>
     
@@ -53,13 +53,12 @@
               <div class="Prod_Img"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Red_Apple.jpg/280px-Red_Apple.jpg" alt="Product image" height="250" width="250" > </div>
                <div class="Prod_Name"><h3>Produto nome exemplo</h3>
                 <div class="Prod_Qtd"> <h3>Qtd</h3><div class="qty">
-                  <button>-<i class="bx bx-minus"></i></button>
-                  <span>1</span>
-                  <button>+</button><i class="bx bx-plus"></i></button></div> 
-                  
+                  <button class="minus">-<i class="bx bx-minus"></i></button>
+                  <span class="valor">1</span>
+                  <button class="plus">+</button><i class="bx bx-plus"></i></button></div> 
                 <div class="Prof_Preco"><h3>Preço</h3><h2 class="Real_Preco">R$99,50</h2></div>
               </div>
-                
+                <div class="Remove"> <input type="button" onclick="" value="Remover Produto"> </div>
               </div>
             
             </section>

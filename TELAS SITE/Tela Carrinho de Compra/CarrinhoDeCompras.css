@@ -175,12 +175,17 @@ header {
     padding: 0 10px;
     font-size: 20px;
     height: 100%;
+    cursor: pointer;
   }
   
   .qty button:hover {
-    background: #ddd;
+    background: #368f6e;
   }
   
+  .qty button:active {
+    background: #9dddc5;
+  }
+
   .button input{
     margin-left: 40%;
     background-color: #038c5a;
@@ -191,6 +196,33 @@ header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff; 
     margin-bottom: 5%;
+    cursor: pointer;
+  }
+
+  .button input:hover{
+    margin-left: 40%;
+    background-color: #36bb8a;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff; 
+    margin-bottom: 5%;
+    cursor: pointer;
+  }
+
+  .button input:active{
+    margin-left: 40%;
+    background-color: #c7f8e6;
+    height: 50px;
+    width: 200px;
+    border-radius: 10px;
+    font-size:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff; 
+    margin-bottom: 5%;
+    cursor: pointer;
   }
   
   .Prof_Preco{
@@ -240,6 +272,45 @@ header {
     margin-bottom: 30%;
   }
   
+.Remove input{
+  float: left;
+  margin-top: 17%;
+  background-color: #c84648;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+font-size: 16px;}
+
+.Remove input:hover{
+  float: left;
+  margin-top: 17%;
+  background-color: #c46365;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+font-size: 16px;}
+
+.Remove input:active{
+  float: left;
+  margin-top: 17%;
+  background-color: #f1afb0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  border-radius: 15px;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+font-size: 16px;}
+
   .Frete_Info .Free{
     margin-left: 50%;
     color: #038c5a;
