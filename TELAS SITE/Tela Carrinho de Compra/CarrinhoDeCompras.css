@@ -83,48 +83,6 @@ header {
     margin-top: 10%;
   }
   
-  
-  .CheckBox{
-    float: left;
-    margin-top: 10%;
-    margin-right: 3%;
-  }
-  input[type="checkbox"]{
-  appearance: none;
-  -webkit-appearance: none;
-  height: 40px;
-  width: 40px;
-  background-color: #d5d5d5;
-  border-radius: 7px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  }
-  
-  /* Vou usar o site Font Awesome para fazer o confirmado */
-  
-  input[type="checkbox"]::after{
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-    content: "\f00c";
-    font-size: 38px;
-    color: white;
-    display: none;
-  }
-  
-  input[type="checkbox"]:hover{
-    background-color: #a5a5a5;
-  }
-  
-  input[type="checkbox"]:checked{
-    background-color: #5bcd3e;
-  }
-  
-  input[type="checkbox"]:checked::after{
-    display: block;
-  }
-  
   .Prod_Name{
     float: left;
     margin-left: 2%;
@@ -140,52 +98,6 @@ header {
     margin-left: 50%;
   }
   
-  .qty {
-    background: #038c5a;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    padding: 0 0;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    min-width: 100px;
-    border-radius: 10px;
-    overflow: hidden;
-    height: 45px;
-    margin-left: 7%;
-  }
-  
-  .qty span {
-    margin: 0 15px;
-    background: #038c5a;
-  }
-  
-  .qty button { 
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #038c5a;
-    border: 0;
-    padding: 0 10px;
-    font-size: 20px;
-    height: 100%;
-    cursor: pointer;
-  }
-  
-  .qty button:hover {
-    background: #368f6e;
-  }
-  
-  .qty button:active {
-    background: #9dddc5;
-  }
-
   .button input{
     margin-left: 40%;
     background-color: #038c5a;
@@ -225,6 +137,21 @@ header {
     cursor: pointer;
   }
   
+  .Quantil{
+    margin-top: 3%;
+    padding: 10px;
+    border: 1px solid #000000;
+    width: 50px;
+    border-radius: 10px;
+  }
+
+  .QtdProdNumb{
+    font-size: 20px;
+    width: 30px;
+    border: none;
+    text-decoration: none;
+  }
+
   .Prof_Preco{
    display: flex;
    float: left;
