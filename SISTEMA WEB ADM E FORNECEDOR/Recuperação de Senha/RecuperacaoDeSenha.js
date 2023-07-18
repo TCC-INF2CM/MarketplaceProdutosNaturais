@@ -30,6 +30,13 @@ function emailValidate(){
 }
 
 function sendEmail(){
-    window.alert("Email enviado com sucesso");
-    window.location.href = "https://www.spotify.com"
+    if(!emailRegex.test(campos[0].value = ""))
+    {
+        window.alert("Digite um email inválido");   
+
+    } else {
+        window.alert("Email enviado com sucesso");
+        window.location.href = "https://www.google.com.br"
+    }
+    
 }

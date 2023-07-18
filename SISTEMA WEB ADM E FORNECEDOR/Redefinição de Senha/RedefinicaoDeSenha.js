@@ -1,6 +1,16 @@
 const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required'); 
+const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
+
+// REGEX SENHA
+//  (?=.*\d)              // deve conter ao menos um dígito
+//  (?=.*[a-z])           // deve conter ao menos uma letra minúscula
+//  (?=.*[A-Z])           // deve conter ao menos uma letra maiúscula
+//  (?=.*[$*&@#])         // deve conter ao menos um caractere especial
+//  [0-9a-zA-Z$*&@#]{8,}  // deve conter ao menos 8 dos caracteres mencionados
+//  $/
+
 
 form.addEventListener('submit', (event) =>{
     event.preventDefault();
@@ -19,8 +29,10 @@ function removeError (index) {
   
 }
 
+
+// SENHAS TERAO QUE TER 1 NUMERO, 1 CARATER ESPECIAL E 1 LETRA MAISUCULA
 function mainPasswordValidate(){
-    if(campos[0].value.length < 8)
+    if(!senhaRegex.test(campos[0].value))
     {
         setError(0);
     }
@@ -44,6 +56,7 @@ function Entrar() {
     if (campos[0].value == campos[1].value) {
         window.alert("Senha Redefinida com sucesso!")
         window.location.href = "https://www.google.com.br";
+
     } else {
         window.alert("Os valores dos campos devem ser iguais! , tente novamente!");
     }
