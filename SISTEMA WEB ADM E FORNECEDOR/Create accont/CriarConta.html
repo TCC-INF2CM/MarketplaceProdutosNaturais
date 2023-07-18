@@ -37,7 +37,7 @@
               
                 <!--DATA DE NASCIMENTO (CAMPO 3)-->    
                     <label for="Data">Insira sua data de Nascimento</label>
-                    <input type="date" name="dtNsc" id="datanasc" class="input required" placeholder="Digite seu aniversário" oninput="datanascValidate()">
+                    <input type="date" name="dtNsc" id="datanasc" class="input required" maxlength="10"placeholder="Digite sua data de nascimento" oninput="datanascValidate()">
 
                 <!--EMAIL (CAMPO 4)-->
                     <label for="Email">Email</label>
@@ -47,20 +47,19 @@
                     
                  <!--(CAMPO 5)--> 
                     <label for="Email2">Confirme seu email</label>  
-                    <input type="email" name="email" id="email2" class="input required" placeholder="Confirme o email" oninput="compareEmail()">
+                    <input type="email" name="email" id="email2" class="input required" placeholder="Confirme o email" oninput="compareEmail()"> 
                 <!--EMAIL-->
 
                 <!--SENHA (CAMPO 6)-->
                     <label for="Senha">Crie uma senha</label>
                     <input type="password" name="password" id="password" class="input required" placeholder="Crie uma senha" oninput="mainPasswordValidate()">
+              
                
                 <!--(CAMPO 7)-->    
                     <label for="Senha2">Confirme sua senha</label>
                     <input type="password" name="password2" id="password2" class="input required" placeholder="Confirme sua senha" oninput="comparePassword()">
-
                 <!--SENHA-->
-
-                            <!-- <input type="button" id="botão" onclick="enviar()" value="Confirmar"> -->
+          
                <button type="submit" onclick="">Confirmar</button>
             </form>
 
@@ -79,3 +78,6 @@
 </body>
 
 </html>
+
+
+

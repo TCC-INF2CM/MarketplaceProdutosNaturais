@@ -1,19 +1,28 @@
 const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const emailRegex = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9]{2,4})+$/;
-// const nomeRegex = /[^a-zà-ú]/gi;
+const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
 // const spans = document.querySelectorAll('.span-required');
 
-form.addEventListener("submit", (event) =>{
+// REGEX SENHA
+//  (?=.*\d)              // deve conter ao menos um dígito
+//  (?=.*[a-z])           // deve conter ao menos uma letra minúscula
+//  (?=.*[A-Z])           // deve conter ao menos uma letra maiúscula
+//  (?=.*[$*&@#])         // deve conter ao menos um caractere especial
+//  [0-9a-zA-Z$*&@#]{8,}  // deve conter ao menos 8 dos caracteres mencionados
+//  $/
+
+form.addEventListener('submit', (event) =>{
     event.preventDefault();
-     nomeValidate();
-     cpfValidate();
-     telefoneValidate();
-     datanascValidate();
-     emailValidate(); 
-     compareEmail();  
-     mainPasswordValidate();
-     comparePassword();
+    nomeValidate();
+    cpfValidate();
+    telefoneValidate();
+    datanascValidate();
+    emailValidate();
+    compareEmail();
+    mainPasswordValidate();
+    comparePassword();
+
 }  )
 
 
@@ -37,7 +46,6 @@ function nomeValidate(){
         removeError(0);
     }
 }
-
 
 // Validação CPF (Mascara) 
 function cpfValidate(){
@@ -74,7 +82,7 @@ function compareEmail(){
 
 // Validação dos campos de Senha
 function mainPasswordValidate(){
-    if(campos[6].value.length < 8)
+    if(!senhaRegex.test(campos[6].value))
     {
         setError(6);
     }
