@@ -39,7 +39,9 @@ section p{
   .span-required{
     display: none;
     color: red;
-    margin-left: -40%;
+    font-size: 14px;
+    margin-left: -47%;
+    margin-top: -8px;
   }
   button {
     display: block;

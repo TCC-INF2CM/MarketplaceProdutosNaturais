@@ -248,10 +248,11 @@ font-size: 16px;}
   }
   
 .arvore{
-    margin-top: -160px;
+    margin-top: -150px;
     float: right;
     margin-right: 30px;
     opacity: 0.55;
+    display: block;
   }
   
 .arvore img{

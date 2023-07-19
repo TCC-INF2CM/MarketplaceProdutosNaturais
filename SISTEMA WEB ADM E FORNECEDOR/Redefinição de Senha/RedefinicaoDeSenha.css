@@ -36,9 +36,11 @@ input {
 }
 
 .span-required{
+  font-size: 13px;
   display: none;
   color: red;
-  margin-left: -30%;
+  margin-top:  -8px;
+  margin-left: -35%;
 }
 
 #eye-icon{

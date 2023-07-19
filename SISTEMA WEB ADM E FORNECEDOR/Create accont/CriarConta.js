@@ -12,6 +12,8 @@ const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]
 //  [0-9a-zA-Z$*&@#]{8,}  // deve conter ao menos 8 dos caracteres mencionados
 //  $/
 
+
+// Verificar se os campos foram preenchidos 
 form.addEventListener('submit', (event) =>{
     event.preventDefault();
     nomeValidate();
@@ -22,9 +24,7 @@ form.addEventListener('submit', (event) =>{
     compareEmail();
     mainPasswordValidate();
     comparePassword();
-
 }  )
-
 
 // Mostrar erro (borda dos inputs em cor vermelha)
 function setError(index) {
@@ -32,6 +32,7 @@ function setError(index) {
     spans[index].style.display = 'block';
 }
 
+// Remover erro
 function removeError (index) {
     campos[index].style.border ='';
     spans[index].style.display = 'none';
@@ -39,7 +40,7 @@ function removeError (index) {
 
 //Validação do campo nome (caracteres)
 function nomeValidate(){
-    if(campos[0].value.length < 3)
+    if(campos[0].value.length < 10)
     {
         setError(0);
     } else{
@@ -56,7 +57,6 @@ function cpfValidate(){
 // Validação Telefone (Mascara)
 function telefoneValidate(){
     $('#telefone').mask('(99) 99999-9999');
-
 }
 
 // Validação dos campos de Email
@@ -69,6 +69,7 @@ function emailValidate(){
     }
 }
 
+// Comparação dos Email
 function compareEmail(){
     if(campos[5].value == campos[4].value && campos[4])
     {
@@ -78,7 +79,6 @@ function compareEmail(){
         setError(5);
     }
 }
-
 
 // Validação dos campos de Senha
 function mainPasswordValidate(){
@@ -92,6 +92,7 @@ function mainPasswordValidate(){
     }
 }
 
+// Comparação de senhas
 function comparePassword(){
     if(campos[7].value == campos[6].value && campos[6].value.length >=8)
     {

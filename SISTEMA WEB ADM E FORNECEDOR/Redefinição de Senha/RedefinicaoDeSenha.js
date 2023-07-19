@@ -11,22 +11,23 @@ const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]
 //  [0-9a-zA-Z$*&@#]{8,}  // deve conter ao menos 8 dos caracteres mencionados
 //  $/
 
-
+// Verificar se os campos foram preenchidos 
 form.addEventListener('submit', (event) =>{
     event.preventDefault();
     mainPasswordValidate();
     comparePassword();
 })
 
+// Mostrar erro (borda dos inputs em cor vermelha)
 function setError(index) {
     campos[index].style.border ='2px solid #e63636';
     spans[index].style.display = 'block';
 }
 
+// Remover erro
 function removeError (index) {
     campos[index].style.border ='';
     spans[index].style.display = 'none';
-  
 }
 
 
@@ -42,6 +43,7 @@ function mainPasswordValidate(){
     }
 }
 
+// Comparação de senhas
 function comparePassword(){
     if(campos[0].value == campos[1].value && campos[1].value.length >=8)
     {
@@ -52,13 +54,14 @@ function comparePassword(){
     }
 }
 
+
 function Entrar() {
     if (campos[0].value == campos[1].value) {
         window.alert("Senha Redefinida com sucesso!")
         window.location.href = "https://www.google.com.br";
 
     } else {
-        window.alert("Os valores dos campos devem ser iguais! , tente novamente!");
+        window.alert("As senhas devem ser iguais, tente novamente!");
     }
  
 }
