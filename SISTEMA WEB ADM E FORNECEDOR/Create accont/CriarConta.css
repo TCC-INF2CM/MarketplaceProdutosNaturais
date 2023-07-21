@@ -44,15 +44,8 @@ input{
 
 }
 
-.inf.success{
-  border: 3px solid #4eca64;
-}
-.inf.error{
-  border: 3px solid #db5a5a;
-}
-
 .span-required{
-  font-size: 10px;
+  font-size: 0px;
   display: none;
   color: red;
 }
