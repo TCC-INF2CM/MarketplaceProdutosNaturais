@@ -30,9 +30,9 @@ function emailValidate(){
 }
 
 function sendEmail(){
-    if(!emailRegex.test(campos[0].value = ""))
+    if(emailRegex.value = "")
     {
-        window.alert("Digite um email inválido");   
+        window.alert("Digite um email válido");   
 
     } else {
         window.alert("Email enviado com sucesso");
