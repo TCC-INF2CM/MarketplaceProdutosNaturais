@@ -14,16 +14,15 @@
         <p>Redefine sua senha inserindo suas nova senha</p>
       <form id="form"> <!--Inicio do Formulario-->
 
-        <input type="password" id="password" class="input required" placeholder="Digite sua nova senha" oninput="mainPasswordValidate()">
+        <input type="password" id="password" placeholder="Digite sua nova senha" oninput="mainPasswordValidate()" class="senha" required>
         <span class="span-required">Senha deve conter 8 caracteres</span>
         <br>
 
-         <input type="password" id="password-two" class="inpuy required" placeholder="Repita sua senha" oninput="comparePassword()">
+         <input type="password" id="password-two" placeholder="Repita sua senha" oninput="comparePassword()" class="senha" required>
          <span class="span-required">Senhas devem ser compativeis</span>
         <br>
 
        <button type="submit" onclick="Entrar()">Atualizar Senha</button> <!--Botao-->
-        
       </form> <!--Fim do Formulario-->
 
     </section>

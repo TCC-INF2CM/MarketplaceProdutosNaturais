@@ -34,7 +34,7 @@ function setError(index) {
 
 // Remover erro
 function removeError (index) {
-    campos[index].style.border ='';
+    campos[index].style.border ='2px solid #228B22';
     spans[index].style.display = 'none';
 }
 
