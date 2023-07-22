@@ -18,7 +18,7 @@ function setError(index) {
 
 // Remover erro
 function removeError (index) {
-    campos[index].style.border ='2px solid #15ff009f';
+    campos[index].style.border ='2px solid #228B22';
     spans[index].style.display = 'none';
   
 }
@@ -34,14 +34,14 @@ function emailValidate(){
 }
 
 // FINALIZAR A FUNÇÃO 
-// function sendEmail(){
-//    if(!emailRegex.test(campos[0].value = ""))
-//    {
-//        window.alert("Digite um email válido");   
-//        window.alert("Digite um email inválido");   
-//
-//    } else {
-//        window.alert("Email enviado com sucesso");
-//        window.location.href = "https://www.google.com.br"
-//    }
-//    }
+ function sendEmail(){
+    if(!emailRegex.test(campos[0].value = ""))
+    {
+        window.alert("Digite um email válido");    
+
+    } else {
+        window.alert("Email enviado com sucesso");
+        window.location.href = "https://www.google.com.br"
+    }
+    
+}
