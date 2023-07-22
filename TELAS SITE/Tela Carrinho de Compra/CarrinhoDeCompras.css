@@ -1,18 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+  
 
+    
+    /*rgb(212, 225, 212);*/
 }
 
 header {
-    background-color: #639379;
+    background-color: #95aaa2;
     width: 100%;
     height: 100px;
     display: flex;
 
+}
+header #arvorelogo{
+  height: 100px;
+  width: 100px;
+  margin-left: 10%;
+}
+header #carrinho{
+  height: 50px;
+  width: 50px;
+  margin-left: 65%;
+  margin-top: 1.5rem;
+}
+header h1{
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 2.1rem;
+}
+.cupons h1{
+  font-size: 20px;
+  margin-left: 45%;
+}
+.cupons input{
+  width: 260px;
+  height: 35px;
+  margin-left:45%;
+  padding: 15px;
+  background-color: #ffffff;
 }
 
 .logo {
@@ -21,6 +50,7 @@ header {
     display: flex;
 
 }
+
 
 .logo img{
     height: 70px;
@@ -99,26 +129,25 @@ header {
   }
   
   .button input{
-    margin-left: 40%;
+    margin-left: 80%;
     background-color: #038c5a;
     height: 50px;
     width: 200px;
     border-radius: 10px;
-    font-size:20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:18px;
+    margin-top: 50px;
     color: #ffffff; 
     margin-bottom: 5%;
     cursor: pointer;
   }
 
   .button input:hover{
-    margin-left: 40%;
+    margin-left: 80%;
     background-color: #36bb8a;
     height: 50px;
     width: 200px;
     border-radius: 10px;
     font-size:20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff; 
     margin-bottom: 5%;
     cursor: pointer;
@@ -143,6 +172,7 @@ header {
     border: 1px solid #000000;
     width: 50px;
     border-radius: 10px;
+    background-color: #ffffff;
   }
 
   .QtdProdNumb{
@@ -150,6 +180,7 @@ header {
     width: 30px;
     border: none;
     text-decoration: none;
+    background-color: #ffffff;
   }
 
   .Prof_Preco{
@@ -162,12 +193,7 @@ header {
     margin-left: 40%;
   }
   
-  .divisor{
-    float: left;
-    margin-top: 3%;
-    border-left: 3px solid black;
-    height:700px;
-  }
+  
   
   .Sec_Cont{
     display: block;
@@ -178,20 +204,21 @@ header {
   }
   
   .Second_Tit{
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 45%;
   }
   
-  .Prod_Slc{
-    margin-bottom: 5%;
-  }
   
   .Total_Price{
-    display: flex;
+  
     margin-bottom: 5%;
+    margin-left: 50%;
   }
   .Total_Price .PriceFaice{
     margin-left: 50%;
-    display: inline-block;
+    margin-top: -25px;
+    
+    
   }
   
   .Frete_Info{
@@ -243,12 +270,10 @@ font-size: 16px;}
     color: #038c5a;
   }
   
-  .divisor{
-    margin-left:15%;
-  }
+  
   
 .arvore{
-    margin-top: -150px;
+    margin-top: 550px;
     float: right;
     margin-right: 30px;
     opacity: 0.55;
@@ -259,5 +284,17 @@ font-size: 16px;}
     height:16rem;
     width: 15rem;
     float: inline-end;
+  }
+
+  .divisor{
+    
+    margin-top: 3%;
+    border-left: 3px solid black;
+    height:700px;
+    margin-right: 1500px;
+    position: absolute;
+  }
+  .divisor{
+    margin-left:52%;
   }
 

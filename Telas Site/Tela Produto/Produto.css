@@ -1,10 +1,12 @@
 body {
   background-color: #7DA88E;
-  margin:0; padding:0;
+  margin:0; 
+  padding:0;
  box-sizing: border-box;
- outline: none; border:none;
+ outline: none; 
+ border:none;
  text-decoration: none;
- transition: all 0.9s linear;
+ 
  text-transform: capitalize;
   
 }
@@ -376,25 +378,26 @@ input[type="text"] {
 }
 
 .description{
-  margin: 10%;    
+  margin: 75%;  
+  margin-right: -25rem; 
 }
 .description h1{
-  font-size: 30px;
-  margin-top: 5%;
-  margin-left: 55%;
+  font-size: 25px;
+  margin-bottom: 2rem;
+  margin-left: -45rem;
 }
 
 .text{
-   background-color: #BAD9CC;
-   margin-top: 10px;
+   background-color: #d4d4d4;
+   margin-top: 10rem;
    border-radius: 20px;
    height:100%;
    width: 100%;
-   margin-left: 20%;
+   margin-right: 45rem;
 }
 
 .text h2{
-  margin-left: 20px;
+  margin-right: 7rem;
   margin-top: 5px;
   font-size: 20px;
 }
