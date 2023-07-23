@@ -2,15 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  
-
-    
     /*rgb(212, 225, 212);*/
 }
 
 header {
-    background-color: #95aaa2;
+    background-color: #7DA88E;
     width: 100%;
     height: 100px;
     display: flex;
@@ -192,7 +188,9 @@ header h1{
   .Prof_Preco .Real_Preco{
     margin-left: 40%;
   }
-  
+  .Car_info{
+    position: fixed;
+  }
   
   
   .Sec_Cont{
