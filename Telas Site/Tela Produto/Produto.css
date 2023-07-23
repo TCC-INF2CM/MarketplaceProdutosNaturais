@@ -321,49 +321,6 @@ input[type="text"] {
   margin-top: 50px;
 }
 
-.qty {
-  background: #038c5a;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 0 0;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 60px;
-  border-radius: 10px;
-  overflow: hidden;
-  height: 45px;
-  margin-left: 7%;
-}
-
-
-.qty span {
-  margin: 0 15px;
-  background: #038c5a;
-}
-
-.qty button {
-  
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background: #038c5a;
-  border: 0;
-  padding: 0 10px;
-  font-size: 20px;
-  height: 100%;
-}
-
-.qty button:hover {
-  background: #ddd;
-}
-
 .button input{
   margin-left: 45%;
   background-color: #038c5a;
