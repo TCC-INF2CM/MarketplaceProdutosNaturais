@@ -1,5 +1,5 @@
-const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
+const form = document.getElementById('from');
+const campos = document.querySelectorAll('.email');
 const spans = document.querySelectorAll('.span-required'); 
 const emailRegex = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9]{2,4})+$/; 
 

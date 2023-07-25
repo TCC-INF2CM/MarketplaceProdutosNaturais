@@ -64,7 +64,7 @@ function Entrar() {
        window.location.href = "#";
 
     } else {
-        window.alert("As senhas devem ser iguais, tente novamente!");
+        window.alert("As senhas devem ser iguais e com no minimo 8 caracteres!");
     }
  
 }

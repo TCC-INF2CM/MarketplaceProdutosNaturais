@@ -51,6 +51,7 @@ function nomeValidate(){
 // Validação CPF (Mascara) 
 function cpfValidate(){
     $('#CPF').mask('999.999.999-99')
+    
 }
 
 
