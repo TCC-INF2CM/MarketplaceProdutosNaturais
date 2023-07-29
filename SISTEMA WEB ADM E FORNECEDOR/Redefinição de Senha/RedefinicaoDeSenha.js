@@ -59,7 +59,7 @@ function comparePassword(){
 // Verificaçãp dos campos senhas para enviar email
 function Entrar() {
 
-    if (campos[0].value === campos[1].value && campos[0 && 1].value.length > 8 ) {
+    if (campos[0].value === campos[1].value && campos[0 && 1].value.length >= 8 && !senhaRegex.test(campos[0 && 1])) {
        window.alert("Senha Redefinida com sucesso!")
        window.location.href = "#";
 
@@ -68,5 +68,5 @@ function Entrar() {
     }
  
 }
-
-    
+// Verificar se ambos campos foram preenchidps de acordo com o Regex de senha 
+// ainda é possivel atualizar a senha se o campo 0 nao contem os caracteres necessarios

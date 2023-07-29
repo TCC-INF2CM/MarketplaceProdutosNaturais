@@ -1,4 +1,4 @@
-const form = document.getElementById('form');
+   const form = document.getElementById('form');
 const campos = document.querySelectorAll('.required');
 const emailRegex = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9]{2,4})+$/;
 const senhaRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[$*&@#])[0-9a-zA-Z$*&@#]{8,}$/;
