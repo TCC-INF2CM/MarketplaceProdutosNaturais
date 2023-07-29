@@ -103,56 +103,29 @@ header {
 
 }
 
-.nome h1{
-    margin-top: 15%;
-    margin-left: 20px;
-   
+.infClick {
+  display: flex;
+  position: absolute;
+  right: 250px;
+  top: 150px;
 }
 
-.container{
-    background-color: #d2d2db;
-    margin-left: 5%;
-    margin-top: 10%;
-    height: 39%;
-    width:30%;
-   
-    display: flex;
-    flex-direction: column;
+#pesquisaP {
+  height: 30px;
+  width: 120px;
+  font-size: 12px bold;
+  margin-top: 80px;
+  color: black;
+  margin-left: 30px;
 }
 
-.container-items{
-    display: inline-flex;
+#barraP {
+  width: 250px;
+  height: 30px;
+  margin-top: 80px;
 }
 
-.container-items img{
-    height: 15px;
-    width: 15px;
-    margin: 30px;
+.api {
+   margin-top: 200px;
+   margin-left: 220px;
 }
-
-.container-items h4{
-  margin-top: 3%;
-  margin-left: 10%;
-}
-
-
-
-.funcionarios{
-    display: inline-flex;
-    background-color: #F2F2F2;
-}
-
-.funcionarios img{
-    height: 15px;
-    width: 15px;
-    margin: 30px;
-}
-
-.funcionarios h4{
-    margin-top: 3%;
-    margin-left: 10%;
-
-}
-
-#ID{}
-
