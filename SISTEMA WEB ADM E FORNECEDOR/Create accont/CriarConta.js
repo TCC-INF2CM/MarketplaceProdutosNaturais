@@ -49,7 +49,7 @@ function nomeValidate(){
     }
 }
 
-// Validação CPF (Mascara) 
+// Validação CPF
 function cpfValidate(){
 //   $('#CPF').mask('999.999.999-99');
    $(document).ready(function(){
