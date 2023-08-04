@@ -1,5 +1,6 @@
 body {
-  background-color: #7DA88E;
+  background-color: #bad9cc;
+
   margin:0; padding:0;
  box-sizing: border-box;
  outline: none; border:none;
@@ -450,7 +451,7 @@ margin-top: 12%;
 
 .buttons{
 margin-top: 34%;
-margin-left: 75%;
+margin-left: 83%;
 }
 
 .button{
