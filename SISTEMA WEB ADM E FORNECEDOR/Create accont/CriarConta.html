@@ -24,43 +24,42 @@
 
                 <!--NOME (CAMPO 0)--> 
                     <label for="Nome">Nome</label>
-                    <input type="text" name="name" id="Nome" class="input required" placeholder="Nome Completo" oninput="nomeValidate()">
+                    <input type="text" name="name" id="Nome" class="input required" placeholder="Nome Completo" oninput="nomeValidate()" required>
 
                 <!--CPF (CAMPO 1)-->
                     <label for="CPF">Insira seu CPF</label>
-                    <input type="text" autocomplete="off" maxlength="14" name="CPF" id="CPF" class="input required" placeholder="000.000.000-00" oninput="cpfValidate()">
+                    <input type="text" autocomplete="off" maxlength="11" name="CPF" id="CPF" class="input required" placeholder="000.000.000-00" onkeyup="cpfValidate()" required>
 
-            
                 <!--TELEFONE (CAMPO 2)-->    
                     <label for="Telefone">Telefone</label>
-                    <input type="text" name="tel" id="telefone" class="input required"placeholder="(00) 00000-0000"  oninput="telefoneValidate()">
+                    <input type="text" name="tel" id="telefone" class="input required"placeholder="(00) 00000-0000"  oninput="telefoneValidate()" required>
               
                 <!--DATA DE NASCIMENTO (CAMPO 3)-->    
                     <label for="Data">Insira sua data de Nascimento</label>
-                    <input type="date" name="dtNsc" id="datanasc" class="input required" maxlength="10"placeholder="Digite sua data de nascimento" oninput="datanascValidate()">
+                    <input type="date" name="dtNsc" id="datanasc" class="input required" maxlength="10"placeholder="Digite sua data de nascimento" oninput="datanascValidate()" required>
 
                 <!--EMAIL (CAMPO 4)-->
                     <label for="Email">Email</label>
                     
-                    <input type="email" name="email" id="email" class="input required" placeholder="Insira o seu Email" onkeyup ="emailValidate()">
+                    <input type="email" name="email" id="email" class="input required" placeholder="Insira o seu Email" onkeyup ="emailValidate()" required>
                     
                     
                  <!--(CAMPO 5)--> 
                     <label for="Email2">Confirme seu email</label>  
-                    <input type="email" name="email" id="email2" class="input required" placeholder="Confirme o email" oninput="compareEmail()"> 
+                    <input type="email" name="email" id="email2" class="input required" placeholder="Confirme o email" oninput="compareEmail()" required> 
                 <!--EMAIL-->
 
                 <!--SENHA (CAMPO 6)-->
                     <label for="Senha">Crie uma senha</label>
-                    <input type="password" name="password" id="password" class="input required" placeholder="Crie uma senha" oninput="mainPasswordValidate()">
+                    <input type="password" name="password" id="password" class="input required" placeholder="Crie uma senha" oninput="mainPasswordValidate()" required>
               
                
                 <!--(CAMPO 7)-->    
                     <label for="Senha2">Confirme sua senha</label>
-                    <input type="password" name="password2" id="password2" class="input required" placeholder="Confirme sua senha" oninput="comparePassword()">
+                    <input type="password" name="password2" id="password2" class="input required" placeholder="Confirme sua senha" oninput="comparePassword()" required>
                 <!--SENHA-->
           
-               <button type="submit" onclick="">Confirmar</button>
+               <button type="submit" onclick="EnviarCadastro()">Confirmar</button>
             </form>
 
         </div>
