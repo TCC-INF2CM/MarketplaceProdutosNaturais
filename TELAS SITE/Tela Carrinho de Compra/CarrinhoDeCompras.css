@@ -110,6 +110,7 @@ header h1{
   
   .Car_Prod{
     display: flex;
+    position: sticky;
     margin-top: 10%;
   }
   
@@ -128,6 +129,10 @@ header h1{
     margin-left: 50%;
   }
   
+  .button{
+    margin-top: 20%;
+  }
+
   .button input{
     margin-left: 80%;
     background-color: #038c5a;
@@ -135,9 +140,9 @@ header h1{
     width: 200px;
     border-radius: 10px;
     font-size:18px;
-    margin-top: 50px;
+    margin-top: 20px;
     color: #ffffff; 
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     cursor: pointer;
   }
 
@@ -149,12 +154,10 @@ header h1{
     border-radius: 10px;
     font-size:20px;
     color: #ffffff; 
-    margin-bottom: 5%;
     cursor: pointer;
   }
 
   .button input:active{
-    margin-left: 40%;
     background-color: #c7f8e6;
     height: 50px;
     width: 200px;
@@ -162,7 +165,6 @@ header h1{
     font-size:20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #ffffff; 
-    margin-bottom: 5%;
     cursor: pointer;
   }
   
@@ -196,11 +198,11 @@ header h1{
   
   
   .Sec_Cont{
-    display: block;
-    margin-left: 20px;
+    position: sticky;
+    display: flex;
+    margin-left: 40%;
     width: 40%;
-    float: left;
-    margin-top: 3%;
+    margin-top: -30%;
   }
   
   .Second_Tit{
@@ -214,13 +216,7 @@ header h1{
     margin-bottom: 5%;
     margin-left: 50%;
   }
-  .Total_Price .PriceFaice{
-    margin-left: 50%;
-    margin-top: -25px;
-    
-    
-  }
-  
+
   .Frete_Info{
     display: flex;
     margin-bottom: 30%;
@@ -273,11 +269,11 @@ font-size: 16px;}
   
   
 .arvore{
-    margin-top: 550px;
-    float: right;
-    margin-right: 30px;
+
+    margin-bottom: 0px; 
+    position: sticky;
+    margin-left: 80%;
     opacity: 0.55;
-    display: block;
   }
   
 .arvore img{
@@ -287,14 +283,12 @@ font-size: 16px;}
   }
 
   .divisor{
-    
+    position: sticky;
+    margin-left: 45%;
+    margin-right: 55%;
     margin-top: 3%;
     border-left: 3px solid black;
     height:700px;
-    margin-right: 1500px;
-    position: absolute;
+    
   }
-  .divisor{
-    margin-left:52%;
-  }
-
+  
