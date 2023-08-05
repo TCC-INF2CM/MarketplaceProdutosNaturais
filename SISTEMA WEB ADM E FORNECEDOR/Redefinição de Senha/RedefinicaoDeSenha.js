@@ -59,14 +59,11 @@ function comparePassword(){
 // Verificaçãp dos campos senhas para enviar email
 function Entrar() {
 
-    if (campos[0].value === campos[1].value && campos[0 && 1].value.length > 8 ) {
+    if (senhaRegex.test(campos[0 && 1].value) && campos[0 && 1].value.length >= 8 && campos[0].value === campos[1].value) {
        window.alert("Senha Redefinida com sucesso!")
        window.location.href = "#";
 
     } else {
-        window.alert("As senhas devem ser iguais, tente novamente!");
+        window.alert("As senhas devem ser iguais e com no minimo 8 caracteres!");
     }
- 
 }
-
-    

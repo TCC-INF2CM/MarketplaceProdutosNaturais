@@ -1,5 +1,5 @@
 const form = document.getElementById('form');
-const campos = document.querySelectorAll('.required');
+const campos = document.querySelectorAll('.email');
 const spans = document.querySelectorAll('.span-required'); 
 const emailRegex = /^([a-z0-9_\.\-])+\@(([a-z0-9\-])+\.)+([a-z0-9]{2,4})+$/; 
 
@@ -28,20 +28,22 @@ function emailValidate(){
     if(!emailRegex.test(campos[0].value))
     {
         setError(0);
-    } else {
+    }
+    else {
         removeError(0);
     }
 }
 
 // FINALIZAR A FUNÇÃO 
  function sendEmail(){
-    if(!emailRegex.test(campos[0].value = ""))
+    if(!emailRegex.test(campos[0].value))
     {
-        window.alert("Digite um email válido");    
-
+        window.alert("Digite um email válido");
+           
     } else {
         window.alert("Email enviado com sucesso");
-        window.location.href = "https://www.google.com.br"
+        window.location.href = "#"
+        
     }
     
 }

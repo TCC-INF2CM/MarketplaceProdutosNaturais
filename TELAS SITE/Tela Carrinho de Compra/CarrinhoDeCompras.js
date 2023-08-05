@@ -4,7 +4,6 @@ if (document.readyState == "loading") {
     ready()
 }
 
-var totalAmount = "0,00"
 
 function ready(){
     const removeProductButtons = document.getElementsByClassName("Remove")
@@ -29,16 +28,13 @@ function removeProduct(event){
 }
 
 function updateTotal() {
-totalAmount = 0
+let totalAmount = 0
 const cartProduct = document.getElementsByClassName("Car_Prod")
 for (var i = 0; i < cartProduct.length; i++) {
-    //console.log(cartProduct[i])
     const productPrice = cartProduct[i].getElementsByClassName("Real_Preco")[0].innerText.replace("R$", "").replace(",",".")
-    console.log(productPrice)
     const productQuantity = cartProduct[i].getElementsByClassName("QtdProdNumb")[0].value
-    console.log(productQuantity)
 
-    totalAmount += + productPrice * productQuantity
+    totalAmount += productPrice * productQuantity
 }
 totalAmount = totalAmount.toFixed(2)
 totalAmount = totalAmount.replace(".",",")
