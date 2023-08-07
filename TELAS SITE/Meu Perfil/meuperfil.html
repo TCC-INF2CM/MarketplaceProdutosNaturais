@@ -5,85 +5,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="MeuPerfil.css">
+    <link rel="stylesheet" href="meuperfil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/img/arvorelogo.png" type="image/png">
     <title>Meu Perfil</title>
   </head>
+  <style>
+    body{
+      background-color: #bad9cc;
+    }
+  </style>
   
   <body>
-    <div class="head-inicio"></div>
-  
-  
-  <div class="container">
-      <a href="/TELAS SITE/Tela Home/Home.html"><img src="/img/arvorelogo1.png" id="logo-home">
-    <p>Life Tree</p>
-  </a>
+    <div class="head"></div>
 
-    <div class="cliente-acess">
-      <div class="container-cliente">
-        <div class="menu-bar2">
-          <img src="/img/Adm-Icon.png" id="logo-cliente">
-          <ul>
-            <li><a href="#">Entrar</a>
-                <div class="dropdown-menu-cliente">
-                    <ul>
-                      <li><a href="#">Login e Cadastro</a></li>
-                      <li><a href="#">Meus pedidos</a></li>
-                      <li><a href="#">Sair</a></li>
-                    </ul>
-                  </div>
-            </li>
-          </ul>
+    <div class="container">
+        <a href="#"><img src="/arvorelogo.png" id="logo-home"></a>
+      <p>Life Tree</p>
+  
+      <div class="cliente-acess">
+        <div class="container-cliente">
+          <div class="menu-bar2">
+            <img src="/adm icon.png" id="logo-cliente">
+            <ul>
+              <li><a href="#">Entrar</a>
+                  <div class="dropdown-menu-cliente">
+                      <ul>
+                        <li><a href="#">Login e Cadastro</a></li>
+                        <li><a href="#">Meus pedidos</a></li>
+                        <li><a href="#">Sair</a></li>
+                      </ul>
+                    </div>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-      </div>    
-  </div>
-
-  
-
-
-    <div class="barra-pesquisa">
-    <form>
-      <input type="text" id="barra" placeholder="O que você está procurando?">
-    </form>
-  </div>
-
-  <div class="container-tds-dep">
-    <div class="menu-bar">
-      <ul>
-        <li><a href="#">Todos os Departamentos <i class="fas fa-caret-down"></i></a>
-            <div class="dropdown-menu">
-                <ul>
-                  <li><a href="#">Chá e Infusões</a></li>
-                  <li><a href="#">Vitaminas e Suplementos</a></li>
-                  <li><a href="#">Mercearia e Empório</a></li>
-                  <li><a href="#">Promoções</a></li>
-                  <li><a href="#">Bem-estar e Beleza</a></li>
-                </ul>
-              </div>
-        </li>
-      </ul>
+        
+          
+        </div>
+     
     </div>
-  </div>
-
+  
+      <form>
+        <input type="text" id="barra" placeholder="O que você está procurando?">
+        
+      </form>
+    </div>
+  
+    <div class="container-tds-dep">
+      <div class="menu-bar">
+        <ul>
+          <li><a href="#">Todos os Departamentos <i class="fas fa-caret-down"></i></a>
+              <div class="dropdown-menu">
+                  <ul>
+                    <li><a href="#">Chá e Infusões</a></li>
+                    <li><a href="#">Vitaminas e Suplementos</a></li>
+                    <li><a href="#">Mercearia e Empório</a></li>
+                    <li><a href="#">Promoções</a></li>
+                    <li><a href="#">Bem-estar e Beleza</a></li>
+                  </ul>
+               </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
   <div class="content">
     
     <div class="square">
-     <div class="inSquare">
-      <div class="img"></div>
-      <div class="tetux"><h3>Nome</h3></div>
+      <h3>Nome</h3>
            <div class="divisor"></div>
-             <div class="prefius">
-              
-              <a href="#" id="meuperfil"> <img src="/img/Adm-Icon.png">MeuPerfil</a></div>
-             <div class="divisor"></div>
-     </div>
+           <div class="link">
+             <a href="#" id="meuperfil"> <img src="#">Meu perfil</a>
+             <br>
+             <br>
+             <a href="#" id="redefinir_senha"> <img src="#">Redefinir senha</a>
+            </div>
+     
     </div>
  
     <div class="info-1">
@@ -94,22 +96,24 @@
         <input type="text" name="Nome" id="Nome" placeholder="Fulano de Tal">
         <p>Telefone</p>
         <input type="text" name="number" id="number" placeholder="11 99999-9999">
-        
     </div>
 
     <div class="info-2">
-
         <p>E-mail</p>
         <input type="text" name="email" id="email" placeholder="FulanodeTal@gmail.com">
-         
-        <p>Senha</p>
-        <input type="password" name="password" id="password" placeholder="**********" >
     </div>
 </div>
+
+<div class="buttons">
+  <input class="button" type="submit" value="Salvar">
+</div>
+
     <div class="">
-  <img src="/img/arvorelogo1.png" alt="Imagem" id="imgfundo">
+  <img src="/arvorelogo.png" alt="Imagem" class="imgfundo">
 
 </div>
+
+
     
 </body>
 
@@ -126,10 +130,8 @@
 
   <div class="box">
     <h1>Fale Conosco</h1>
-    
      <p>Email para contato: sac@lifetree.com.br</p>
      <p>Whatsapp: (11) 999999999</p>
-     
   </div>
 
   <div class="box">
@@ -137,7 +139,7 @@
     <p>Nós equipe Life Tree estamos no mercado em busca da facilidade na escolha de produtos naturais de sua preferencia com o maior cuidado e desejo de facilitar para você</p>
   </div>
 
-
+  <img src="/img/arvorelogo.png" alt="" srcset="">
   
 
 </footer>
