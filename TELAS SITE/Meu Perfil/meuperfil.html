@@ -5,13 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="meuperfil.css">
+    <link rel="stylesheet" href="MeuPerfil.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <title>Meu Perfil</title>
   </head>
   <style>
@@ -24,13 +26,13 @@
     <div class="head"></div>
 
     <div class="container">
-        <a href="#"><img src="/arvorelogo.png" id="logo-home"></a>
+        <a href="#"><img src="/img/arvorelogo.png" id="logo-home"></a>
       <p>Life Tree</p>
   
       <div class="cliente-acess">
         <div class="container-cliente">
           <div class="menu-bar2">
-            <img src="/adm icon.png" id="logo-cliente">
+            <img src="/img/Adm-Icon.png" id="logo-cliente">
             <ul>
               <li><a href="#">Entrar</a>
                   <div class="dropdown-menu-cliente">
@@ -80,10 +82,10 @@
       <h3>Nome</h3>
            <div class="divisor"></div>
            <div class="link">
-             <a href="#" id="meuperfil"> <img src="#">Meu perfil</a>
+             <a href="#" id="meuperfil"> <img src="/img/Adm-Icon.png">Meu perfil</a>
              <br>
              <br>
-             <a href="#" id="redefinir_senha"> <img src="#">Redefinir senha</a>
+             <a href="#" id="redefinir_senha"> <img src="/img/eye-closed.svg">Redefinir senha</a>
             </div>
      
     </div>
@@ -92,24 +94,43 @@
         <h2>Meu Perfil</h2>
         <p>Gerenciar informações</p>
         <p>Informações Pessoais</p>
-        <p>Nome</p> 
-        <input type="text" name="Nome" id="Nome" placeholder="Fulano de Tal">
-        <p>Telefone</p>
-        <input type="text" name="number" id="number" placeholder="11 99999-9999">
+
+     
+        
+            <h4>Atualizar Informações</h4>
+          <form id="form"> <!--Inicio do Formulario-->
+    
+            <label for="nome">Nome</label>
+            <br>
+            <input type="Text" id="nome" placeholder="Nome Completo" class="input required"  oninput="nomeValidate()" required>
+            <br>
+            <span class="span-required">Digite seu nome completo </span>
+    
+            <br>
+
+            <label for="telefone">Celular</label>
+            <br>
+            <input type="text" id="tel" placeholder="(99) 99999-9999" class="input required"  oninput="telefoneValidate()" required>
+            <br>
+            <span class="span-required">Digite seu número atualizado</span>
+            <br>
+
+            <label for="email">Email</label>
+            <br>
+            <input type="email" id="email"  placeholder="exemplo@gmail.com" class="input required" onkeyup ="emailValidate()" required>
+            <span class="span-required">Digite um email válido</span>
+            
+            <button type="submit" onclick="Entrar()">Atualizar dados</button> <!--Botao-->
+          </form> <!--Fim do Formulario-->
+
     </div>
 
-    <div class="info-2">
-        <p>E-mail</p>
-        <input type="text" name="email" id="email" placeholder="FulanodeTal@gmail.com">
-    </div>
+   
 </div>
 
 <div class="buttons">
-  <input class="button" type="submit" value="Salvar">
 </div>
-    <div class="">
-  <img src="/arvorelogo.png" alt="Imagem" class="imgfundo">
-</div>
+    
 
 
 <footer>
@@ -130,7 +151,8 @@
     <p>Nós equipe Life Tree estamos no mercado em busca da facilidade na escolha de produtos naturais de sua preferencia com o maior cuidado e desejo de facilitar para você</p>
   </div>
 </footer>
-
+<script src="MeuPerfil.js"></script>
 </body>
 
 </html>
+
