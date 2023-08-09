@@ -40,3 +40,12 @@ totalAmount = totalAmount.toFixed(2)
 totalAmount = totalAmount.replace(".",",")
 document.querySelector(".Total_Price h2").innerText = "R$" + totalAmount
 }
+
+document.querySelector("#cupons").addEventListener('keyup' , (e) =>{
+    let ss = e.target.selectionStart;
+    let se = e.target.selectionEnd;
+    e.target.value = e.target.value.toUpperCase();
+    e.target.selectionStart = ss;
+    e.target.selectionEnd = se;
+});
+
