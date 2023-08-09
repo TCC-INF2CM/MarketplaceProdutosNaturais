@@ -452,23 +452,7 @@ body {
      
     }
     
-    footer .box{
-     width: 520px;
-     min-height: 150px;
-     padding: 5px;
-     margin: 5px;
-    }
-    .box p{
-     font-size: 15px;
-     color: white;
-     cursor: pointer;
-     font-style: italic;
-     margin-top: 5px;
-    }
-    .box h1{
-     font-size: 25px;
-     color: white;
-    }
+    
 section {}
         
 input {
@@ -493,10 +477,9 @@ input {
 
         
       button[type="submit"] {
-          display: block;
           margin-right: auto;
           margin-left: auto;
-          margin-top: 25px;
+          margin-left: 10%;
           width: 150px;
           height: 45px;
           border-radius: 20px;
@@ -517,4 +500,31 @@ input {
         background-color: #0fbd7d;
       }
 
+      footer{
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+        text-align: center;
+         
+        }
+
+      footer .box{
+        width: 520px;
+        min-height: 150px;
+        padding: 5px;
+        margin: 5px;
+       }
+       .box p{
+        font-size: 15px;
+        color: white;
+        cursor: pointer;
+        font-style: italic;
+        margin-top: 5px;
+       }
+       .box h1{
+        font-size: 25px;
+        color: white;
+       }
+    
+       
 
