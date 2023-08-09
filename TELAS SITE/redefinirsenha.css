@@ -1,6 +1,6 @@
 body {
     background-color: #bad9cc;
-  
+    height: 100%;
     margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
@@ -19,6 +19,8 @@ body {
   margin-top: 60px;
   position: absolute;
   margin-bottom: 180px;
+
+  height: 40px;
   }
   .cliente-acess h1{
   font-size: 15px;
@@ -225,7 +227,7 @@ body {
     color: white;
   }
   
-  form {
+#pesquisa {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -267,11 +269,7 @@ body {
     color: white;
   }
   
-  form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+
   
   input[type="text"] {
     padding: 10px;
@@ -431,22 +429,14 @@ body {
   
   
 
-  
-  .imgfundo {
-    position: absolute;
-    top: 630px;
-    left: 50px;
-    width: 300px;
-    max-width: 350px;
-  }
-  
+
   
   footer{
     position: relative;
     background-color: #655643;
     width:100%;
-    min-height: 250px;
-    display: flex;
+
+    display: block;
     margin-top: 100px;
     padding: 5px;
      
@@ -469,29 +459,60 @@ body {
      font-size: 25px;
      color: white;
     }
-section {}
+
+    button[type="submit"] {
+          display: block;
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 25px;
+          width: 150px;
+          height: 45px;
+          border-radius: 20px;
+          background-color: #4ec4439f;
+      }
+
+      
+      button[type="submit"]:hover{
+        background-color: #0fbd7d;
+      }
+
+
+
+
+.button{
+        background-color: #038C5A;
+        color: #e9e9e9;
+        height: 50px;
+        width: 200px;
+        border-radius: 50px;
+        margin-top: 34%;
+        margin-left: 300%;
+        }
         
-input {
+        input {
           border: 1px solid black;
           border-radius: 18px;
-          height: 10px;
+          height: 40px;
           width: 225pt;
           padding: 15px;
           font-size: 15px;
           margin: 15px;
           margin-top: 30px;
       }
+
+      #password-two{
+        margin-top: 10px;
+      }
       
-.span-required{
+      .span-required{
         font-size: 15px;
         display: none;
         color: red;
-        margin-top:  -8px;
-        margin-left: 35px;
-        text-align: left;
+        margin-top: 5px;
+        margin-left: -0.1px;
       }
+      
 
-        
       button[type="submit"] {
           display: block;
           margin-right: auto;
@@ -512,9 +533,4 @@ input {
       input#botão a{
           text-decoration: #467262;
       }
-      
-      button[type="submit"]:hover{
-        background-color: #0fbd7d;
-      }
-
-
+        
