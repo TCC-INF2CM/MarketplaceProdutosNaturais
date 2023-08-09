@@ -12,21 +12,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"></script>
-    <title>Meu Perfil</title>
+    <title>Redefinir Senha</title>
   </head>
-
+  <style>
+    body{
+      background-color: #bad9cc;
+    }
+  </style>
   
   <body>
     <div class="head"></div>
 
     <div class="container">
-        <a href="#"><img src="/arvorelogo.png" id="logo-home"></a>
+        <a href="#"><img src="/img/arvorelogo.png" id="logo-home"></a>
       <p>Life Tree</p>
   
       <div class="cliente-acess">
         <div class="container-cliente">
           <div class="menu-bar2">
-            <img src="/adm icon.png" id="logo-cliente">
+            <img src="/img/Adm-Icon.png" id="logo-cliente">
             <ul>
               <li><a href="#">Entrar</a>
                   <div class="dropdown-menu-cliente">
@@ -46,7 +50,7 @@
      
     </div>
   
-      <form id="pesquisa">
+      <form>
         <input type="text" id="barra" placeholder="O que você está procurando?">
         
       </form>
@@ -76,59 +80,54 @@
       <h3>Nome</h3>
            <div class="divisor"></div>
            <div class="link">
-             <a href="#" id="meuperfil"> <img src="#">Meu perfil</a>
+             <a href="#" id="meuperfil"> <img src="/img/Adm-Icon.png">Meu perfil</a>
              <br>
              <br>
-             <a href="#" id="redefinir_senha"> <img src="#">Redefinir senha</a>
+             <a href="#" id="redefinir_senha"> <img src="/img/eye-closed.svg">Redefinir senha</a>
             </div>
      
     </div>
  
-    <section class="info-1">
-      <h2>Meu Perfil</h2>
-      <p>Gerenciar informações</p>
-      <p>Informações Pessoais</p>
-      <p>Redefinir Senha</p> 
+    <div class="info-1">
+        <h2>Meu Perfil</h2>
+        <p>Gerenciar informações</p>
+        <p>Informações Pessoais</p>
 
-      <form id="form"> <!--Inicio do Formulario-->
+     
+        
+            <h4>Redefine sua senha inserindo suas nova senha</h4>
+          <form id="form"> <!--Inicio do Formulario-->
+    
+            <input type="password" id="password" placeholder="Digite sua nova senha" oninput="mainPasswordValidate()" class="senha" required>
+            <br>
+            <span class="span-required">Senha deve conter 8 caracteres, incluindo um caractere especial, <br> uma letra maiúscula, uma letra minúscula e um dígito </span>
+            <br>
+    
+             <input type="password" id="password-two" placeholder="Repita sua senha" oninput="comparePassword()" class="senha" required>
+             <br>
+             <span class="span-required">Senhas devem ser compativeis</span>
+            
+          </form> <!--Fim do Formulario-->
 
-        <input type="password" id="password" placeholder="Digite sua nova senha" oninput="mainPasswordValidate()" class="senha" required>
-        <span class="span-required">Senha deve conter 8 caracteres, incluindo um caractere especial <br> uma letra maiúscula, uma letra minúscula e um dígito </span>
-        <br>
-
-         <input type="password" id="password-two" placeholder="Repita sua senha" oninput="comparePassword()" class="senha" required>
-         <span class="span-required">Senhas devem ser compativeis</span>
-        <br>
-
-      
-    <div class="buttons">
-         <input class="button" type="submit" value="Atualizar Senha">
     </div>
 
-    
+   
+</div>
 
-    </form> <!--Fim do Formulario-->
-    
-</section>
-
-
-
-    </div>
-    
-</body>
+<div class="buttons">
+  <input class="button" type="submit" value="Atualizar Senha">
+</div>
+    <div class="">
+  <img src="/arvorelogo.png" alt="Imagem" class="imgfundo">
+</div>
 
 
 <footer>
   <div class="box">
     <h1>Inicio</h1>
-    
       <p>Home</p>
       <p>Meus Pedidos</p>
-      
-    
   </div>
-
-  
 
   <div class="box">
     <h1>Fale Conosco</h1>
@@ -141,7 +140,8 @@
     <p>Nós equipe Life Tree estamos no mercado em busca da facilidade na escolha de produtos naturais de sua preferencia com o maior cuidado e desejo de facilitar para você</p>
   </div>
 </footer>
-
-<script src="/SISTEMA WEB ADM E FORNECEDOR/Redefinição de Senha/RedefinicaoDeSenha.js"></script>
+<script src="RedefinicaoDeSenha.js"></script>
+</body>
 
 </html>
+

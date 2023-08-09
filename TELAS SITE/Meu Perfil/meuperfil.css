@@ -1,13 +1,5 @@
 body {
   background-color: #bad9cc;
-
-  margin:0; padding:0;
- box-sizing: border-box;
- outline: none; border:none;
- text-decoration: none;
- transition: all 0.9s linear;
- text-transform: capitalize;
-  
 }
 :root {
   --color-primary: #000000;
@@ -485,8 +477,6 @@ border-radius: 50px;
 footer{
   position: relative;
   background-color: #655643;
-  width:100%;
-  min-height: 250px;
   display: flex;
   margin-top: 100px;
   padding: 5px;
