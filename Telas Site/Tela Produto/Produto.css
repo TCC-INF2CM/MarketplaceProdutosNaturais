@@ -19,6 +19,29 @@ body {
   position: absolute;
   margin-bottom: 180px;
   }
+
+  .carrinho{
+    border-radius: 11px;
+    /*/ background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    box-shadow:2px 3px 6px #6e6e6e,
+             -2px -3px 6px #ffffff;  /*/
+    width: 150px;
+    height: 80px;
+    margin-top: -100px;
+    
+    
+  }
+  
+  #carrinho-logo{
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+    margin-left: 5rem;
+  }
+  #contador{
+    margin-top: -1.5rem;
+    margin-left: 8rem;
+  } 
   
   .cliente-acess{
     align-items: center;
@@ -246,14 +269,13 @@ body {
   }
   
   .content{
-    display: flex;
     height: 100%;
     width: 50%;
     margin-left: 40%;
   }
   
   .image{
-    width: 50%;
+    width: 40%;
     
   }
   
@@ -270,23 +292,24 @@ body {
     margin-left: -150%;
   }
   
-  .nome{
+  .nome{  
     font-size: 30px;
-    margin-top: 15%;
-    margin-left: 40px;
+    margin-top: -50%;
     font-weight: bold;
+    margin-left: 40%;
+    
   }
   
   .inf p{
     font-weight: bold;
-    margin-left: 40px;
     font-size: 15px;
     margin-top: 5px;
+    margin-left: 40%;
   }
   
   .stars{
-    margin-left: 40px;
     margin-top: 10px;
+    margin-left: 40%;
   }
   
   .stars img{
@@ -294,6 +317,7 @@ body {
   }
   
   .price{
+    margin-top:20px;
     margin-left: 40%;
   }
   
@@ -311,9 +335,7 @@ body {
     margin-left: 1%;
   }
   
-  .estoque{
-    font-size: 20px;
-  }
+
   
   .ad_prod{
     display: flex;
@@ -332,8 +354,8 @@ body {
     color: #ffffff; 
   }
   
-  .description{
-    margin: 10%;    
+  .description{ 
+    height: fit-content;
   }
   .description h1{
     font-size: 30px;
@@ -345,8 +367,8 @@ body {
      background-color: #e0e6e3;
      margin-top: 10px;
      border-radius: 20px;
-     height:100%;
-     width: 100%;
+     height:fit-content;
+     width:90%;
      margin-left: 20%;
   }
   
