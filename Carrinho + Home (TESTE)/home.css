@@ -506,6 +506,14 @@ h1, h2 {
     transition: all ease .2s;
 }
 
+#cupom{
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: 300px;
+}
+
 .cart--finalizar:hover {
     background-color:#27ae60;
 }
