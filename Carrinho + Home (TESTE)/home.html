@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/lifetree-Tcc/src/main/resources/static/img/arvorelogo.png" />
+
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+</head>
+
+<body>
+    
+    
+
+    <!-- modelos de pizza na lista e no carrinho -->
+    <div class="models">
+
+        <!-- pizza na lista -->
+        <div class="pizza-item">
+            <a href="">
+                <div class="pizza-item--img"><img src="" /></div>
+                <div class="pizza-item--add">+</div>
+            </a>
+            <div class="pizza-item--price">R$ --</div>
+            <div class="pizza-item--name">--</div>
+            <div class="pizza-item--desc">--</div>
+        </div>
+
+        <!-- pizza no carrinho -->
+        <div class="cart--item">
+            <img src="" />
+            <div class="cart--item-nome">--</div>
+            <div class="cart--item--qtarea">
+                <button class="cart--item-qtmenos">-</button>
+                <div class="cart--item--qt">1</div>
+                <button class="cart--item-qtmais">+</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- /models -->
+
+    <!-- .menu-openner aparecera no modo mobile -->
+    <header>
+        
+        
+        <div class="container">
+            <a href="#"><img src="/lifetree-Tcc/src/main/resources/static/img/arvorelogo.png" id="logo-home"></a>
+            <br>
+            <h1 id="logo-nome">Life Tree</h1>
+        </div>
+
+        <div class="search">
+            <input type="search" name="pesquisa" placeholder="Pequisar" id="barra">
+        </div>
+
+        <img src="/lifetree-Tcc/src/main/resources/static/img/Adm-Icon.png" id="logo-cliente">
+        
+        <div class="cliente-acess">
+            <div class="container-cliente">
+              <div class="menu-bar2">
+                <ul>
+                  <li><a href="#">Entrar</a>
+                      <div class="dropdown-menu-cliente">
+                          <ul>
+                            <li><a href="/lifetree/cliente/login">Login Cliente</a></li>
+                            <li><a href="/lifetree/funcionario/loginfuncionario">Login Funcionário</a></li>
+                            
+                          </ul>
+                        </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        
+
+        <div class="menu-openner"><span>0</span> <img
+                src="/lifetree-Tcc/src/main/resources/static/img/Carrinho-Icon.png"/>
+        </div>
+
+        
+    </header>
+    <!-- /menu-openner -->
+
+    
+
+
+    <!-- conteudo principal -->
+    <main>
+
+        <h2>Produtos</h2>
+
+        <div class="pizza-area"></div>
+    </main>
+    <!-- /conteudo principal -->
+
+    <!-- aside do carrinho -->
+    <aside>
+        <div class="cart--area">
+            <div class="menu-closer">❌</div>
+            <h1>Meu Carrinho</h1>
+            <div class="cart"></div>
+            <div class="cart--details">
+                <div class="cart--totalitem subtotal">
+                    <span>Subtotal</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem desconto">
+                    <span>Desconto</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--totalitem total big">
+                    <span>Total</span>
+                    <span>R$ --</span>
+                </div>
+                <div class="cart--finalizar">Finalizar a compra</div>
+            </div>
+        </div>
+    </aside>
+    <!-- /aside do carrinho -->
+
+    <!-- janela modal .pizzaWindowArea -->
+    <div class="pizzaWindowArea">
+        <div class="pizzaWindowBody">
+            <div class="pizzaInfo--cancelMobileButton">Voltar</div>
+            <div class="pizzaBig">
+                <img src="" />
+            </div>
+            <div class="pizzaInfo">
+                <h1>--</h1>
+                <div class="pizzaInfo--desc">--</div>
+                <div class="pizzaInfo--pricearea">
+                    <div class="pizzaInfo--sector">Preço</div>
+                    <div class="pizzaInfo--price">
+                        <div class="pizzaInfo--actualPrice">R$ --</div>
+                        <div class="pizzaInfo--qtarea">
+                            <button class="pizzaInfo--qtmenos">-</button>
+                            <div class="pizzaInfo--qt">1</div>
+                            <button class="pizzaInfo--qtmais">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pizzaInfo--addButton">Adicionar ao carrinho</div>
+                <div class="pizzaInfo--cancelButton">Cancelar</div>
+            </div>
+        </div>
+    </div>
+    <!-- /janela modal .pizzaWindowArea -->
+
+    <!--Aqui começa o rodapé-->
+    <footer>
+        <div class="box">
+            <h1>Inicio</h1>
+            <a href="#"><img src="/lifetree-Tcc/src/main/resources/static/img/arvorelogo1.png" alt="Home"></a>
+        </div>
+
+        <div class="contato">
+            <h1>Fale Conosco</h1>
+            <p>Email para contato: sac@lifetree.com.br</p>
+            <p>Whatsapp: (11) 999999999</p>
+        </div>
+
+        <div class="sobre">
+            <h1>Sobre nós</h1>
+            <p>Nós equipe Life Tree estamos no mercado em busca da facilidade na escolha de produtos naturais de sua
+                preferencia com o maior cuidado e desejo de facilitar para você</p>
+        </div>
+    </footer>
+
+    <script src="pizzas.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>
